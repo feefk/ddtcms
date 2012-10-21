@@ -1,0 +1,26 @@
+{% load i18n %}
+
+
+
+	{%comment%}<!-- begin: #footer -->{%endcomment%}
+	<div id="footer">
+		
+		<a href="/">返回首页</a> 
+		- <a href="/faq/aboutus">关于我们</a> 
+		- <a href="/faq/contact">联系方式</a> 
+		- <a href="/link/">友情链接</a> 
+		- <a href="/sitemap.xml">网站地图</a> 
+		- <a href="/admin/">后台管理</a> 
+		- <a href="/faq/">帮助</a> 
+		- <a href="/guestbook/">留言</a> 
+		<br />
+		
+		<p class="copyright">
+			{% include "copyright.html" %}
+		</p><!-- end: #copyright -->
+		<p class="powered">
+			{% include "powered.html" %}
+		</p><!-- end: #powered -->
+		
+	</div>
+	{%comment%}<!-- end: #footer -->{%endcomment%}

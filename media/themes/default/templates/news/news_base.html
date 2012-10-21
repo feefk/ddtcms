@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load i18n markup news_tags  themes%}
+
+{% block title %}News {% endblock %}
+
+{% block breadcrumbs %} <a href="/">首页</a> &raquo; <a href="{% url news_index %}">新闻中心</a>{% for title, url in category.get_url_name %} &raquo; <a href='{{ url }}'>{{ title }}</a>{% endfor %}  {% endblock %}
+
+{% block content %}
+		<section  class="article">
+			<article class="article_wrap">
+				{% block article_content %}{% endblock article_content%}
+			</article>
+			
+			<aside  class="article_aside">
+				{% block sidebar %}{% endblock sidebar%}
+			</aside>
+			
+		</section><div class="clear"></div>
+{% endblock %}

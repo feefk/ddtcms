@@ -1,0 +1,192 @@
+{% extends 'base.html' %}
+{% load i18n themes news_tags%}
+
+{% block title %}首页{% endblock %}
+
+{% block css.custom %}
+	<link rel="stylesheet" href="{% theme_media_url %}css/orbit-1.2.3.css?v=20110806"/>
+	<link rel="stylesheet" href="{% theme_media_url %}css/home.css?v=20110808"/>
+	
+	<style type="text/css">
+		.orbit-bullets { bottom: 40px !important;  }
+	</style>	
+	<!--[if IE]>
+		<style type="text/css">
+			.orbit-wrapper .orbit-caption { filter : progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=60,finishOpacity=100) !important;}
+		</style>
+	<![endif]-->
+
+{% endblock css.custom %}
+
+
+
+
+
+{% block notice %} {% for notice in notice_list %} [公告]<a href="{{notice.get_absolute_url}}">{{ notice.title }}</a>({{notice.pub_date|date:"Y-m-d"}})  {% endfor %}{% endblock %}
+
+
+{% block content %}
+
+
+	<!-- The first of two "section" elements for demo purposes; optional class added for styling (hs1 = "home section 1") -->
+	<section class="hot-screen clearfix">
+		<!-- The "aside" element could be a sidebar (outside an article or section) -->
+		<!-- Or it could reference other tangentially-related content within an article or section -->
+		
+
+		<article class="attraction">
+ 
+			<div id="tags-list">
+				<ul class="hlist">
+					{% for tag in tag_list %}
+					<li><a href="{% url tagging-index %}{{ tag.name }}" class="title">{{ tag.name }}</a></li>
+					{% endfor %}
+				</ul>
+			</div><!--end #featured-->
+		</article>
+		
+		<aside  class="expressway">
+			<div class="announce"  id="announce">
+			
+				<div class="box-top">
+					<h1><div class="hd"><ul class="ks-switchable-nav clearfix" id="menu">
+						<li class="tab-holder-notice  ks-active" rel="switchable1">最新发布</li>
+						<li class="tab-holder-cw" rel="switchable2">公告</li>
+						<li class="tab-holder-cw" rel="switchable3">开源</li>
+						<li class="tab-holder-cw" rel="switchable4">建站指南{%comment%}<a href="#">建站指南</a>{%endcomment%}</li>
+					</ul></div></h1>
+				</div>
+				<div class="box">
+					 
+					<div class="switchable-content">
+						<div class="box-top1"><span></span></div>
+						
+						<div  id="switchable1" class="tab-panel" style="display:block;">
+							<div class="box1">
+								
+								<ul>
+									<li>DDTCMS v0.2.3.2.20100422, <a href="http://code.google.com/p/ddtcms/downloads/list" title="Google download">马上下载!</a></li>
+									<li><strong>发布日期</strong>: 2010-3-24, <strong>文件大小</strong>:3M</li>
+									<li><strong>运行环境</strong>: Win/Linux+Apache/Nginx</li>
+									<li><strong>Django环境</strong>: Django1.1+Python2.5.x.</li>
+								</ul>
+								
+							</div>
+						</div>
+						
+						<div  id="switchable2" class="tab-panel">
+							<div class="box1">
+								
+								<ul class="clearfix">
+									{% for notice in notice_list %}<li><a href="{{notice.get_absolute_url}}">{{ notice.title|slice:"0:18"}}</a>({{notice.pub_date|date:"Y-m-d"}})  </li>{% endfor %}
+								</ul>
+								 
+							</div>
+						</div>
+						
+						<div  id="switchable3" class="tab-panel">
+							<div class="box1">
+								<ul class="clearfix">
+									<li>
+										<a href="http://code.google.com/p/ddtcms/downloads/list">最新版本下载</a>
+									</li>
+									<li>
+										<a href="http://code.google.com/p/ddtcms/w/list">文档</a>
+									</li>
+									<li>
+										<a href="http://code.google.com/p/ddtcms/">开源项目首页</a>
+									</li>
+									<li>
+										<a href="http://blog.csdn.net/huyoo/">技术博客</a>
+									</li>
+								</ul>
+										
+							</div>
+						</div>
+						
+						<div  id="switchable4" class="tab-panel">
+							<div class="box1">
+								<ul class="clearfix tag-list">
+									<li class="h">
+									<span>[<a href="" class="h">域名</a>]</span>
+									<a href="" class="h">怎样注册域名?</a>
+									</li>
+									<li>
+									<span>[<a href="">主机</a>]</span>
+									<a href="">哪里有Django主机</a>
+									</li>
+									<li>
+									<span>[<a href="">系统</a>]</span>
+									<a href="">使用什么CMS系统建站</a>
+									</li>
+									<li>
+									<span>[<a href="">推广</a>]</span>
+									<a href="">别人如何知道你的网站</a>
+									</li>
+								</ul>			
+							</div>
+						</div>
+						
+						<div class="box-bot"><span></span></div>
+					</div>
+					<div class="clear"></div>
+					 
+				</div>
+				<div class="box-bot"><span></span></div>
+				<div class="clear"></div>
+			
+			</div>
+			<div class="announce">	
+				<div class="box-top"><h1>联系我们</h1></div>
+				<div class="box">
+					<ul> 
+						<li>您喜欢上豆瓣,去 <a href="http://www.douban.com/group/ddtcms/" title="">豆瓣DDTCMS小组</a></li>
+						<li>您喜欢上QQ,就去 <a target="_blank" href="http://qun.qq.com/#jointhegroup/gid/69930365"><img border="0" src="/media/images/utils/gp.gif" alt="点击这里加入Django梦之队QQ群" title="点击这里加入Django梦之队QQ群"></a></li>
+						<li>您喜欢玩微博,关注 <a href="http://weibo.com/ddtcms" title="DDTCMS微博"><img border="0" src="/media/images/utils/guanzhu.jpg" alt="关注DDTCMS微博" title="关注DDTCMS微博"></a></li>
+						<li>您也喜欢微群,加入 <a href="http://q.weibo.com/116482" title="Django梦之队微群">Django梦之队微群</a></li>
+						
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<div class="box-bot"><span></span></div>
+			</div>
+		</aside>
+		
+		
+	</section>
+
+
+	
+ 
+ 
+{% endblock content %}
+
+{% block extended_page %}
+
+<section  id="index_links" class="pagewrapper hs2  clearfix"><!--begin:extended_page-->
+	<div class="box-top"><h1><span><a href="{% url link_index %}" title="网址链接">更多...</a></span> <ul class="lisort"><li class="cur" rel="0">友情链接</li><li rel="1">合作网站</li><li rel="2">技术支持</li></ul></h1></div>
+	<div class="box link_content">
+		<div class="lilink">
+			<ul class="text">{% for link in links %}<li><a href="{{ link.url }}" title='{{ link.notes }}'  target='_blank'>{{ link.title }}</a></li>{% endfor %}</ul>
+		</div>
+		
+		<div class="lilink" style="display:none">
+			<ul class="text"><li>待本站流量达到每日IP 100+ 之后, 再寻求合作网站.</li></ul>
+		</div>
+		
+		<div class="lilink" style="display:none">
+		    <ul class="text"><li><a href="http://www.python.org" title="Python official site"><img src="{{ MEDIA_URL }}images/support/python-powered.png" alt="python"/></a></li>
+							<li><a href="http://www.djangoproject.com" title="Site is Powered by Django Web Framework"><img src='{{ MEDIA_URL }}images/support/djangopowered126x54.gif' alt='Site is Powered by Django Web Framework'/></a></li>
+							<li><a href="http://code.google.com/p/ddtcms/" title="Opensource Project hosted by GoogleCode"><img src='{{ MEDIA_URL }}images/support/ddtcms-googlecode.jpg' alt='Opensource Project hosted by GoogleCode'/></a></li>
+							<li><a href="http://www.ddtcms.com/" title="DDTCMS Official Site for Support"><img src='{{ MEDIA_URL }}images/support/ddtcms-powered.png' alt='DDTCMS Official Site for Support'/></a></li>
+							<li><a href="http://blog.csdn.net/huyoo/" title="The Author Huyoo353's Technical Blog on CSDN.net"><img src='{{ MEDIA_URL }}images/support/csdn-huyoo.jpg' alt="The Author Huyoo353's Technical Blog"/></a></li>
+							<li><a href="http://weibo.com/ddtcms" title="The Weibo of the DDTCMS team"><img src='{{ MEDIA_URL }}images/support/sina_weibo.png' alt="The Weibo of the DDTCMS team"/></a></li>
+		    </ul>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+	<div class="box-bot"><span></span></div>
+</section><!--end:extended_page-->
+
+{% endblock extended_page %}

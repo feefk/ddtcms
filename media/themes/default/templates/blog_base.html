@@ -1,0 +1,33 @@
+{% extends 'base_2col.html' %}{% load i18n %}
+{% block title %}博客{% endblock %}
+
+{% block css.custom %}
+<link rel="stylesheet" href="{{MEDIA_URL}}editor/kindeditor-4.0.1/plugins/code/prettify.css?v=20111028" media="screen" />
+{% endblock css.custom %}
+
+
+{% block js.custom %}<script src="{{MEDIA_URL}}editor/kindeditor-4.0.1/plugins/code/prettify.js?v=20111028"></script>{% endblock js.custom %}
+
+
+
+
+{% block content %}
+		<section  class="article">
+			<article class="article_wrap">
+				{% block article_content %}<p>等待开发人员修改。。。</p>{% endblock article_content%}
+			</article>
+			
+			<aside  class="article_aside">
+				{% block sidebar %}{% endblock sidebar%}
+			</aside>
+			
+		</section><div class="clear"></div>
+{% endblock %}
+
+
+
+{% block js.extra %}
+<script type="text/javascript">
+prettyPrint();
+</script>
+{% endblock js.extra %}

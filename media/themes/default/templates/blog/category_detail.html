@@ -1,0 +1,15 @@
+{% extends "blog_base.html" %}
+
+{% block title %}Blog - {{ object.title|escape }}{% endblock %}
+
+{% block content %}
+<h1>Category</h1>
+
+<dl>
+<dt>Categorys:</dt>
+<dd>
+{{ object.name }}
+</dd>
+</dl>
+
+{% endblock %}

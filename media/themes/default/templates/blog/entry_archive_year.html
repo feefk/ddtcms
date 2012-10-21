@@ -1,0 +1,27 @@
+{% extends "blog_base.html" %}
+
+{% block title %}最新日志列表{{sitename}}{% endblock %}
+
+{% block extrahead %}
+<style>
+#object-list li{border:1px solid #ff8800;margin:5px;}
+</style>
+{% endblock %}
+
+
+
+{% block content %}
+<div class="clearBOX">&nbsp;</div>
+<div class='modth'>最新日志列表</div>
+
+<div id="object-list"  class='list'>
+{{year}}
+<ul>
+{% for object in date_list %}
+<li> <a href="{{object|date:"m"|lower}}">{{object|date:"Y b"}}</a></li>
+{% endfor %}
+</ul>
+</div>
+
+
+{% endblock %}

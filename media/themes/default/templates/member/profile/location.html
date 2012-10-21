@@ -1,0 +1,45 @@
+{% extends "member/base_2col.html" %}
+{% load i18n themes %}
+
+{% block title %}{% blocktrans %}{{ user }}'s Dashboard{% endblocktrans %}{% endblock %}
+{% block robots %}noindex,nofollow{% endblock %}
+
+
+{% block js.extra %}
+	{% if GOOGLE_MAPS_API_KEY %}
+	<script src="{% theme_media_url %}js/jquery.location.js"></script>
+	{% endif %}
+{% endblock %}
+
+{% block userprofile_navigation %}
+{% include "member/menu.html" %}
+{% endblock %}
+
+{% block userprofile_content %}dsdsdsdsd
+	<form action="{{ request.path_info }}" method="post" enctype="multipart/form-data">
+	{{ form.errors }}
+	<fieldset>
+		<legend>{% trans "Define your location" %}{% if geoip %} (<a href="?ip=1">{% trans "Try IP localization" %})</a>{% endif %}</legend>
+		<label for="id_country">{% trans "Country" %}<img class="hide" alt="{% trans "Loading..." %}" src="{% theme_media_url %}images/loading.gif" /></label>
+		<p>{{ form.country }}</p>
+		{% if GOOGLE_MAPS_API_KEY %}
+			<div class="mapinfo">
+				<label>{% trans "Location" %}</label>
+				{{ form.instance.location }}
+				<p id="location_info">{{ profile.location }}</p>
+				<label for="map">{% trans "Position" %}</label>
+				<div id="map"></div>
+			</div>
+			<div class="hide">{{ form.location }}{{ form.latitude }}{{ form.longitude }}</div>
+			<div style="display: none;" id="apikey">{{ GOOGLE_MAPS_API_KEY }}</div>
+		{% endif %}
+	</fieldset>
+	<p><input type="submit" value="{% trans 'Save' %}" /></p>
+	</form>
+{% endblock %}
+{% block userprofile_content_related %}
+<div class="box">
+  <h3>{% trans "Location information" %}</h3>
+    <p>{% trans "Define your location information" %}.</p>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% load i18n %}
+{% if user.is_authenticated %}
+<div id="profile_nav">
+	<ul class="hmenu">
+		<li{% ifequal section "overview" %} class="active"{% endifequal %}><a href="{% url profile_overview %}">概览</a></li>
+		<li{% ifequal section "personal" %} class="active"{% endifequal %}><a href="{% url profile_edit_personal %}">个人信息</a></li>
+		<li{% ifequal section "avatar" %} class="active"{% endifequal %}><a href="{% url profile_edit_avatar %}">头像</a></li>
+		<li{% ifequal section "location" %} class="active"{% endifequal %}><a href="{% url profile_edit_location %}">地理位置</a></li>
+		<li{% ifequal section "delete" %} class="active"{% endifequal %}><a href="{% url profile_delete %}">删除个人档案</a></li>
+	</ul>
+</div>
+{% else %}
+用户菜单需要登录才能查看.
+{% endif %}

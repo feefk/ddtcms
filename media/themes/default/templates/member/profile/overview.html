@@ -1,0 +1,92 @@
+{% extends "member/base_2col.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Overview of your profile" %}{% endblock %}
+{% block robots %}noindex,nofollow{% endblock %}
+
+{% block js.custom %}
+{% if GOOGLE_MAPS_API_KEY and user.get_profile.location %}
+  <script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;key={{ GOOGLE_MAPS_API_KEY }}"></script>
+  <script>
+	$(function() {
+		if (GBrowserIsCompatible()) {
+			this.map = new GMap2(document.getElementById("location"));
+			this.map.disableDragging();
+			this.map.setCenter(new GLatLng({{ user.get_profile.latitude|default:"30" }}, {{ user.get_profile.longitude|default:"0" }}), 2);
+			this.marker = new GMarker(new GLatLng({{ user.get_profile.latitude }}, {{ user.get_profile.longitude }}), {clickable: false, draggable: false});
+			this.map.addOverlay(this.marker);
+		}
+	});
+  </script>
+{% endif %}
+{% endblock %}
+
+
+
+{% block userprofile_content %}
+	{% load avatars %}
+	<form class="form" action="" method="post">
+	<fieldset>
+		<legend>你的个人档案概要</legend>
+		<div id="avatar" class="span-3 center">
+			<a href="{% url profile_edit_avatar %}">
+				<img class="border" src="{% avatar 96 %}" />
+			</a>
+			<p><a href="{{ request.path_info }}edit/avatar/">{% if user.get_profile.has_avatar %}改变头像{% else %}添加头像{% endif %}</a></p>
+		</div>
+	
+		<div class="span-9 last">
+			<p><label for="id_user">{% trans "Username:" %}</label> {{ user }}</p>
+			<p><label for="id_email">{% trans "E-mail:" %}</label>
+				<span class="{% if not email or not validated %}quiet red{% endif %}">
+				{%if not email %}还未设置
+				{% else %}{{ email }}
+				{% if not validated %}未确认
+				{% endif %}{% endif %}
+				</span>
+			</p>
+			<p>
+			<label for="location">国家:</label>
+			{% if user.get_profile.country %}
+				{{ user.get_profile.get_country_display }}
+			{% else %}
+				<span class="quiet red">未设置</span>
+			{% endif %}
+			</p>
+			{% if GOOGLE_MAPS_API_KEY %}
+			<p>
+			<label for="location">地理位置:</label>
+			{% if user.get_profile.location %}
+				{{ user.get_profile.location }}
+			{% else %}
+				<span class="quiet red">未设置</span>
+			{% endif %}
+			</p>
+			{% endif %}
+		</div>
+
+		{% if user.get_profile.location %}
+		<div class="span-12 last">
+			<div id="location" style="width: 480px; height: 240px;"></div>
+		</div>
+		{% endif %}
+	</fieldset>
+	</form>
+{% endblock %}
+
+{% block userprofile_content_related %}
+	<div class="box">
+		<h3>管理</h3>
+		<a href="{% url password_change %}">更改密码</a>
+		<br />
+		<a href="{% url email_validation %}">{% if email %}改变您的 Email 地址{% else %}添加您的 Email 地址{% endif %}</a>
+		{% if not validated and email %}<br /><a href="{% url email_validation_reset %}">重新发送认证邮件</a>
+		{% endif %}
+		<br />
+		{% if not user.get_profile.location %}
+			<a href="{% url profile_edit_location %}">添加您的地理位置</a>
+		{% else %}
+			<a href="{% url profile_edit_location %}">改变您的地理位置</a>
+		{% endif %}
+	</div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Blog - {{ object.title|escape }}{% endblock %}
+
+{% block content %}
+<h2>{{ object.title|escape }}</h2>
+
+<dl>
+<dt>Posted On:</dt>
+<dd>{{ object.pub_date|date:"F j, Y" }}</dd>
+</dl>
+<p>{{ object.content|escape|linebreaks }}</p>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load i18n themes %}
+
+
+{% block css.custom %}	
+	<link rel="stylesheet" href="{% theme_media_url %}css/django-profile.css" media="screen, projection" />
+{% endblock css.custom %}
+
+
+{% block js.shared %}
+	{%comment%}<script src="{% theme_media_url %}js/jquery-1.3.2.min.js"></script>{%endcomment%}
+{% endblock js.shared %}
+
+
+
+{% block sidebar %}
+
+<div>
+    <div class="box-top1"><span></span></div>
+    <div class="box1">
+        <h2>{% trans "SideBar" %}</h2>
+        <div id="userprofile_navigation">
+  		    {% block userprofile_navigation %}{% include "member/menu.html" %}{% endblock %}	
+	    </div>
+        <div class="clear"></div>
+    </div>
+    <div class="box-bot"><span></span></div>
+</div>
+<div class="clear"></div>  
+
+
+{% endblock sidebar %}
+
+{% block content %} 
+	
+		 
+			{% block userprofile_content %}{% endblock %}
+			 
+		 
+{% endblock content %}

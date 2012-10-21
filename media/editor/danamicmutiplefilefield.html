@@ -1,0 +1,27 @@
+<script>
+<!--
+function setFileFileds(num){
+	num = parseInt(num);
+	for(var i=0,str="";i<num;i++){
+		str+=" 附件：<input name=\"{{name}}"+i+"\" type=\"file\" id=\"id_{{name}}"+i+"\">";
+		str+=" 说明：<input name=\"{{name}}_desc"+i+"\" value=\"\" type=\"text\" id=\"id_{{name}}_desc"+i+"\" size=\"10\" /><br />";
+	}
+	document.getElementById("objfiles").innerHTML=str;
+}
+//-->
+</script>
+请选择一个图片，用于首页展示<br />
+<select name="DynamicMultipleFileSelect" onchange="setFileFileds(this.value)">
+<option value="0" selected="selected">不增加</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select> <<< 附件多于1个的话，请选择需要增加的附件个数。单个文件最好小于2M，以利于网络上传。
+<div id="objfiles"><noscript><strong>要动态增加附件数量，请启用网页浏览器的脚本(javascript)功能</strong></noscript></div>
+<script>setFileFileds(document.getElementById("DynamicMultipleFileSelect").value);</script>

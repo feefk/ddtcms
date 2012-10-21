@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% load markup news_tags  themes%}
+
+{% block title %}
+	{{ tag }}
+{% endblock %}
+
+{% block breadcrumbs %} <a href="/">首页</a> &raquo; <a href="{% url tagging-index %}">新闻中心</a> &raquo; 含有标签 [{{ tag }}] 的对象 {% endblock %}
+
+
+
+{% block content %}
+	<div id="channel_nav">	
+		<ul>
+			{% for item in child_categories %}
+			<li><a href='{{ item.get_absolute_url }}'><span>{{ item.name }}</span></a></li>
+			{% endfor %}	
+		</ul>
+		<span class="back"><a href="/">返回首页</a></span>
+	</div>
+
+
+
+<div class="subcolumns">
+	<div class="c75l">
+	  	<div class="subcl">
+
+		<div class="listbox">
+			<ul class="e2">
+				{% for item in tag_list %}
+				<li><a href="{{item.get_absolute_url}}" class="title">{{ item }}</a></li>
+				{% endfor %}
+			</ul>
+			</div><!-- listbox -->
+			
+			<div class="pages">
+			<ul class="pagelist">
+             <span class="pageinfo">总计<strong>{{ hits }}</strong>条，每页{{ results_per_page }}条，共 <strong>{{ pages }}</strong> 页</span> 
+ 
+	{% if is_paginated %}
+
+			<li><a href="?page=1">首页</a></li>
+			{% if has_previous %}
+				<li><a href="?page={{ previous }}">&laquo; 上一页</a></li>
+			{% endif %}
+			
+			{% for p in page_range %}
+				{% ifequal page p  %}
+					<li><span class="thisclass">{{ p }}</span></li>
+				{% else %}
+					<li><a href="?page={{ p }}">{{ p }}</a></li>
+				{% endifequal %}
+			{% endfor %}
+			
+			{% if has_next %}
+				<li><a href="?page={{ next }}">下一页&raquo;</a></li>
+			{% endif %}
+			<li><a href="?page={{ pages }}">最后一页</a></li>
+			
+	{% endif %}
+				</ul>
+			</div><!-- pages -->
+			
+			
+	  	</div>
+	</div>
+	
+	<div class="c25r">
+		<div class="subcr">
+			
+		<div class="commend">
+			<dl class="tbox">
+				<dt><strong>推荐内容</strong></dt>
+				<dd>
+					<ul class="d4">
+                    {% for news in recommended_news %}
+		            <li><a href="{{news.get_absolute_url}}">{{ news.title|slice:"0:18" }}</a>
+		            <p>{{ news.summary|slice:"0:35" }}...</p></li>{% endfor %}
+
+					</ul>
+				</dd>
+			</dl>
+		</div><!-- /commend -->
+		
+		<div class="hot mt1">
+			<dl class="tbox">
+				<dt><strong>热点内容</strong></dt>
+				<dd>
+					<ul class="c1 ico2">
+                    {% for news in most_viewed_list %}
+					<li><a href="{{news.get_absolute_url}}" title="{{ news.title }}">{{ news.title|slice:"0:21" }}(阅{{ news.views }})</a></li>{% endfor %}
+
+					</ul>
+				</dd>
+			</dl>
+		</div>
+
+
+	</div>
+	</div>
+</div>
+
+
+{% endblock %}

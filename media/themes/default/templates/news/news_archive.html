@@ -1,0 +1,38 @@
+{% extends "news/news_base.html" %}
+
+{% block title %}最新新闻列表{% endblock %}
+
+
+
+{% block maintitle %}<span><a href="post" title="添加一条新闻">发布新闻</a></span>最新新闻列表{% endblock %}
+{% block content %}
+<div class="subcolumns coolsubcol">
+        <div class="c33l">
+          <div class="subcl">
+            <h3>要闻</h3>
+			{% for object in latest %}
+			<li>
+			<a href="{{ object.get_absolute_url }}">{{ object.title|escape }}</a>
+			<p class="post-date">{{ object.pub_date|date:"F j, Y" }}</p>
+			<p class="summary">{{ object.summary|escape|linebreaks }}</p>
+			</li>
+{% endfor%}
+          </div>
+        </div>
+        <div class="c33l">
+          <div class="subcl">
+            <h3>要事</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="c33r">
+          <div class="subcr">
+            <h3>国情</h3>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+
+
+{% endblock %}

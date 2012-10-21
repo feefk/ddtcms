@@ -1,0 +1,19 @@
+{% extends "blog_base.html" %}
+
+{% block title %}Blog - Wo的站点{% endblock %}
+
+{% block content %}
+<h2>Tags List</h2>
+
+<dl>
+
+<dt>Tags:</dt>
+<dd>
+{% for object in object_list %}
+<a href="{{ object.get_absolute_url }}">{{ object.name }}</a>{% if not forloop.last %}, {% endif %}
+{% endfor %}
+</dd>
+</dl>
+
+
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends "base_2col.html" %}
+{% load i18n markup news_tags  themes%}
+
+{% block title %}News {% endblock %}
+{% block meta.description %}{% trans 'Category' %}, {{ category.name }}{% endblock meta.description %}
+{% block meta.keywords %}{{ category.name }}{% endblock meta.keywords %}
+{% block meta.author %}{{ SITE_NAME }} {% endblock meta.author %}
+	
+	
+{% block breadcrumbs %} <a href="/">首页</a> &raquo; <a href="{% url news_index %}">新闻中心</a>{% for title, url in category.get_url_name %} &raquo; <a href='{{ url }}'>{{ title }}</a>{% endfor %}  {% endblock %}
+
+{% block sidebar %}
+			<h1>{{ category.name }} ({{ category.total_posts }})</h1>
+			<div>
+				<div class="box-top1"><span></span></div>
+				<div class="box1">
+					
+					{%if child_categories%}
+						<ul>
+						{% for item in child_categories %}
+							<li><a href="{{ item.get_absolute_url }}">{{ item.name }}</a>({{ item.total_posts }})</li>
+						{% endfor %}			
+						</ul>
+					{% else %}
+					{% endif %}	
+				
+					<div class="clear"></div>
+				</div>
+				<div class="box-bot"><span></span></div>
+			</div>
+			<div class="clear"></div> 
+{% endblock sidebar%}
+
+{% block article_content %}
+			{%comment%} <section id="article_list"></section> {%endcomment%}
+				<h1>{{ category.name }}</h1>
+			
+				<div class="box-top1"><span></span></div>
+				{% for news in item_list %}
+				<div class="box">
+					<article class="article_preview">
+						<h1><strong class="category"><a href={{news.category.get_absolute_url}}>{{ news.category }}</a></strong>
+						&raquo; <a href="{{news.get_absolute_url}}" title="{{ news.title }}" target="_blank">{{ news.title  }}</a>
+						</h2>
+						<p class="post-date">Post on {{ news.pub_date|date:"Y-m-d" }}</p> 
+						<p class="summary"> {{ news.summary }} </p>
+					</article> 
+				</div>
+				{% endfor %}
+				<div class="box-bot"><span></span></div>
+				
+				{% if is_paginated %}
+				<p>
+					{% if has_previous %}
+						<a href="?page={{ previous }}">&laquo; Previous</a> |
+					{% endif %}
+					
+					{% for p in page_range %}
+						{% ifequal page p  %}
+							<span class="current page">{{ p }}</span>
+						{% else %}
+							<a href="?page={{ p }}">{{ p }}</a>
+						{% endifequal %}
+					{% endfor %}
+					
+				{% if has_next %}
+					| <a href="?page={{ next }}">Next &raquo;</a>
+				{% endif %}
+				</p>
+				{% endif %}
+			
+
+{% endblock article_content %}

@@ -1,0 +1,199 @@
+{% extends "base_2col.html" %}
+{% load i18n themes %}
+{% load markup news_tags %}{% block title %}最新新闻列表{% endblock %}
+
+{% block meta.keywords %}News,list,新闻列表,Django{% endblock meta.keywords %}
+{% block meta.description %}Django相关的新闻列表,Django资讯中心{% endblock meta.description %}
+
+{% block breadcrumbs %} <a href="/">首页</a>&raquo; <a href="{% url news_index %}">新闻中心</a> {% endblock %}
+
+{% block maintitle %}<span><a href="post" title="添加一条新闻">发布新闻</a></span>最新新闻列表{% endblock %}
+{% block sidebar %}
+		<div id="years_archives">
+			<div class="box-top1"><span></span></div>
+			<div class="box1">
+				<h2>年份检索</h2>
+			   <div id='user_intro'>
+				<ul>
+
+				<li><a href="search/?year=2010">2010年</a> <span class="s gray">4篇</span></li>
+				<li><a href="search/?year=2009">2009年</a> <span class="s gray">7篇</span></li>
+				</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="box-bot"><span></span></div>
+		</div>
+		<div class="clear"></div>
+		
+		<div class="special">
+			<div class="box-top1"><span></span></div>
+			<div class="box1">
+					<h2>新闻专题</h2>
+					<div class="floatbox">
+						<p>
+						<ul>
+							<li><a href="/special/#" target=_blank><strong>XX专题标题</strong>XX专题相关描述<img src="{% theme_media_url %}images/007.gif"/></a> </li>
+							<li><a href="/special/#" target=_blank><strong>XX专题标题</strong>XX专题相关描述<img src="{% theme_media_url %}images/007.gif"/></a> </li>
+						</ul>
+						</p>
+					  </div>
+				<div class="clear"></div>
+			</div>
+			<div class="box-bot"><span></span></div>
+		</div>
+		<div class="clear"></div>
+
+{% endblock %}
+
+
+
+
+{% block content %}
+	<section class="article clearfix">
+		<article class="article_wrap index-headline">
+			<div>
+				<div class="box-top1"><span></span></div>
+				<div class="box1">
+						<div class="headline">
+							<h1>{% trans "Latest News" %}</h1>
+							<ul>
+								{% for news in latest_news %}
+								<li><a href="{{news.get_absolute_url}}" title="{{ news.title }}" target="_blank">{{ news.title|slice:"0:30" }}</a>  ({{ news.category }}, {{ news.pub_date|date:"m-d" }})	 </li>
+								{% endfor %}
+							</ul>
+						</div>
+					<div class="clear"></div>
+				</div>
+				<div class="box-bot"><span></span></div>
+			</div>
+			<div class="clear"></div>
+		</article>
+		
+		<aside  class="article_aside">
+			<div>
+				<div class="box-top1"><span></span></div>
+				<div class="box1">
+					<div class="headline">
+							<h1>{% trans "Featured News" %}</h1>
+							{% for headline_news in headline_news_list %}
+							<h2><a href="{{headline_news.get_absolute_url}}" target="_blank">{{ headline_news.title|slice:"0:20" }}</a></h2>
+							<p>{{headline_news.summary|slice:"0:32"}}...<a href="{{headline_news.get_absolute_url}}" target="_blank">[查阅全文]</a></p>
+							{% endfor %}
+						</div>
+						
+					<div class="clear"></div>
+				</div>
+				<div class="box-bot"><span></span></div>
+			</div>
+			<div class="clear"></div>
+		</aside>
+	</section>
+
+	<section class="article">
+		<nav id="category_list" class="news_category_nav">      
+			<h3>{% trans "Categories" %}:</h3>
+			<ul>
+				{% for category in categories %}
+				<li><a href="#{{ category.slug }}">{{ category.name|escape }}</a></li>
+				{% endfor %}
+			</ul>
+		</nav><div class="clear"></div> 
+		
+		<section class="article_wrap clearfix">
+		{% for category in categories %}
+			<article  class="clearfix">{%comment%} {% cycle 'colL' 'colM' %}{%endcomment%}
+				<a name="{{ category.slug }}"></a>
+				<div>
+		            <div class="box-top1"><span></span></div>
+		            <div class="box1">
+		            	<h1><a href="{{ category.get_absolute_url }}">{{ category.name|escape }}</a></h1>
+						<ul class="col">{% get_posts_by_category category.slug 5 as news_items %}
+							 {% for item in news_items %}
+							<li><a href="{{ item.get_absolute_url }}">{{ item.title|escape }}</a></li>{%comment%} {{ item.pub_date|date:"y-m-d" }}{%endcomment%}
+							{% endfor %}
+						</ul>
+						<div class="clear"></div>
+		            </div>
+		            <div class="box-bot"><span></span></div>
+		        </div>
+		        <div class="clear"></div> 
+			</article>
+		{% endfor %}
+		</section>
+		<aside  class="article_aside">
+				<div>
+		            <div class="box-top1"><span></span></div>
+		            <div class="box1">
+		            	<h1>{% trans "Top Viewed" %}</h1>
+						<ol> 
+							{% for news in most_viewed_news %}
+							<li><a href="{{news.get_absolute_url}}" title="{{ news.title }}">{{ news.title|slice:"0:20" }}...(阅{{ news.views }})</a></li>{% endfor %}
+						</ol>
+		                <div class="clear"></div>
+		            </div>
+		            <div class="box-bot"><span></span></div>
+		        </div>
+		        <div class="clear"></div>
+		        
+		        <div class="box-top1"> <span></span></div>
+				<div class="box1">
+					<h1>{% trans "Hot Commented" %}</h1>
+					 <ul>
+						<li><a href="#" title="">新闻评论TOP5(评123)</a></li>
+						<li><a href="#" title="">新闻评论TOP5(评123)</a></li>
+						<li><a href="#" title="">新闻评论TOP5(评123)</a></li>
+						<li><a href="#" title="">新闻评论TOP5(评123)</a></li>
+						<li><a href="#" title="">新闻评论TOP5(评123)</a></li>
+					</ul>
+				
+					<div class="clear"></div>
+				</div>
+				<div class="box-bot"><span></span></div>
+				
+			</aside>
+		
+	</section><div class="clear"></div>
+
+{% endblock %}
+
+
+{% block extended_content %}
+{%comment%}			<div >
+	            <div class="box-top1"><span></span></div>
+	            <div class="box1">
+					<ul class="col"> 
+					    <li class="hl"><a href="http://news.21cn.com/domestic/yaowen/2011/03/06/8154641.shtml" class="c-blue" target="_blank">海军少将：中国军费预算增长无可厚非</a></li>
+					    <li><a href="http://news.21cn.com/domestic/taihaijushi/2011/03/06/8154987.shtml" target="_blank">台湾一夜总会发生火灾致9死12伤 原因待调查</a></li>
+					    <li><a href="http://news.21cn.com/domestic/shiyong/2011/03/06/8154986.shtml" target="_blank">食品安全法起草人：光讲良心不能保证食品安全</a></li>
+					    <li><a href="http://news.21cn.com/domestic/taihaijushi/2011/03/06/8154956.shtml" target="_blank">台媒两会追问解放军代表何时能撤对台导弹</a></li>
+					    <li><a href="http://news.21cn.com/domestic/yaowen/2011/03/06/8154951.shtml" target="_blank">日本称中国两艘监视船接近钓鱼岛海域</a></li>
+					    <li><a href="http://news.21cn.com/domestic/yaowen/2011/03/06/8154946.shtml" target="_blank">赵启正再被问及两会花费 称正在让人查</a></li>
+					</ul>
+					<ul class="col"> 
+					    <li class="hl"><a href="http://news.21cn.com/domestic/yaowen/2011/03/06/8154641.shtml" class="c-blue" target="_blank">海军少将：中国军费预算增长无可厚非</a></li>
+					    <li><a href="http://news.21cn.com/domestic/taihaijushi/2011/03/06/8154987.shtml" target="_blank">台湾一夜总会发生火灾致9死12伤 原因待调查</a></li>
+					    <li><a href="http://news.21cn.com/domestic/shiyong/2011/03/06/8154986.shtml" target="_blank">食品安全法起草人：光讲良心不能保证食品安全</a></li>
+					    <li><a href="http://news.21cn.com/domestic/taihaijushi/2011/03/06/8154956.shtml" target="_blank">台媒两会追问解放军代表何时能撤对台导弹</a></li>
+					    <li><a href="http://news.21cn.com/domestic/yaowen/2011/03/06/8154951.shtml" target="_blank">日本称中国两艘监视船接近钓鱼岛海域</a></li>
+					    <li><a href="http://news.21cn.com/domestic/yaowen/2011/03/06/8154946.shtml" target="_blank">赵启正再被问及两会花费 称正在让人查</a></li>
+					</ul>
+	                <div class="clear"></div>
+	            </div>
+	            <div class="box-bot"><span></span></div>
+	        </div>
+	        <div class="clear"></div> 
+{%endcomment%}
+
+<div id="picnews_list" class="mainwrapper"><!--begin:extended-->
+	<div class="box-top"><h1> {% trans "Image News" %} </h1></div>
+	<div id="picnews_list1" class="box"><div class="clear"></div>
+		<ul>{% for item in picnews_items %}
+		<li><a href="{{ item.get_absolute_url }}">{{ item.title|escape }}</a> {{ item.pub_date|date:"y-m-d" }}</li>
+		{% endfor %}</ul>
+		<div class="clear"></div>
+	</div>
+	<div class="box-bot"><span></span></div>
+</div><!--end:extended-->
+
+{% endblock extended_content%}

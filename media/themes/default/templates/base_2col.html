@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load i18n themes %}
+
+{% block content %}
+		<section  class="article">
+			<article class="article_wrap">
+				{% block article_content %}{% endblock article_content%}
+			</article>
+			
+			<aside  class="article_aside">
+				{% block sidebar %}{% endblock sidebar%}
+			</aside>
+			
+		</section><div class="clear"></div>
+{% endblock %}

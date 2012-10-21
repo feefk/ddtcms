@@ -1,0 +1,40 @@
+{% extends "member/base_2col.html" %}
+{% load i18n %}
+
+{% block title %}编辑您的个人信息{% endblock %}
+{% block robots %}noindex,nofollow{% endblock %}
+
+{% block extracss %}
+	<link rel="stylesheet" href="{{ MEDIA_URL }}member/css/ui.datepicker.css"/>
+{% endblock %}
+
+{% block js.custom %}
+<script>
+	$(function() {
+		$("input[type='text']").addClass("text");
+		$("form input")[0].focus();
+	});
+</script>
+{% endblock %}
+
+{% block userprofile_navigation %}
+{% include "member/menu.html" %}
+{% endblock %}
+
+{% block userprofile_content %}
+	<form class="yform" action="{{ request.path_info }}" method="post" enctype="multipart/form-data">
+	<fieldset>
+		<legend>编辑您的个人信息</legend>
+		{{ form.as_p }}
+	</fieldset>
+  	<div class="type-button"><input type="submit" value="保存" id="submit" name="submit"/></div>
+	</form>
+{% endblock %}
+
+{% block userprofile_content_related %}
+  <div class="box">
+    <h3>个人信息</h3>
+    <p>填写一些关于您的信息.</p>
+  </div>
+{% endblock %}
+

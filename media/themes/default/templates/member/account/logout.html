@@ -1,0 +1,12 @@
+{% extends "member/base.html" %}
+{% load i18n %}
+
+{% block title %}注销此次会话{% endblock %}
+{% block robots %}noindex,nofollow{% endblock %}
+
+{% block userprofile_content %}
+<div class="notice">
+	<h3>注销此次会话</h3>
+	<p class="large">您已经结束了当前会话. (<a href="{% url profile_overview %}">重新登录</a>)</p>
+</div>
+{% endblock %}

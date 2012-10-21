@@ -1,0 +1,84 @@
+{% extends "member/base_2col.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "login"%}{% endblock %}
+{% block robots %}noindex,nofollow{% endblock %}
+
+{% block js.custom %}
+<script>
+	$(function() {
+		$("input[type='text'], input[type='password']").addClass("text");
+		$("#id_username").focus();
+	});
+</script>
+{% endblock %}
+
+
+{% block sidebar %}
+
+<div>
+    <div class="box-top1"><span></span></div>
+    <div class="box1">
+        <h2>{% trans "SideBar" %}</h2>
+        <div id="userprofile_navigation">
+  		    {% block userprofile_content_related %}
+	    <div>
+        <h3>实用功能:</h3>
+        {# http://code.djangoproject.com/ticket/7239 #}
+        <a href="{% url password_reset %}">忘记密码?</a>
+        <br />
+        <a href="{% url email_validation_reset %}">重新发送认证邮件E-Mail</a>
+        <br />
+        <a href="{% url signup %}">注册新用户</a>
+        <br />
+        </div>
+        {% endblock %}
+	    </div>
+        <div class="clear"></div>
+    </div>
+    <div class="box-bot"><span></span></div>
+</div>
+<div class="clear"></div>  
+
+
+{% endblock %}
+
+{% block userprofile_content %}
+<div id="account_content">
+	<form class="form" action="{% if next %}?next={{ next }}{% endif %}" method="post" accept-charset="utf-8">
+		<h2>{% trans "Login"%}</h2>
+		<label for="id_username">用户名</label>
+		<p>
+			
+			{{ form.username }}
+			{% if form.username.errors %}
+				<span class="quiet red">{{ form.username.errors|join:"; " }}</span>
+			{% endif %}
+		</p>
+		<div class="clear"></div>
+		<label for="id_password">密码</label>
+		<p>
+			
+			{{ form.password }}
+			{% if form.password.errors %}
+				<span class="quiet red">{{ form.password.errors|join:"; " }}</span>
+			{% endif %}
+		</p>
+		<div class="clear"></div>
+		<p id="remember-password">
+			<input type="checkbox" />{% trans "Remember me" %}
+		</p>
+		<div class="clear"></div>
+		{% if form.non_field_errors %}
+			<ul class="quiet red">{{ form.non_field_errors.as_ul }}</ul>
+		{% endif %}		
+
+		<p>
+			<input type="submit" value="{% trans "Login"%}" id="submit" name="submit" class="button"/>
+		</p>
+		
+	</form>
+</div>
+{% endblock %}
+
+

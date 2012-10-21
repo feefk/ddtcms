@@ -1,0 +1,14 @@
+{% extends "news/news_base.html" %}
+{% load markup %}
+
+{% block title %}
+	{{ day|date:"Y-m-d" }}提交的新闻
+{% endblock %}
+
+{% block content %}
+<h1>{{ day|date:"Y-m-d" }}提交的新闻</h1>
+<ul>{% for item in object_list %}
+	<li>{{ item.pub_date|date:"y-m-d" }}<a href="{{ item.get_absolute_url }}">{{ item.title }}</a></li>
+	{{ item.body }}{% endfor %}
+</ul>
+{% endblock %}

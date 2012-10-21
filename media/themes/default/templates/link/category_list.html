@@ -1,0 +1,80 @@
+{% extends 'base.html' %}{% load i18n themes link_tags %}
+{% block title %}网址导航{% endblock %}
+
+
+{% block css.custom %}
+	<link rel="stylesheet" href="{% theme_media_url %}css/link.css?v=20111104"/>
+{% endblock css.custom %}
+
+
+{% block sidebar %}
+        <div><h1>操作菜单</h1>
+            <div class="box-top1"><span></span></div>
+            <div class="box1">
+	      		<ul>
+	      			<li><a href="{%url link_create%}">添加新链接</a></li>
+	      			<li><a href="{%url link_create%}">批量添加新链接</a></li>
+	      			<li><a href="{%url link_create%}">导入GreenBrowser群组文件</a></li>
+	      			<li><a href="{%url link_create%}">导入Maxthon群组文件</a></li>
+	      			<li><a href="{%url link_create%}">导入IE书签</a></li>
+	      		</ul>
+	      		<h2>链接分类</h2>
+	      		<ul>
+	      			<li>分类1</li>
+	      			<li>分类1</li>
+	      			<li>分类1</li>
+	      		</ul>
+                <div class="clear"></div>
+			</div>
+            <div class="box-bot"><span></span></div>
+	      </div>
+        <div class="clear"></div>
+
+        <div>
+            <div class="box-top1"><span></span></div>
+            <div class="box1">
+							{% block userprofile_content_related %}
+							<h2>访问最多</h2>
+							<ul>
+								<li>1</li>
+								<li>2</li>
+							</ul>
+							<h2>最近访问</h2>
+							<ul>
+								<li>1</li>
+								<li>2</li>
+							</ul>
+                            {% endblock %}
+
+                <div class="clear"></div>
+	        </div>
+            <div class="box-bot"><span></span></div>
+	    </div>
+        <div class="clear"></div>
+
+{% endblock sidebar %}
+
+
+
+{% block content %}
+<div class="m">
+    <h2> {{ category }}</h2> 
+        <ul class="m_1" width="100%" > 
+        
+        {% for category in item_list %}
+        <li> <a href="{{ category.get_absolute_url }}" title="{{ link.notes }}">{{ category.name|escape }}</a> </li>
+        {% endfor %}
+      </ul> 
+</div>
+
+<div class="clear"></div>
+
+{% endblock %}
+
+{% block extended_content %}
+
+<script type="text/javascript">
+var pageName='社区';
+</script>
+<script type="text/javascript" src="/neiye/js/sosofooter.js"></script>
+{% endblock extended_content%}

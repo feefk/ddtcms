@@ -1,0 +1,64 @@
+{% extends 'base.html' %}{% load i18n %}
+{% block title %}首页{% endblock %}
+
+{% block content %}
+<div class="subcolumns">
+	<!-- begin: #col1 - first float column -->
+
+				<div id="col1">
+				<div id="col1_content" class="clearfix">
+					<h3>用户登录... </h3>					
+					<ul><li><a href='gallery'>{% trans 'gallery' %}</a></li></ul>
+				</div>
+			</div>
+			<!-- end: #col1 -->
+			<!-- begin: #col3 static column -->
+			<div id="col3">
+				<div id="col3_content" class="clearfix"> 
+					<h2>DDTCMS</h2>
+					<h3>Summary:</h3>
+					
+					
+				</div>
+				<div id="ie_clearing">&nbsp;</div>
+				<!-- End: IE Column Clearing -->
+			</div>
+			<!-- end: #col3 -->
+</div>
+
+
+
+	<div class="subcolumns">
+		<div class="c33l">
+			<div class="subcl">
+				<h3>更多待添加...</h3>
+				更多待添加...
+			</div>
+		</div>
+		
+		<div class="c33l">
+			<div class="subc">
+			
+				<h3>更多待添加...</h3>
+				<ul class="linklist">
+				<li class="floatbox">
+					更多待添加...
+				</li>
+				<li class="floatbox">
+					更多待添加...
+				</li>
+				</ul>
+	 
+			</div>
+		</div>
+		
+		<div class="c33r">
+			<div class="subcr">	
+				<h3>更多待添加...</h3>
+				<p>更多待添加...</p>
+				<p>更多待添加....</p>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

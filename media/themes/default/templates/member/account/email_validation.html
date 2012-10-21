@@ -1,0 +1,43 @@
+{% extends "member/base_2col.html" %}
+{% load i18n %}
+
+{% block title %}{% if user.email %} 更改 E-mail {% else %}添加 e-mail {% endif %}{% endblock %}
+{% block robots %}noindex,nofollow{% endblock %}
+
+{% block js.custom %}
+<script type="text/javascript">
+	$(function() {
+		$("input#id_email").focus();
+		$("input[type='text'], input[type='text']").addClass("text");
+	});
+</script>
+{% endblock %}
+
+{% block userprofile_navigation %}
+{% include "member/menu.html" %}
+{% endblock %}
+
+{% block userprofile_content %}
+	<form action="" method="post" accept-charset="utf-8">
+	<fieldset>
+		<legend>{% if user.email %}更改 E-mail {% else %}添加 e-mail {% endif %}</legend>
+		<label for="id_email">新 E-mail 地址</label>
+		<p>{{ form.email }}
+		{% if form.email.errors %}
+			<span class="quiet red"><br />* {{ form.email.errors|join:"; " }}</span>
+		{% endif %}
+		</p>
+		{% if form.non_field_errors %}
+			<ul class="quiet red">{{ form.non_field_errors.as_ul }}</ul>
+		{% endif %}
+	</fieldset>
+	<p><input type="submit" value="发送确认邮件" /></p>
+	</form>
+{% endblock %}
+
+{% block userprofile_content_related %}
+	<div class="box">
+		<h3>添加 E-mail 地址</h3>
+		<p>插入新的 e-mail 地址. 一封 e-mail 将会被发送到您所填写的E-mail地址以测试和确认.</p>
+	</div>
+{% endblock %}

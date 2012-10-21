@@ -1,0 +1,31 @@
+{% extends "blog_base.html" %}
+
+{% block title %}最新日志列表{{sitename}}{% endblock %}
+
+{% block extrahead %}
+<style>
+#object-list li{border:1px solid #ff8800;margin:5px;}
+
+
+
+
+</style>
+{% endblock %}
+
+
+
+{% block content %}
+<div class="clearBOX">&nbsp;</div>
+<div class='modth'>最新日志列表</div>
+
+<div id="object-list"  class='list'>
+<ul>
+{% for object in object_list %}
+<li> <a href="{{ object.get_absolute_url }}">{{ object.title|escape }}</a></li>
+<span>{{ object.pub_date }}发表</span>
+{% endfor %}
+</ul>
+</div>
+
+
+{% endblock %}

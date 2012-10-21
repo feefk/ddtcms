@@ -1,0 +1,45 @@
+/*.box .guestbook {padding-bottom:20px;}
+.box .guestbook li{display:block;list-style:none;padding-left:17px;line-height:28px;background:#f8f8f8;}
+.box .guestbook li.b1{border-left:3px solid #cedde2;}
+.box .guestbook li.b2{padding-top:8px;padding-bottom:8px;text-indent:2em;font-size:14px;color:#4f4f4f;line-height:20px;}
+.box .guestbook li.b3{background:#e9e9e8;color:#000000;line-height:19px;border:1px solid #dfdfdd;border-bottom:0px;}
+.box .guestbook li.b4{padding-top:8px;padding-bottom:8px;background:#efefee;color:#4f4f4f;border:1px solid #dfdfdd;border-top:0px;line-height:20px;}
+*/
+
+.guestbook {
+margin-left: auto;
+margin-right: auto;
+width: 1000px;
+}
+	.guestbook h1 { 
+		font-size : 31px;
+	
+		font-family : "simhei", Arial,  Tahoma, sans-serif;
+		font-weight : 700;/*bold*/
+		border-bottom: 1px dashed #CCC;
+		padding: 10px;
+		margin-bottom:10px;
+	}
+
+
+.guestbook .guestbook-wrap {
+float: right;
+width: 690px;
+}
+.guestbook .guestbook-aside {
+float: left;
+width: 300px;
+overflow: hidden;/**/
+}
+.guestbook .guestbook-wrap label {
+float: left;
+width: 80px;
+}
+
+.guestbook .guestbook-wrap ul {
+margin:0 0 0 20px;
+background:#efefef;
+}
+.guestbook .guestbook-wrap ul li {
+margin:0 0 0 10px;
+}

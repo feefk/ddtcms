@@ -1,0 +1,101 @@
+{% extends 'base_2col.html' %}{% load i18n themes link_tags %}
+{% block title %}Django 网址导航{% endblock %}
+
+{% block meta.keywords %}Django, 网址, 导航, 网站, 列表, 工具, 集合, 链接, 图书, 书籍, Book, 教程, Tutorial, Links{% endblock meta.keywords %}
+{% block meta.description %}和Django相关的各类网址, 包括网站, 博客, 开源项目, 链接等{% endblock meta.description %}
+
+{% block css.custom %}
+	<link rel="stylesheet" href="{% theme_media_url %}css/link.css?v=20111104"/>
+{% endblock css.custom %}
+
+
+{% block sidebar %}
+        <div><h1>操作菜单</h1>
+            <div class="box-top1"><span></span></div>
+            <div class="box1">
+	      		<ul>
+	      			<li><a href="{%url link_create%}">添加新链接</a></li>
+
+	      		</ul>
+	      		<h2>链接分类</h2>
+	      		<ul>
+	      			<li>分类1</li>
+	      			<li>分类1</li>
+	      			<li>分类1</li>
+	      		</ul>
+                <div class="clear"></div>
+			</div>
+            <div class="box-bot"><span></span></div>
+	      </div>
+        <div class="clear"></div>
+
+
+{% endblock sidebar %}
+
+
+
+{% block article_content %}
+<div class="mzdh">
+    <div id="homeweb_txt1">
+    </div>
+    <div id="nav1" class="mzdh_list">
+        <ul class="iptmz">
+            {% get_links_by_category 'featured' 6 as links_items %}
+            {% for link in links_items %}
+            <li><a href="{{ link.get_absolute_url }}" title="{{ link.notes }}">{{ link.title|escape }}</a></li>
+            {% endfor %}
+        </ul>  
+        <ul>
+            
+            {% get_links_by_category 'django-sites' 42 as links_items %}
+            {% for link in links_items %}
+            <li><a href="{{ link.get_absolute_url }}"  name="2" class="fred" title="{{ link.notes }}">{{ link.title|escape }}</a></li>
+            {% endfor %}
+            
+        </ul>
+    </div>
+</div>
+
+<h2 class="mzdh_bottom">
+<a href="http://zh.wikipedia.org/zh/Django" class="fblue" name="2">什么是Django</a>
+<a href="http://wiki.woodpecker.org.cn/moin/DjangoStepByStep" class="fblue" name="2">Django step by step</a>
+<a href="http://www.oulan.com/topics/django-cms-step-by-step.html" class="fgreen" name="2">Django CMS step by step</a>
+<a href="http://www.djangobook.com/" class="fblue" name="2">djangobook(英文)</a>
+<a href="http://djangobook.py3k.cn/" class="fblue" name="2">djangobook(中文)</a>
+
+
+</h2>
+<!-- 酷站 -->
+<div class="kzjx"><dl  id="dingzhi">
+	<dt><b ><a href="city/" id="localCity">本 地</a></b></dt>
+	<dd id="local"><span class="gray"><a href="#"></a></span></dd>
+	<dt><a id="moreLocal" href="city/">更多&raquo;</a></dt>
+</dl>
+<ul id="local2" style="display:none"></ul>
+
+{% for category in user_category %}
+<dl class="{% cycle bg1,bg0 %}" ><dt><b>
+<a href="{{ category.get_absolute_url }}" >{{ category.name }}</a></b></dt><dd>
+{% get_links_by_category category.slug 7 as links_items %}
+{% for link in links_items %}
+<a href="{{ link.get_absolute_url }}" title="{{ link.notes }}">{{ link.title|escape }}</a>
+{% endfor %}
+</dd><dt>
+<a href="{{ category.get_absolute_url }}">更多&raquo;</a></dt></dl>
+{% endfor %}
+
+
+</div>
+<!-- 酷站end --> 
+
+<div class="clear"></div>
+
+{% endblock %}
+
+{% block extended_content %}
+
+
+
+
+
+{% endblock extended_content%}

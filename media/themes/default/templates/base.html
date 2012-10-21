@@ -1,0 +1,194 @@
+﻿{% load i18n themes %}<!doctype html>
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"><![endif]-->
+<!--[if (gt IE 6)|!(IE)]><!--><html lang="en" class="no-js"><!--<![endif]-->
+<head>
+	{% block meta %}
+	<meta charset="{% block meta.charset %}utf-8{% endblock meta.charset %}">
+	<title>{% block title %}title{% endblock %} - {{SITE_NAME}}</title>
+	
+	<meta name="description" content="{% block meta.description %}{{ SITE_NAME }}{% endblock meta.description %}" />
+	<meta name="keywords" content="{% block meta.keywords %}DDTCMS, {{ SITE_NAME }} {% endblock meta.keywords %}" />
+	<meta name="author" content="{% block meta.author %}huyoo,糊糊{% endblock meta.author %}">
+	<meta name="robots" content="{% block meta.robots %}index,follow{% endblock meta.robots %}" />
+	<meta name="generator" content="DDTCMS V{{ DDTCMS_VERSION }}" />
+	<meta name="copyright" content="http://{{ SITE_DOMAIN }}/" />	
+	{% endblock meta %}
+	
+	<!-- Delete these two icon references once you've placed them in the root directory with these file names -->
+	
+	<link rel="shortcut icon" href="/favicon.ico"><!-- favicon 16x16 -->
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- apple touch icon 57x57 -->
+	
+	{% block css %}<link rel="stylesheet" href="{% theme_media_url %}css/html5.css?v=20110303" media="screen" />
+	{% block css.shared %}	
+	<link rel="stylesheet" href="{% theme_media_url %}css/default.css?v=20110806" media="screen" />
+	{% endblock css.shared %}
+	{% block css.custom %}{% endblock css.custom %}
+	{% endblock css%}
+
+	{% block js %}
+	{% block js.shared %}
+	{%comment%}
+	{% if DEBUG %}<script src="{% theme_media_url %}js/jquery-1.3.2.min.js"></script>{%else%}
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>{%endif%}
+	{%endcomment%}
+	
+	{% endblock js.shared %}
+	{% block js.custom %}{% endblock js.custom %}
+	{% endblock js%}
+
+	<!-- Modernizr for feature detection of CSS3 and HTML5; must be placed in the "head" -->
+	{% if DEBUG %}<script src="{% theme_media_url %}js/modernizr-1.6.min.js"></script>{%else%}
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>{%endif%}
+
+	{%comment%}	<!-- Remove the script reference below if you're using Modernizr -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->{%endcomment%}
+	
+	{% block rss %}
+	{% block rss.shared %}{% endblock rss.shared%}	
+	{% block rss.custom %}{% endblock rss.custom%}
+	{% endblock rss%}
+	
+	{% block head.extra %}{% endblock head.extra%}
+</head>
+
+<!-- If possible, use the body as the container -->
+<!-- The "home" class is an example of a dynamic class created on the server for page-specific targeting -->
+<body class="home" {% block bodyonload %}{% endblock bodyonload %}>
+<section class="wrapper">
+	<!-- ******************************************************************** -->
+	<!-- The content below is for demonstration of some common HTML5 elements  -->
+	<!-- More than likely you'll rip out everything except header/section/footer and start fresh -->
+	
+	<!-- First header has an ID so you can give it individual styles, and target stuff inside it -->
+	{% block header %}
+	<section id="mininav">
+		<div>
+			<div id="notice">
+				<marquee onmouseover="this.stop();" onmouseout="this.start();" trueSpeed scrollAmount="1" scrollDelay="21">{% block notice %}公告：网站正在测试中。。。{% endblock %}</marquee>
+			</div>
+
+			<div id="tool">
+				{% if user.is_authenticated %}
+				<a href="{% url profile_overview %}">{{user.username}}</a>,{% trans "Welcome back!" %} | <a href="{% url logout %}">{% trans "Logout" %}</a>
+				{% else %}
+				<span class="highlight">
+				<a href="{% url profile_overview %}" title="{% trans "Login" %}">{% trans "Login" %}</a>
+				<a href="{% url signup %}" title="{% trans "Welcome join us!" %}">{% trans "Register" %}</a></span>
+				<a href="{% url password_reset %}" title="{% trans "Send email to webmaster" %}" style="cursor:help;">{% trans "Forget Password" %}</a>
+				{% endif %}
+
+			</div>
+		</div>
+	</section>
+
+	<!-- begin:  header  id="topwrapper"  -->
+	<header id="topheader" class="pagewrapper"><!-- begin: topwrapper  -->
+		<div id='logo'>
+			<a href="/" ><img src="{% theme_media_url %}images/logo.png" alt="{{SITE_NAME}}"/></a>
+		</div>
+		
+		<div class="float_left">
+			<h1>★{{SITE_NAME}}</h1>
+			<p>{% trans "<abbr title='Django Dream Team&rsquo;s Content Management System.'>DDTCMS</abbr>, is build on Django1.3.1 Now." %}</p>
+		</div>
+		<div class='clear'></div>
+		
+		<!-- begin: navigation #nav --><!-- Main nav, styled by targeting "#hd1 nav"; you can have more than one nav element per page -->
+		<nav  id="nav" class="top-menu">
+			{% block topnav %}{% include "top_nav.html" %}{% endblock topnav%}
+		</nav>
+		<!-- end: navigation #nav-->
+	</header><!--end:topwrapper-->
+	<!-- /header -->
+
+	<!-- begin: breadcrumbs -->
+	<div id="breadcrumbs">
+	
+		<span class='float_right'>{% trans "Welcome to DDTCMS!" %}
+		{{ SITE_TIME|date:"Y-m-d, D" }}</span>
+		{% trans "Breadcrumbs" %}: {% block breadcrumbs %}{% for crumb in crumbs %}<a href="{{ crumb.path }}">{% trans crumb.name %}</a>{% if not forloop.last %} &raquo; {% endif %}{% endfor %}{% endblock %}
+	
+	</div>
+	<!-- end: breadcrumbs -->
+	{% endblock header%}
+
+	{%comment%}
+    <section class="banner_main">
+    	<div id="reserved_banner"><!--begin:reserved_banner-->
+			<img src="{% theme_media_url %}images/banner/banner20010304.jpg">
+		</div><!--end:reserved_banner-->
+	</section>{%endcomment%}
+
+	<!-- This is the main "div" that wraps the content generically; don't use "section" for this -->
+	<div id="main" class="pagewrapper" role="main"><!--begin:midwrapper-->
+        {% block content %} {% endblock content%}
+        {% block extended_content %} {% endblock extended_content%}
+	</div><!-- #main -->
+	
+	{% block extended_page %}
+	
+	{% endblock extended_page %}
+		
+	<!-- The main footer has an ID for targeting, similar to the main header -->
+	<footer id="botmfooter"><!--begin:botmfooter-->
+	{% block footer %}{% include "footer.html" %}{% endblock footer%}
+	
+	</footer><!--end:botmfooter-->
+
+</section>
+
+
+{%comment%}{%endcomment%}<!-- Remote jQuery with local fallback; taken from HTML5 Boilerplate http://html5boilerplate.com -->
+<!-- jQuery version might not be the latest; check jquery.com -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="{% theme_media_url %}js/jquery-1.4.4.min.js"%3E%3C/script%3E'))</script>
+
+<!-- Below is your script file, which has a basic JavaScript design pattern that you can optionally use -->
+<!-- Keep this and plugin scripts at the bottom for faster page load; combining and minifying scripts is recommended -->
+<script src="{% theme_media_url %}js/general.js"></script>
+
+<!--[if lt IE 7 ]>
+<script src="{% theme_media_url %}js/dd_belatedpng.js"></script>
+<script> DD_belatedPNG.fix('img, .png_bg');</script>
+<![endif]-->
+
+{% block js.extra %}{% endblock js.extra %}
+
+{% if DEBUG %}
+
+{%else%}
+<script language="javascript" type="text/javascript" src="http://js.users.51.la/4549868.js"></script>
+<noscript><a href="http://www.51.la/?4549868" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/4549868.asp" style="border:none" /></a></noscript>
+
+<!-- this can also be placed in the <head> if you want page views to be tracked quicker -->
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript">var jiathis_config = {"data_track_clickback":true};</script>
+<script type="text/javascript" src="http://v1.jiathis.com/code/jiathis_r.js?move=0&amp;uid=1504432" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F7730cb36467a37cb9a0462c01624e06c' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20006756-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+{%endif%}
+</body>
+</html>

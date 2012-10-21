@@ -1,0 +1,53 @@
+.fLeft{
+	float:left;
+	display:inline;
+}
+ul{
+	list-style-type:none;
+}
+.navList{
+	margin-top:4px;
+	line-height:22px;
+}
+.navList li{
+	width:100%;
+	clear:both;
+	overflow:hidden;
+	vertical-align:top;
+}
+.navList span{
+	width:126px;
+	float:left;
+	display:inline;
+	margin-left:9px;
+	border-right:1px dashed #7f7f7f;
+}
+.navList span.nbo{
+	border:0;
+	/*width:120px;*/
+}
+.navList span.wide{
+	/*width:134px;*/
+}
+
+.navList a{
+	margin:0 7px;
+
+}
+.navList label{
+	font-weight:bold;
+	color:#146aac;
+}
+.navList a{
+	margin:0 6px;
+}
+
+.blue,
+.blue a:link,
+a.blue:link,
+.blue a:visited,
+a.blue:visited{color:#1f3a87;}
+.blue a:hover,
+.blue a:active,
+a.blue:hover,
+a.blue:active{color:#c23500;}

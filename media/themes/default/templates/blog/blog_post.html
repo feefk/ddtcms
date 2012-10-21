@@ -1,0 +1,23 @@
+{% extends "blog_base.html" %}
+
+{% block title %}发布信息{% endblock %}
+
+{% block content %}
+<div class='inline'><h1>发布信息</h1></div>
+
+
+{% if user.is_authenticated %}
+
+<form id="createform" name="form1"   action="/blog/post/" method="post">
+
+<table>
+    {{ form }}
+</table>
+
+<input type=submit value="提交信息"> 
+</form>
+
+{% else %}
+<p>发布信息请<a href='/accounts/login'>登录</a>.</p>
+{% endif %}
+{% endblock %}

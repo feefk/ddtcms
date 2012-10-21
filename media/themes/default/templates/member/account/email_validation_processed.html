@@ -1,0 +1,23 @@
+{% extends "member/base_2col.html" %}
+{% load i18n %}
+
+{% block title %} E-mail 更改处理{% endblock %}
+{% block robots %}noindex,nofollow{% endblock %}
+
+{% block userprofile_navigation %}
+{% include "member/menu.html" %}
+{% endblock %}
+
+{% block userprofile_content %}
+	<div class="notice">
+		<h3> E-mail 更改处理</h3>
+		<p> 一封认证和激活邮件已经发送至您的新Email地址. 请到你的邮箱中收取邮件并在邮件主要内容中的相关指示下完成剩下的处理过程.</p>
+	</div>
+{% endblock %}
+
+{% block userprofile_content_related %}
+  <div class="box">
+    <h3>添加Email</h3>
+    <p>插入新的 e-mail 地址. 一封 e-mail 将会被发送到您所填写的E-mail地址以测试和确认.</p>
+  </div>
+{% endblock %}

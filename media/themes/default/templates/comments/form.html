@@ -1,0 +1,40 @@
+{% load comments i18n %}
+<form action="{% comment_form_target %}?next={{ request.path }}" method="post">{% csrf_token %}
+    <div><input type="hidden" name="next" value="{% if next %}{{ next }}{% else %}{{ request.path }}{% endif %}" /></div>
+    
+    {% if user.is_authenticated %}
+        <a href="/member/profile/">admin</a>,您已登录,请在下面输入您的评论内容!
+        <div>{{ form.content_type }}</div> 
+        <div>{{ form.object_pk }}</div> 
+        <div>{{ form.timestamp }}</div> 
+        <div>{{ form.security_hash }}</div> 
+        <div><input type="hidden" id="id_name"  name="name"  value="{{ user.username }}"/></div>
+        <div><input type="hidden" id="id_email" name="email" value="{{ user.email }}"/></div>
+        <div><input type="hidden" id="id_url" name="url"  /></div>
+        
+        <p> 
+        <label for="id_comment">评论内容</label> <textarea id="id_comment" rows="10" cols="40" name="comment"></textarea> 
+        </p> 
+        
+        <p style="display:none;"> 
+        <label for="id_honeypot">如果你在该字段中输入任何内容，那么你的评论就会被视为垃圾评论。</label> <input type="text" name="honeypot" id="id_honeypot" /> 
+        </p> 
+    {% else %}
+        {% for field in form %}
+            {% if field.is_hidden %}
+                <div>{{ field }}</div>
+            {% else %}
+                {% if field.errors %}{{ field.errors }}{% endif %}
+                <p{% if field.errors %} class="error"{% endif %}{% ifequal field.name "honeypot" %} style="display:none;"{% endifequal %}>
+                {{ field.label_tag }} {{ field }}
+                </p>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+
+  <p class="submit">
+    <input type="submit" name="post" class="submit-post" value="{% trans "Post" %}" />
+    <input type="submit" name="preview" class="submit-preview" value="{% trans "Preview" %}" />
+  </p>
+</form>

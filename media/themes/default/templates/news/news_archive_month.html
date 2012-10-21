@@ -1,0 +1,15 @@
+{% extends "news/news_base.html" %}
+{% load markup %}
+
+{% block title %}
+	News from {{ month|date:"F Y" }}
+{% endblock %}
+
+{% block content %}
+<h1>News from {{ month|date:"F Y" }}</h1>
+	{% for item in object_list %}
+		<h3><a href="{{ item.get_absolute_url }}">{{ item.title }}</a>
+		    {{ item.pub_date|date:"F j, Y" }}</h3>
+	{{ item.body }}
+	{% endfor %}
+{% endblock %}

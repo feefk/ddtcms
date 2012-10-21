@@ -1,0 +1,39 @@
+{% extends 'base_2col.html' %}{% load i18n themes%}
+{% block title %}Guestbook{% endblock %}
+
+{% block css.custom %}
+<link rel="stylesheet" href="{% theme_media_url %}css/guestbook.css?v=20110728" media="screen"/>
+{% endblock css.custom %}
+
+
+{% block sidebar_title %}操作菜单{% endblock sidebar_title %}
+
+{% block sidebar %}
+{% include "guestbook/sidebar.html" %}
+{% endblock %}
+
+
+{% block article_content %}
+		<h1>Guestbook</h1>	      		
+		
+		{% for entry in entry_list %}
+		
+		<div class="www">
+			<div class="box-top1"><span></span></div>
+		        <div class="box1">
+		            <h2>{% if entry.url %}<a href="{{ entry.url }}">{{ entry.user }} </a>{% else %}{{ entry.user }} {% endif %} @ {{ entry.submit_date|date:"Y-m-d G:i" }}  说： </h2>
+		            <p>{{ entry.text|linebreaks }}</p>
+					{% if entry.get_replies%}
+		    		
+		    		<ul>回复：{% for reply in entry.get_replies %}
+		    			<li>{{ reply.text }} by {{ reply.user }} @ {{ reply.submit_date|date:"Y-m-d G:i" }}</li>{% endfor %}
+		    		</ul>
+		    		{% endif %}
+		    	
+		            <div class="clear"></div>
+		        </div>
+		    <div class="box-bot"><span></span></div>
+		</div>
+		{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}最新问题列表{% endblock %}
+
+{% block content %}
+<h1>最新问题列表</h1>
+
+<ol id="object-list">
+{% for object in latest %}
+<li>
+<h2><a href="{{ object.get_absolute_url }}">{{ object.title|escape }}</a></h2>
+<p class="post-date">{{ object.pub_date|date:"F j, Y" }}</p>
+<p class="summary">{{ object.summary }}</p>
+</li>
+{% endfor %}
+</ol>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% load i18n %}
+{% load avatars %}
+<div class="vcard">
+	<div>
+		<a href="{{ profile.get_absolute_url }}"><img class="border" src="{% avatar 64 profile.user %}" alt="{{ profile.user }}"/><br />{{ profile.user }}</a>
+	</div>
+</div>

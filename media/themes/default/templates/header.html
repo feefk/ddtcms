@@ -1,0 +1,52 @@
+{% load i18n themes tagging_tags%}
+<!-- begin:  header -->
+	<div id="mininav">
+		<div>
+			<div id="notice">
+				<marquee onmouseover="this.stop();" onmouseout="this.start();" trueSpeed scrollAmount="1" scrollDelay="21">{% block notice %}公告：网站正在测试中。。。{% endblock %}</marquee>
+			</div>
+
+			<div id="tool">
+				{% if user.is_authenticated %}
+				<a href="{% url profile_overview %}">{{user.username}}</a>,{% trans "Welcome back!" %} | <a href="{% url logout %}">{% trans "Logout" %}</a>
+				{% else %}
+				<span class="highlight">
+				<a href="{% url profile_overview %}" title="{% trans "Login" %}">{% trans "Login" %}</a>
+				<a href="{% url signup %}" title="{% trans "Welcome join us!" %}">{% trans "Register" %}</a></span>
+				<a href="{% url password_reset %}" title="{% trans "Send email to webmaster" %}" style="cursor:help;">{% trans "Forget Password" %}</a>
+				{% endif %}
+
+			</div>
+		</div>
+	</div>
+
+
+	<header id="topwrapper"><!-- begin: topwrapper  -->
+		<div id='logo'>
+			<a href="/" ><img src="{% theme_media_url %}images/logo.png" alt="{{SITE_NAME}}"/></a>
+		</div>
+
+		<div>
+			<h1>★{{SITE_NAME}}</h1>
+			<p>网站正在建设中。。。</p>
+		</div>
+		<div class='clear'></div>
+		<!-- begin: navigation #nav -->
+			<nav>
+				<div id="nav" class="top-menu">{% block topnav %}{% include "top_nav.html" %}{% endblock topnav%}</div>
+			</nav>
+		<!-- end: navigation #nav-->
+	</header><!--end:topwrapper-->
+<!--end:#header-->
+
+
+
+<!-- begin: breadcrumbs -->
+	<div id="breadcrumbs">
+	
+		<span class='float_right'>欢迎您的光临！
+		{{ SITE_TIME|date:"Y-m-d, D" }}</span>
+		{% trans "Breadcrumbs" %}: {% block breadcrumbs %}{% for crumb in crumbs %}<a href="{{ crumb.path }}">{% trans crumb.name %}</a>{% if not forloop.last %} &raquo; {% endif %}{% endfor %}{% endblock %}
+	
+	</div>
+<!-- end: #breadcrumbs -->

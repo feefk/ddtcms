@@ -1,0 +1,28 @@
+{% extends "member/base_2col.html" %}
+{% load i18n %}
+
+{% block title %}头像选择成功{% endblock %}
+{% block robots %}noindex,nofollow{% endblock %}
+
+{% block userprofile_navigation %}
+{% include "member/menu.html" %}
+{% endblock %}
+
+{% block userprofile_content %}
+	<p class="success large">
+		您的新头像已经被成功保存.
+	</p>
+{% endblock %}
+
+{% block userprofile_content_related %}
+  <div class="box">
+    <h3>头像选择页面</h3>
+    <p>您有几种选择去选取图像作为您的档案中的个性头像.</p>
+  </div>
+
+  {% load avatars %}
+  <div class="center">
+    <img class="border" id="avatarimg" src="{% avatar 96 %}" />
+  </div>
+
+{% endblock %}

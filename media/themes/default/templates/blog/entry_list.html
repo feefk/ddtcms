@@ -1,0 +1,98 @@
+{% extends "blog_base.html" %}
+
+{% block title %}最新日志列表{{sitename}}{% endblock %}
+
+{% block extrahead %}
+<style>
+#object-list li{border:1px solid #ff8800;margin:5px;clear:both;}
+
+
+
+
+</style>
+{% endblock %}
+
+
+{% block maintitle %}最新日志列表{% endblock %}
+{% block content %}
+
+
+
+
+
+{% if is_paginated %}
+<div class="pagebar1">
+<div class="p_bar">
+<a class="p_total"> 共计 {{ hits }} 篇 </a>
+<a class="p_pages"> 第 {{page}} 页/共 {{ pages }} 页，{{ results_per_page }} 篇/页 </a>
+<a class="p_redirect" href="/blog/page/1" title="第一页">|&lsaquo;</a>
+{%if has_previous %}<a class="p_redirect" href="/blog/page/{{ previous}}" title="前一页">&lsaquo;&lsaquo;</a>{%endif %}
+{% for num in paginator.page_range %}
+<a href="/blog/page/{{ num }}/"{% ifequal num page %} class="p_curpage"{% else %} class="p_num"{% endifequal %} >{{ num }}</a>
+{% endfor %} 
+{%if has_next %}<a class="p_redirect" href="/blog/page/{{ next}}" title="后一页">&rsaquo;&rsaquo;</a>{%endif %}
+<a class="p_redirect" href="/blog/page/last" title="最后一页">&rsaquo;|</a>
+<a class="p_pages" style="padding: 0px"><input class="p_input" type="text" name="custompage" onKeyDown="if(event.keyCode==13) {window.location='/blog/page/'+this.value; return false;}"></a>
+</div>
+<div class="clearBOX">&nbsp;</div>
+</div>
+{% endif %}
+
+<div id="object-list" class='area'>
+{% for object in object_list %}
+
+
+
+
+<div class="view_box1">
+<div class="view_lbox">
+<img src="/images/ethics.jpg" class="view_photo" /><br />
+<div><img src="/images/icon_read.gif" alt="阅读" /> 23 <img src="/images/icon_rep.gif" alt="评论" /> 1 </div>
+</div>
+<div class="view_rbox">
+<div class="view_t">
+
+
+<a href="{{ object.get_absolute_url }}" class="view_t">{{ object.title|escape }}</a>
+
+</div>
+<div class="view_c">
+作者：<a href="/accounts/">{{ object.user }}</a><br/>
+关键词：恪守道德  <br/>
+所属类别：<a href="{{ object.category.get_absolute_url }}" title="查看该分类中所有文章">Django</a><br>
+所属主题：<a href="/motif/index.cfm?motifID=079169D9B1">文化营销</a><br/>
+发表时间： {{ object.pub_date }}  编辑时间：{{ object.pub_date }} 
+</div>
+</div>
+<div class="clearBOX"></div>
+</div>
+<div class="clearBOX"></div>
+
+
+{% endfor %}
+
+
+</div>
+
+{% if is_paginated %}
+<div class="pagebar1">
+<div class="p_bar">
+<a class="p_total"> 共计 {{ hits }} 篇 </a>
+<a class="p_pages"> 第 {{page}} 页/共 {{ pages }} 页，{{ results_per_page }} 篇/页 </a>
+<a class="p_redirect" href="/blog/page/1" title="第一页">|&lsaquo;</a>
+{%if has_previous %}<a class="p_redirect" href="/blog/page/{{ previous}}" title="前一页">&lsaquo;&lsaquo;</a>{%endif %}
+{% for num in paginator.page_range %}
+<a href="/blog/page/{{ num }}/"{% ifequal num page %} class="p_curpage"{% else %} class="p_num"{% endifequal %} >{{ num }}</a>
+{% endfor %} 
+{%if has_next %}<a class="p_redirect" href="/blog/page/{{ next}}" title="后一页">&rsaquo;&rsaquo;</a>{%endif %}
+<a class="p_redirect" href="/blog/page/last" title="最后一页">&rsaquo;|</a>
+<a class="p_pages" style="padding: 0px"><input class="p_input" type="text" name="custompage" onKeyDown="if(event.keyCode==13) {window.location='/blog/page/'+this.value; return false;}"></a>
+</div>
+<div class="clearBOX">&nbsp;</div>
+</div>
+{% endif %}
+
+	
+
+
+{% endblock %}

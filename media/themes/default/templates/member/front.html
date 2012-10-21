@@ -1,0 +1,31 @@
+{% extends "member/index.html" %}
+{% load i18n %}
+{% block title %}用户档案首页{% endblock %}
+
+{% block sidebar %}
+
+<div>
+    <div class="box-top1"><span></span></div>
+    <div class="box1">
+        <h2>{% trans "SideBar" %}</h2>
+        <div id="userprofile_navigation">
+  		    {% block userprofile_navigation %}{% include "member/menu.html" %}{% endblock %}	
+	    </div>
+        <div class="clear"></div>
+    </div>
+    <div class="box-bot"><span></span></div>
+</div>
+<div class="clear"></div>  
+
+
+{% endblock %}
+
+{% block content %}
+<h2>已注册会员</h2>
+
+{% for profile in profiles %}
+	{% include "member/profile/usercard.html" %}
+{% endfor %}
+<div class="clear"></div>
+{% endblock %}
+

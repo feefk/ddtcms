@@ -1,0 +1,980 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Wei-Chia Chiu <chiu.wei.jia@gmail.com>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-08-22 03:30+0800\n"
+"PO-Revision-Date: 2008-11-16 14:36+0800\n"
+"Last-Translator: huyoo <huyoo353@126.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: countries.py:248
+msgid "Unknown or unspecified country"
+msgstr ""
+
+#: countries.py:253
+msgid "This value must be in COUNTRIES setting in localflavor.generic package."
+msgstr ""
+
+#: forms.py:58
+#, python-format
+msgid "The file type is invalid: %s"
+msgstr "不正确的档案类型: %s"
+
+#: forms.py:63
+msgid "You must enter one of the options"
+msgstr "你必须输入一个选项"
+
+#: forms.py:77
+msgid "You must select a portion of the image with a minimum of 96x96 pixels."
+msgstr "你所选择的部份必须大于96x96像素"
+
+#: forms.py:83
+#: templates/userprofile/account/login.html:20
+#: templates/userprofile/account/registration.html:20
+#: templates/userprofile/profile/public.html:33
+#: templates/userprofile/profile/usercard.html:11
+#: templates/userprofile/userprofile/account/login.html:20
+#: templates/userprofile/userprofile/account/registration.html:20
+#: templates/userprofile/userprofile/profile/public.html:33
+#: templates/userprofile/userprofile/profile/usercard.html:11
+#: templates/userprofile/userprofile/userprofile/account/login.html:20
+#: templates/userprofile/userprofile/userprofile/account/registration.html:20
+#: templates/userprofile/userprofile/userprofile/profile/public.html:33
+#: templates/userprofile/userprofile/userprofile/profile/usercard.html:11
+msgid "Username"
+msgstr "使用者名称"
+
+#: forms.py:84
+#: templates/userprofile/account/password_reset.html:21
+#: templates/userprofile/userprofile/account/password_reset.html:21
+#: templates/userprofile/userprofile/userprofile/account/password_reset.html:21
+msgid "E-mail address"
+msgstr "E-mail地址"
+
+#: forms.py:85
+#: templates/userprofile/account/login.html:26
+#: templates/userprofile/account/registration.html:32
+#: templates/userprofile/userprofile/account/login.html:26
+#: templates/userprofile/userprofile/account/registration.html:32
+#: templates/userprofile/userprofile/userprofile/account/login.html:26
+#: templates/userprofile/userprofile/userprofile/account/registration.html:32
+msgid "Password"
+msgstr "密码"
+
+#: forms.py:86
+#: templates/userprofile/account/registration.html:38
+#: templates/userprofile/userprofile/account/registration.html:38
+#: templates/userprofile/userprofile/userprofile/account/registration.html:38
+msgid "Password (again)"
+msgstr "确认密码"
+
+#: forms.py:94
+msgid "That username has invalid characters. The valid values are letters, numbers and underscore."
+msgstr "使用者名称含有不法字符, 只能接受英文字母, 数字, _(下底线)"
+
+#: forms.py:99
+msgid "The username is already registered."
+msgstr "这个使用者名称已经被注册过了"
+
+#: forms.py:108
+msgid "The passwords inserted are different."
+msgstr "你的密码不一致"
+
+#: forms.py:120
+#: forms.py:139
+msgid "That e-mail is already used."
+msgstr "这个e-mail已经被使用"
+
+#: forms.py:124
+msgid "That e-mail is already being confirmed."
+msgstr "这个e-mail已经通过验证"
+
+#: models.py:39
+#, python-format
+msgid "%s's profile"
+msgstr "%s的个人信息"
+
+#: models.py:58
+#, python-format
+msgid "%s's Avatar"
+msgstr "%s的图像"
+
+#: models.py:143
+#, python-format
+msgid "Email validation process for %(user)s"
+msgstr "%(user)s的e-mail验证程序"
+
+#: templates/userprofile/menu.html:5
+#: templates/userprofile/userprofile/menu.html:5
+#: templates/userprofile/userprofile/userprofile/menu.html:5
+msgid "Overview"
+msgstr "概要"
+
+#: templates/userprofile/menu.html:6
+#: templates/userprofile/profile/personal.html:34
+#: templates/userprofile/profile/personal_done.html:19
+#: templates/userprofile/userprofile/menu.html:6
+#: templates/userprofile/userprofile/profile/personal.html:34
+#: templates/userprofile/userprofile/profile/personal_done.html:19
+#: templates/userprofile/userprofile/userprofile/menu.html:6
+#: templates/userprofile/userprofile/userprofile/profile/personal.html:34
+#: templates/userprofile/userprofile/userprofile/profile/personal_done.html:19
+msgid "Personal information"
+msgstr "个人信息"
+
+#: templates/userprofile/menu.html:7
+#: templates/userprofile/userprofile/menu.html:7
+#: templates/userprofile/userprofile/userprofile/menu.html:7
+msgid "Avatar"
+msgstr "图像"
+
+#: templates/userprofile/menu.html:8
+#: templates/userprofile/profile/location.html:26
+#: templates/userprofile/profile/overview.html:60
+#: templates/userprofile/profile/public.html:38
+#: templates/userprofile/userprofile/menu.html:8
+#: templates/userprofile/userprofile/profile/location.html:26
+#: templates/userprofile/userprofile/profile/overview.html:60
+#: templates/userprofile/userprofile/profile/public.html:38
+#: templates/userprofile/userprofile/userprofile/menu.html:8
+#: templates/userprofile/userprofile/userprofile/profile/location.html:26
+#: templates/userprofile/userprofile/userprofile/profile/overview.html:60
+#: templates/userprofile/userprofile/userprofile/profile/public.html:38
+msgid "Location"
+msgstr "地区"
+
+#: templates/userprofile/menu.html:9
+#: templates/userprofile/profile/delete.html:22
+#: templates/userprofile/userprofile/menu.html:9
+#: templates/userprofile/userprofile/profile/delete.html:22
+#: templates/userprofile/userprofile/userprofile/menu.html:9
+#: templates/userprofile/userprofile/userprofile/profile/delete.html:22
+msgid "Remove profile"
+msgstr "移除个人信息"
+
+#: templates/userprofile/account/email_validation.html:4
+#: templates/userprofile/account/email_validation.html:23
+#: templates/userprofile/userprofile/account/email_validation.html:4
+#: templates/userprofile/userprofile/account/email_validation.html:23
+#: templates/userprofile/userprofile/userprofile/account/email_validation.html:4
+#: templates/userprofile/userprofile/userprofile/account/email_validation.html:23
+msgid "E-mail change"
+msgstr "更改e-mail"
+
+#: templates/userprofile/account/email_validation.html:4
+#: templates/userprofile/account/email_validation.html:23
+#: templates/userprofile/account/email_validation.html:40
+#: templates/userprofile/account/email_validation_processed.html:20
+#: templates/userprofile/userprofile/account/email_validation.html:4
+#: templates/userprofile/userprofile/account/email_validation.html:23
+#: templates/userprofile/userprofile/account/email_validation.html:40
+#: templates/userprofile/userprofile/account/email_validation_processed.html:20
+#: templates/userprofile/userprofile/userprofile/account/email_validation.html:4
+#: templates/userprofile/userprofile/userprofile/account/email_validation.html:23
+#: templates/userprofile/userprofile/userprofile/account/email_validation.html:40
+#: templates/userprofile/userprofile/userprofile/account/email_validation_processed.html:20
+msgid "Add e-mail"
+msgstr "加入e-mail"
+
+#: templates/userprofile/account/email_validation.html:24
+#: templates/userprofile/userprofile/account/email_validation.html:24
+#: templates/userprofile/userprofile/userprofile/account/email_validation.html:24
+msgid "New e-mail address"
+msgstr "新的e-mail地址"
+
+#: templates/userprofile/account/email_validation.html:34
+#: templates/userprofile/userprofile/account/email_validation.html:34
+#: templates/userprofile/userprofile/userprofile/account/email_validation.html:34
+msgid "Send confirmation"
+msgstr "发送验证"
+
+#: templates/userprofile/account/email_validation.html:41
+#: templates/userprofile/account/email_validation_processed.html:21
+#: templates/userprofile/userprofile/account/email_validation.html:41
+#: templates/userprofile/userprofile/account/email_validation_processed.html:21
+#: templates/userprofile/userprofile/userprofile/account/email_validation.html:41
+#: templates/userprofile/userprofile/userprofile/account/email_validation_processed.html:21
+msgid "Insert the new e-mail address. An e-mail will be send to it for testing and confirmation"
+msgstr "输入一个新的e-mail, 我们将会发一封新信到这个信箱作验证"
+
+#: templates/userprofile/account/email_validation_done.html:4
+#: templates/userprofile/userprofile/account/email_validation_done.html:4
+#: templates/userprofile/userprofile/userprofile/account/email_validation_done.html:4
+msgid "E-mail validation successful"
+msgstr "E-mail验证成功"
+
+#: templates/userprofile/account/email_validation_done.html:4
+#: templates/userprofile/userprofile/account/email_validation_done.html:4
+#: templates/userprofile/userprofile/userprofile/account/email_validation_done.html:4
+msgid "E-mail change unsuccessful"
+msgstr "E-mail更改失败"
+
+#: templates/userprofile/account/email_validation_done.html:14
+#: templates/userprofile/userprofile/account/email_validation_done.html:14
+#: templates/userprofile/userprofile/userprofile/account/email_validation_done.html:14
+msgid "E-mail address validated successfully"
+msgstr "E-mail地址验证成功"
+
+#: templates/userprofile/account/email_validation_done.html:16
+#: templates/userprofile/userprofile/account/email_validation_done.html:16
+#: templates/userprofile/userprofile/userprofile/account/email_validation_done.html:16
+msgid "The key you received via e-mail is no longer valid. Please try the e-mail validation process again"
+msgstr "这个验证码已经过期, 请再做一次e-mail验证程序"
+
+#: templates/userprofile/account/email_validation_done.html:23
+#: templates/userprofile/account/email_validation_reset_response.html:22
+#: templates/userprofile/userprofile/account/email_validation_done.html:23
+#: templates/userprofile/userprofile/account/email_validation_reset_response.html:22
+#: templates/userprofile/userprofile/userprofile/account/email_validation_done.html:23
+#: templates/userprofile/userprofile/userprofile/account/email_validation_reset_response.html:22
+msgid "E-mail validation process"
+msgstr "E-mail验证程序"
+
+#: templates/userprofile/account/email_validation_done.html:24
+#: templates/userprofile/account/email_validation_reset_response.html:23
+#: templates/userprofile/userprofile/account/email_validation_done.html:24
+#: templates/userprofile/userprofile/account/email_validation_reset_response.html:23
+#: templates/userprofile/userprofile/userprofile/account/email_validation_done.html:24
+#: templates/userprofile/userprofile/userprofile/account/email_validation_reset_response.html:23
+msgid "You can manage the e-mail validation process from the"
+msgstr "你可以管理e-mail验证程序透过"
+
+#: templates/userprofile/account/email_validation_done.html:24
+#: templates/userprofile/account/email_validation_reset_response.html:23
+#: templates/userprofile/userprofile/account/email_validation_done.html:24
+#: templates/userprofile/userprofile/account/email_validation_reset_response.html:23
+#: templates/userprofile/userprofile/userprofile/account/email_validation_done.html:24
+#: templates/userprofile/userprofile/userprofile/account/email_validation_reset_response.html:23
+msgid "overview page"
+msgstr "概要页面"
+
+#: templates/userprofile/account/email_validation_processed.html:4
+#: templates/userprofile/account/email_validation_processed.html:13
+#: templates/userprofile/userprofile/account/email_validation_processed.html:4
+#: templates/userprofile/userprofile/account/email_validation_processed.html:13
+#: templates/userprofile/userprofile/userprofile/account/email_validation_processed.html:4
+#: templates/userprofile/userprofile/userprofile/account/email_validation_processed.html:13
+msgid "E-mail change processed"
+msgstr "E-mail更改程序"
+
+#: templates/userprofile/account/email_validation_processed.html:14
+#: templates/userprofile/userprofile/account/email_validation_processed.html:14
+#: templates/userprofile/userprofile/userprofile/account/email_validation_processed.html:14
+msgid "An e-mail has been sent to the new e-mail address to verify and activate it. Please access to your e-mail and complete this process following the instructions specified in the e-mail body"
+msgstr "一封e-mail将会寄到你的信箱以完成验证与启动, 请到你的信箱完成这个程序, 更详细的信息可以在信中找到"
+
+#: templates/userprofile/account/email_validation_reset_response.html:4
+#: templates/userprofile/userprofile/account/email_validation_reset_response.html:4
+#: templates/userprofile/userprofile/userprofile/account/email_validation_reset_response.html:4
+msgid "Validation e-mail sent"
+msgstr "送出验证e-mail"
+
+#: templates/userprofile/account/email_validation_reset_response.html:4
+#: templates/userprofile/userprofile/account/email_validation_reset_response.html:4
+#: templates/userprofile/userprofile/userprofile/account/email_validation_reset_response.html:4
+msgid "Your user account was already active"
+msgstr "你的账号已经被启动"
+
+#: templates/userprofile/account/email_validation_reset_response.html:14
+#: templates/userprofile/userprofile/account/email_validation_reset_response.html:14
+#: templates/userprofile/userprofile/userprofile/account/email_validation_reset_response.html:14
+msgid "We've e-mailed you the e-mail validation link"
+msgstr "我们已经寄出e-mail验证连结"
+
+#: templates/userprofile/account/email_validation_reset_response.html:16
+#: templates/userprofile/userprofile/account/email_validation_reset_response.html:16
+#: templates/userprofile/userprofile/userprofile/account/email_validation_reset_response.html:16
+msgid "Your e-mail was already validated"
+msgstr "你的e-mail已经通过验证"
+
+#: templates/userprofile/account/login.html:4
+#: templates/userprofile/account/login.html:19
+#: templates/userprofile/userprofile/account/login.html:4
+#: templates/userprofile/userprofile/account/login.html:19
+#: templates/userprofile/userprofile/userprofile/account/login.html:4
+#: templates/userprofile/userprofile/userprofile/account/login.html:19
+msgid "User login"
+msgstr "使用者登入"
+
+#: templates/userprofile/account/login.html:36
+#: templates/userprofile/userprofile/account/login.html:36
+#: templates/userprofile/userprofile/userprofile/account/login.html:36
+msgid "Login"
+msgstr "登入"
+
+#: templates/userprofile/account/login.html:42
+#: templates/userprofile/userprofile/account/login.html:42
+#: templates/userprofile/userprofile/userprofile/account/login.html:42
+msgid "Utilities"
+msgstr "另外的选项"
+
+#: templates/userprofile/account/login.html:44
+#: templates/userprofile/userprofile/account/login.html:44
+#: templates/userprofile/userprofile/userprofile/account/login.html:44
+msgid "Lost your password?"
+msgstr "忘记你的密吗?"
+
+#: templates/userprofile/account/login.html:46
+#: templates/userprofile/userprofile/account/login.html:46
+#: templates/userprofile/userprofile/userprofile/account/login.html:46
+msgid "Sign up!"
+msgstr "注册!!"
+
+#: templates/userprofile/account/logout.html:4
+#: templates/userprofile/account/logout.html:9
+#: templates/userprofile/userprofile/account/logout.html:4
+#: templates/userprofile/userprofile/account/logout.html:9
+#: templates/userprofile/userprofile/userprofile/account/logout.html:4
+#: templates/userprofile/userprofile/userprofile/account/logout.html:9
+msgid "Logged out"
+msgstr "已经注销"
+
+#: templates/userprofile/account/logout.html:10
+#: templates/userprofile/userprofile/account/logout.html:10
+#: templates/userprofile/userprofile/userprofile/account/logout.html:10
+msgid "You've been logged out"
+msgstr "你已经被注销"
+
+#: templates/userprofile/account/logout.html:10
+#: templates/userprofile/userprofile/account/logout.html:10
+#: templates/userprofile/userprofile/userprofile/account/logout.html:10
+msgid "Log in again"
+msgstr "再次登入"
+
+#: templates/userprofile/account/password_change.html:4
+#: templates/userprofile/account/password_change.html:23
+#: templates/userprofile/account/password_reset_confirm.html:4
+#: templates/userprofile/userprofile/account/password_change.html:4
+#: templates/userprofile/userprofile/account/password_change.html:23
+#: templates/userprofile/userprofile/account/password_reset_confirm.html:4
+#: templates/userprofile/userprofile/userprofile/account/password_change.html:4
+#: templates/userprofile/userprofile/userprofile/account/password_change.html:23
+#: templates/userprofile/userprofile/userprofile/account/password_reset_confirm.html:4
+msgid "Password change for"
+msgstr "更改密码"
+
+#: templates/userprofile/account/password_change.html:24
+#: templates/userprofile/userprofile/account/password_change.html:24
+#: templates/userprofile/userprofile/userprofile/account/password_change.html:24
+msgid "Old password"
+msgstr "旧的密码"
+
+#: templates/userprofile/account/password_change.html:30
+#: templates/userprofile/account/password_reset_confirm.html:26
+#: templates/userprofile/userprofile/account/password_change.html:30
+#: templates/userprofile/userprofile/account/password_reset_confirm.html:26
+#: templates/userprofile/userprofile/userprofile/account/password_change.html:30
+#: templates/userprofile/userprofile/userprofile/account/password_reset_confirm.html:26
+msgid "New password"
+msgstr "新的密码"
+
+#: templates/userprofile/account/password_change.html:36
+#: templates/userprofile/account/password_reset_confirm.html:32
+#: templates/userprofile/userprofile/account/password_change.html:36
+#: templates/userprofile/userprofile/account/password_reset_confirm.html:32
+#: templates/userprofile/userprofile/userprofile/account/password_change.html:36
+#: templates/userprofile/userprofile/userprofile/account/password_reset_confirm.html:32
+msgid "Confirm password"
+msgstr "确认密码"
+
+#: templates/userprofile/account/password_change.html:46
+#: templates/userprofile/account/password_reset_confirm.html:42
+#: templates/userprofile/userprofile/account/password_change.html:46
+#: templates/userprofile/userprofile/account/password_reset_confirm.html:42
+#: templates/userprofile/userprofile/userprofile/account/password_change.html:46
+#: templates/userprofile/userprofile/userprofile/account/password_reset_confirm.html:42
+msgid "Change"
+msgstr "更改"
+
+#: templates/userprofile/account/password_change.html:52
+#: templates/userprofile/account/password_change_done.html:19
+#: templates/userprofile/userprofile/account/password_change.html:52
+#: templates/userprofile/userprofile/account/password_change_done.html:19
+#: templates/userprofile/userprofile/userprofile/account/password_change.html:52
+#: templates/userprofile/userprofile/userprofile/account/password_change_done.html:19
+msgid "Password change"
+msgstr "更改密码"
+
+#: templates/userprofile/account/password_change.html:53
+#: templates/userprofile/account/password_change_done.html:20
+#: templates/userprofile/userprofile/account/password_change.html:53
+#: templates/userprofile/userprofile/account/password_change_done.html:20
+#: templates/userprofile/userprofile/userprofile/account/password_change.html:53
+#: templates/userprofile/userprofile/userprofile/account/password_change_done.html:20
+msgid "Password change utility page. Please enter your new password twice so we can verify you typed it in correctly"
+msgstr "更改密码页面, 请输入你新的密码两次, 以确认你密码是正确的"
+
+#: templates/userprofile/account/password_change_done.html:4
+#: templates/userprofile/account/password_reset_complete.html:4
+#: templates/userprofile/userprofile/account/password_change_done.html:4
+#: templates/userprofile/userprofile/account/password_reset_complete.html:4
+#: templates/userprofile/userprofile/userprofile/account/password_change_done.html:4
+#: templates/userprofile/userprofile/userprofile/account/password_reset_complete.html:4
+msgid "Password change successful"
+msgstr "密码更改成功"
+
+#: templates/userprofile/account/password_change_done.html:13
+#: templates/userprofile/userprofile/account/password_change_done.html:13
+#: templates/userprofile/userprofile/userprofile/account/password_change_done.html:13
+msgid "The password has been changed successfully"
+msgstr "密码已经成功的被更改"
+
+#: templates/userprofile/account/password_expired.html:4
+#: templates/userprofile/userprofile/account/password_expired.html:4
+#: templates/userprofile/userprofile/userprofile/account/password_expired.html:4
+msgid "Password key expired"
+msgstr "Password key已经失效"
+
+#: templates/userprofile/account/password_expired.html:9
+#: templates/userprofile/userprofile/account/password_expired.html:9
+#: templates/userprofile/userprofile/userprofile/account/password_expired.html:9
+msgid "The password key you're trying to use is expired. Please, request a new one"
+msgstr "你输入的Password key已经失效, 请要求一个新的"
+
+#: templates/userprofile/account/password_reset.html:4
+#: templates/userprofile/account/password_reset.html:20
+#: templates/userprofile/account/password_reset_complete.html:19
+#: templates/userprofile/account/password_reset_confirm.html:55
+#: templates/userprofile/userprofile/account/password_reset.html:4
+#: templates/userprofile/userprofile/account/password_reset.html:20
+#: templates/userprofile/userprofile/account/password_reset_complete.html:19
+#: templates/userprofile/userprofile/account/password_reset_confirm.html:55
+#: templates/userprofile/userprofile/userprofile/account/password_reset.html:4
+#: templates/userprofile/userprofile/userprofile/account/password_reset.html:20
+#: templates/userprofile/userprofile/userprofile/account/password_reset_complete.html:19
+#: templates/userprofile/userprofile/userprofile/account/password_reset_confirm.html:55
+msgid "Password reset"
+msgstr "重设密码"
+
+#: templates/userprofile/account/password_reset.html:31
+#: templates/userprofile/userprofile/account/password_reset.html:31
+#: templates/userprofile/userprofile/userprofile/account/password_reset.html:31
+msgid "Reset my password"
+msgstr "重设我的密码"
+
+#: templates/userprofile/account/password_reset.html:37
+#: templates/userprofile/account/password_reset_done.html:16
+#: templates/userprofile/userprofile/account/password_reset.html:37
+#: templates/userprofile/userprofile/account/password_reset_done.html:16
+#: templates/userprofile/userprofile/userprofile/account/password_reset.html:37
+#: templates/userprofile/userprofile/userprofile/account/password_reset_done.html:16
+msgid "Password reset form"
+msgstr "重设密码"
+
+#: templates/userprofile/account/password_reset.html:38
+#: templates/userprofile/account/password_reset_done.html:17
+#: templates/userprofile/userprofile/account/password_reset.html:38
+#: templates/userprofile/userprofile/account/password_reset_done.html:17
+#: templates/userprofile/userprofile/userprofile/account/password_reset.html:38
+#: templates/userprofile/userprofile/userprofile/account/password_reset_done.html:17
+msgid "Forgotten your password? Enter your e-mail address, and we'll reset your password and e-mail the new one to you"
+msgstr "忘记你的密吗? 输入你的e-mail信箱, 我们会重设你的密码并且寄到你的信箱"
+
+#: templates/userprofile/account/password_reset_complete.html:13
+#: templates/userprofile/userprofile/account/password_reset_complete.html:13
+#: templates/userprofile/userprofile/userprofile/account/password_reset_complete.html:13
+msgid "Your password has been set.  You may go ahead and log in now."
+msgstr "你的密码已经被设定, 你现在已经可以登入"
+
+#: templates/userprofile/account/password_reset_complete.html:20
+#: templates/userprofile/account/password_reset_confirm.html:56
+#: templates/userprofile/userprofile/account/password_reset_complete.html:20
+#: templates/userprofile/userprofile/account/password_reset_confirm.html:56
+#: templates/userprofile/userprofile/userprofile/account/password_reset_complete.html:20
+#: templates/userprofile/userprofile/userprofile/account/password_reset_confirm.html:56
+msgid "Password reset utility page. Please enter your new password twice so we can verify you typed it in correctly"
+msgstr "更改密码页面, 请输入你新的密码两次, 以确认你密码是正确的"
+
+#: templates/userprofile/account/password_reset_confirm.html:47
+#: templates/userprofile/userprofile/account/password_reset_confirm.html:47
+#: templates/userprofile/userprofile/userprofile/account/password_reset_confirm.html:47
+msgid "Password reset unsuccessful"
+msgstr "密码重设失败"
+
+#: templates/userprofile/account/password_reset_confirm.html:48
+#: templates/userprofile/userprofile/account/password_reset_confirm.html:48
+#: templates/userprofile/userprofile/userprofile/account/password_reset_confirm.html:48
+msgid "The password reset link was invalid, possibly because it has already been used.  Please request a new password reset."
+msgstr "密码重设的连结不正确, 可能已经被使用过了, 你可以请求一个新的密码"
+
+#: templates/userprofile/account/password_reset_done.html:4
+#: templates/userprofile/account/password_reset_done.html:9
+#: templates/userprofile/userprofile/account/password_reset_done.html:4
+#: templates/userprofile/userprofile/account/password_reset_done.html:9
+#: templates/userprofile/userprofile/userprofile/account/password_reset_done.html:4
+#: templates/userprofile/userprofile/userprofile/account/password_reset_done.html:9
+msgid "Password reset successful"
+msgstr "成功重设密码"
+
+#: templates/userprofile/account/password_reset_done.html:10
+#: templates/userprofile/userprofile/account/password_reset_done.html:10
+#: templates/userprofile/userprofile/userprofile/account/password_reset_done.html:10
+msgid "We've e-mailed you the instructions to obtain a new password. You should be receiving it shortly"
+msgstr "我们已经寄出新的密码, 你现在可以去收信"
+
+#: templates/userprofile/account/registration.html:4
+#: templates/userprofile/account/registration.html:19
+#: templates/userprofile/userprofile/account/registration.html:4
+#: templates/userprofile/userprofile/account/registration.html:19
+#: templates/userprofile/userprofile/userprofile/account/registration.html:4
+#: templates/userprofile/userprofile/userprofile/account/registration.html:19
+msgid "User registration"
+msgstr "使用者注册"
+
+#: templates/userprofile/account/registration.html:26
+#: templates/userprofile/userprofile/account/registration.html:26
+#: templates/userprofile/userprofile/userprofile/account/registration.html:26
+msgid "E-mail (optional)"
+msgstr ""
+
+#: templates/userprofile/account/registration.html:48
+#: templates/userprofile/userprofile/account/registration.html:48
+#: templates/userprofile/userprofile/userprofile/account/registration.html:48
+msgid "Register"
+msgstr "注册"
+
+#: templates/userprofile/account/registration.html:54
+#: templates/userprofile/account/registration_done.html:14
+#: templates/userprofile/userprofile/account/registration.html:54
+#: templates/userprofile/userprofile/account/registration_done.html:14
+#: templates/userprofile/userprofile/userprofile/account/registration.html:54
+#: templates/userprofile/userprofile/userprofile/account/registration_done.html:14
+msgid "Register a new account"
+msgstr "注册一个新的账号"
+
+#: templates/userprofile/account/registration.html:55
+#: templates/userprofile/account/registration_done.html:15
+#: templates/userprofile/userprofile/account/registration.html:55
+#: templates/userprofile/userprofile/account/registration_done.html:15
+#: templates/userprofile/userprofile/userprofile/account/registration.html:55
+#: templates/userprofile/userprofile/userprofile/account/registration_done.html:15
+msgid "Joining this community is quick and easy. You only need to fill the form to get access to all the private content"
+msgstr "要加入这个社群是非常容易而且快速, 你只需要填写这个简单的窗体, 就可以开始使用进阶的功能"
+
+#: templates/userprofile/account/registration_done.html:4
+#: templates/userprofile/userprofile/account/registration_done.html:4
+#: templates/userprofile/userprofile/userprofile/account/registration_done.html:4
+msgid "Registration complete"
+msgstr "完成注册"
+
+#: templates/userprofile/account/registration_done.html:9
+#: templates/userprofile/userprofile/account/registration_done.html:9
+#: templates/userprofile/userprofile/userprofile/account/registration_done.html:9
+msgid "You have successfully registered a new account. Go to the"
+msgstr "你已经成功"
+
+#: templates/userprofile/account/registration_done.html:9
+#: templates/userprofile/userprofile/account/registration_done.html:9
+#: templates/userprofile/userprofile/userprofile/account/registration_done.html:9
+msgid "login page"
+msgstr "登入页面"
+
+#: templates/userprofile/account/registration_done.html:9
+#: templates/userprofile/userprofile/account/registration_done.html:9
+#: templates/userprofile/userprofile/userprofile/account/registration_done.html:9
+msgid "to authenticate and start using this site"
+msgstr "验证并且开始使用这个网站"
+
+#: templates/userprofile/avatar/choose.html:4
+#: templates/userprofile/avatar/choose.html:36
+#: templates/userprofile/userprofile/avatar/choose.html:4
+#: templates/userprofile/userprofile/avatar/choose.html:36
+#: templates/userprofile/userprofile/userprofile/avatar/choose.html:4
+#: templates/userprofile/userprofile/userprofile/avatar/choose.html:36
+msgid "Choose the location of your avatar"
+msgstr "选择你的图像位置"
+
+#: templates/userprofile/avatar/choose.html:39
+#: templates/userprofile/userprofile/avatar/choose.html:39
+#: templates/userprofile/userprofile/userprofile/avatar/choose.html:39
+msgid "Select an image from disk"
+msgstr "从你的计算机挑选图片"
+
+#: templates/userprofile/avatar/choose.html:41
+#: templates/userprofile/avatar/choose.html:47
+#: templates/userprofile/avatar/crop.html:47
+#: templates/userprofile/userprofile/avatar/choose.html:41
+#: templates/userprofile/userprofile/avatar/choose.html:47
+#: templates/userprofile/userprofile/avatar/crop.html:47
+#: templates/userprofile/userprofile/userprofile/avatar/choose.html:41
+#: templates/userprofile/userprofile/userprofile/avatar/choose.html:47
+#: templates/userprofile/userprofile/userprofile/avatar/crop.html:47
+msgid "Done"
+msgstr "完成"
+
+#: templates/userprofile/avatar/choose.html:45
+#: templates/userprofile/userprofile/avatar/choose.html:45
+#: templates/userprofile/userprofile/userprofile/avatar/choose.html:45
+msgid "Select an image from a remote URL. Put the URL on the input below and we'll retrieve the image for you"
+msgstr "从网络上挑选图片. 只要把图片的网址填入下面字段, 我们会为你保存图片"
+
+#: templates/userprofile/avatar/choose.html:52
+#: templates/userprofile/avatar/search.html:4
+#: templates/userprofile/avatar/search.html:28
+#: templates/userprofile/userprofile/avatar/choose.html:52
+#: templates/userprofile/userprofile/avatar/search.html:4
+#: templates/userprofile/userprofile/avatar/search.html:28
+#: templates/userprofile/userprofile/userprofile/avatar/choose.html:52
+#: templates/userprofile/userprofile/userprofile/avatar/search.html:4
+#: templates/userprofile/userprofile/userprofile/avatar/search.html:28
+msgid "Search for an image on Picasa Web"
+msgstr "从Picase Web上搜寻图片"
+
+#: templates/userprofile/avatar/choose.html:62
+#: templates/userprofile/avatar/crop.html:53
+#: templates/userprofile/avatar/done.html:19
+#: templates/userprofile/avatar/search.html:50
+#: templates/userprofile/userprofile/avatar/choose.html:62
+#: templates/userprofile/userprofile/avatar/crop.html:53
+#: templates/userprofile/userprofile/avatar/done.html:19
+#: templates/userprofile/userprofile/avatar/search.html:50
+#: templates/userprofile/userprofile/userprofile/avatar/choose.html:62
+#: templates/userprofile/userprofile/userprofile/avatar/crop.html:53
+#: templates/userprofile/userprofile/userprofile/avatar/done.html:19
+#: templates/userprofile/userprofile/userprofile/avatar/search.html:50
+msgid "Avatar selection page"
+msgstr "图片选取页面"
+
+#: templates/userprofile/avatar/choose.html:63
+#: templates/userprofile/avatar/crop.html:54
+#: templates/userprofile/avatar/done.html:20
+#: templates/userprofile/avatar/search.html:51
+#: templates/userprofile/userprofile/avatar/choose.html:63
+#: templates/userprofile/userprofile/avatar/crop.html:54
+#: templates/userprofile/userprofile/avatar/done.html:20
+#: templates/userprofile/userprofile/avatar/search.html:51
+#: templates/userprofile/userprofile/userprofile/avatar/choose.html:63
+#: templates/userprofile/userprofile/userprofile/avatar/crop.html:54
+#: templates/userprofile/userprofile/userprofile/avatar/done.html:20
+#: templates/userprofile/userprofile/userprofile/avatar/search.html:51
+msgid "You have several options to select the image you want as avatar on your profile"
+msgstr "你有几个方法选择图片作为你的个人图像"
+
+#: templates/userprofile/avatar/choose.html:69
+#: templates/userprofile/userprofile/avatar/choose.html:69
+#: templates/userprofile/userprofile/userprofile/avatar/choose.html:69
+msgid "Delete"
+msgstr "删除"
+
+#: templates/userprofile/avatar/crop.html:4
+#: templates/userprofile/avatar/crop.html:31
+#: templates/userprofile/userprofile/avatar/crop.html:4
+#: templates/userprofile/userprofile/avatar/crop.html:31
+#: templates/userprofile/userprofile/userprofile/avatar/crop.html:4
+#: templates/userprofile/userprofile/userprofile/avatar/crop.html:31
+msgid "Crop &amp; resize the area you want"
+msgstr "裁剪并缩放你想要的区域"
+
+#: templates/userprofile/avatar/done.html:4
+#: templates/userprofile/userprofile/avatar/done.html:4
+#: templates/userprofile/userprofile/userprofile/avatar/done.html:4
+msgid "Avatar selection finished"
+msgstr "完成图像选择"
+
+#: templates/userprofile/avatar/done.html:13
+#: templates/userprofile/userprofile/avatar/done.html:13
+#: templates/userprofile/userprofile/userprofile/avatar/done.html:13
+msgid "Your new avatar has been saved successfully"
+msgstr "你的新图像已经储存成功"
+
+#: templates/userprofile/avatar/search.html:29
+#: templates/userprofile/userprofile/avatar/search.html:29
+#: templates/userprofile/userprofile/userprofile/avatar/search.html:29
+msgid "Search on Picasa Web"
+msgstr "在Picasa Web上搜寻"
+
+#: templates/userprofile/avatar/search.html:32
+#: templates/userprofile/userprofile/avatar/search.html:32
+#: templates/userprofile/userprofile/userprofile/avatar/search.html:32
+msgid "Search"
+msgstr "搜寻"
+
+#: templates/userprofile/profile/delete.html:4
+#: templates/userprofile/userprofile/profile/delete.html:4
+#: templates/userprofile/userprofile/userprofile/profile/delete.html:4
+msgid "Delete personal information"
+msgstr "删除个人信息"
+
+#: templates/userprofile/profile/delete.html:14
+#: templates/userprofile/profile/delete_done.html:18
+#: templates/userprofile/userprofile/profile/delete.html:14
+#: templates/userprofile/userprofile/profile/delete_done.html:18
+#: templates/userprofile/userprofile/userprofile/profile/delete.html:14
+#: templates/userprofile/userprofile/userprofile/profile/delete_done.html:18
+msgid "Delete your personal information"
+msgstr "删除你的个人信息"
+
+#: templates/userprofile/profile/delete.html:15
+#: templates/userprofile/userprofile/profile/delete.html:15
+#: templates/userprofile/userprofile/userprofile/profile/delete.html:15
+msgid "Are you sure?"
+msgstr "你确定吗?"
+
+#: templates/userprofile/profile/delete.html:15
+#: templates/userprofile/userprofile/profile/delete.html:15
+#: templates/userprofile/userprofile/userprofile/profile/delete.html:15
+msgid "Yes"
+msgstr ""
+
+#: templates/userprofile/profile/delete.html:23
+#: templates/userprofile/userprofile/profile/delete.html:23
+#: templates/userprofile/userprofile/userprofile/profile/delete.html:23
+msgid "It erases all your private data except your username. You can refill the information later if you want to"
+msgstr "删除你所有的信息除了你的使用者名称,你可以在任何时候重新填写你的信息"
+
+#: templates/userprofile/profile/delete_done.html:4
+#: templates/userprofile/userprofile/profile/delete_done.html:4
+#: templates/userprofile/userprofile/userprofile/profile/delete_done.html:4
+msgid "Profile removed"
+msgstr "个人信息已经被移除"
+
+#: templates/userprofile/profile/delete_done.html:13
+#: templates/userprofile/userprofile/profile/delete_done.html:13
+#: templates/userprofile/userprofile/userprofile/profile/delete_done.html:13
+msgid "Your profile information has been removed successfully"
+msgstr "你的个人信息已经成功的被移除了"
+
+#: templates/userprofile/profile/delete_done.html:19
+#: templates/userprofile/userprofile/profile/delete_done.html:19
+#: templates/userprofile/userprofile/userprofile/profile/delete_done.html:19
+msgid "Deleting all your personal information will erase all your private data, except your username. You can refill the information later if you want to"
+msgstr "删除所有你的个人信息将会清除你所有的个人数据除了你的使用者名称你可以在任何时候重新填写你的信息"
+
+#: templates/userprofile/profile/location.html:4
+#: templates/userprofile/profile/location_done.html:4
+#: templates/userprofile/profile/personal_done.html:4
+#: templates/userprofile/userprofile/profile/location.html:4
+#: templates/userprofile/userprofile/profile/location_done.html:4
+#: templates/userprofile/userprofile/profile/personal_done.html:4
+#: templates/userprofile/userprofile/userprofile/profile/location.html:4
+#: templates/userprofile/userprofile/userprofile/profile/location_done.html:4
+#: templates/userprofile/userprofile/userprofile/profile/personal_done.html:4
+#, python-format
+msgid "%(user)s's Dashboard"
+msgstr "%(user)s's的广告牌"
+
+#: templates/userprofile/profile/location.html:21
+#: templates/userprofile/userprofile/profile/location.html:21
+#: templates/userprofile/userprofile/userprofile/profile/location.html:21
+msgid "Define your location"
+msgstr "定义你的地区"
+
+#: templates/userprofile/profile/location.html:22
+#: templates/userprofile/profile/overview.html:51
+#: templates/userprofile/profile/public.html:35
+#: templates/userprofile/userprofile/profile/location.html:22
+#: templates/userprofile/userprofile/profile/overview.html:51
+#: templates/userprofile/userprofile/profile/public.html:35
+#: templates/userprofile/userprofile/userprofile/profile/location.html:22
+#: templates/userprofile/userprofile/userprofile/profile/overview.html:51
+#: templates/userprofile/userprofile/userprofile/profile/public.html:35
+msgid "Country"
+msgstr "国家"
+
+#: templates/userprofile/profile/location.html:28
+#: templates/userprofile/userprofile/profile/location.html:28
+#: templates/userprofile/userprofile/userprofile/profile/location.html:28
+msgid "Position"
+msgstr "位置"
+
+#: templates/userprofile/profile/location.html:35
+#: templates/userprofile/userprofile/profile/location.html:35
+#: templates/userprofile/userprofile/userprofile/profile/location.html:35
+msgid "Save"
+msgstr "储存"
+
+#: templates/userprofile/profile/location.html:40
+#: templates/userprofile/profile/location_done.html:19
+#: templates/userprofile/userprofile/profile/location.html:40
+#: templates/userprofile/userprofile/profile/location_done.html:19
+#: templates/userprofile/userprofile/userprofile/profile/location.html:40
+#: templates/userprofile/userprofile/userprofile/profile/location_done.html:19
+msgid "Location information"
+msgstr "地区信息"
+
+#: templates/userprofile/profile/location.html:41
+#: templates/userprofile/profile/location_done.html:20
+#: templates/userprofile/userprofile/profile/location.html:41
+#: templates/userprofile/userprofile/profile/location_done.html:20
+#: templates/userprofile/userprofile/userprofile/profile/location.html:41
+#: templates/userprofile/userprofile/userprofile/profile/location_done.html:20
+msgid "Define your location information"
+msgstr "定义你的地区信息"
+
+#: templates/userprofile/profile/location_done.html:13
+#: templates/userprofile/profile/personal_done.html:13
+#: templates/userprofile/userprofile/profile/location_done.html:13
+#: templates/userprofile/userprofile/profile/personal_done.html:13
+#: templates/userprofile/userprofile/userprofile/profile/location_done.html:13
+#: templates/userprofile/userprofile/userprofile/profile/personal_done.html:13
+msgid "Your profile information has been updated successfully"
+msgstr "你的个人信息已经成功的被更新了"
+
+#: templates/userprofile/profile/overview.html:4
+#: templates/userprofile/profile/overview.html:32
+#: templates/userprofile/userprofile/profile/overview.html:4
+#: templates/userprofile/userprofile/profile/overview.html:32
+#: templates/userprofile/userprofile/userprofile/profile/overview.html:4
+#: templates/userprofile/userprofile/userprofile/profile/overview.html:32
+msgid "Overview of your profile"
+msgstr "你的个人信息概要"
+
+#: templates/userprofile/profile/overview.html:37
+#: templates/userprofile/userprofile/profile/overview.html:37
+#: templates/userprofile/userprofile/userprofile/profile/overview.html:37
+msgid "Change avatar"
+msgstr "更改图像"
+
+#: templates/userprofile/profile/overview.html:37
+#: templates/userprofile/userprofile/profile/overview.html:37
+#: templates/userprofile/userprofile/userprofile/profile/overview.html:37
+msgid "Add avatar"
+msgstr "加入图像"
+
+#: templates/userprofile/profile/overview.html:41
+#: templates/userprofile/userprofile/profile/overview.html:41
+#: templates/userprofile/userprofile/userprofile/profile/overview.html:41
+msgid "Username:"
+msgstr "使用者名称:"
+
+#: templates/userprofile/profile/overview.html:42
+#: templates/userprofile/userprofile/profile/overview.html:42
+#: templates/userprofile/userprofile/userprofile/profile/overview.html:42
+msgid "E-mail:"
+msgstr ""
+
+#: templates/userprofile/profile/overview.html:44
+#: templates/userprofile/userprofile/profile/overview.html:44
+#: templates/userprofile/userprofile/userprofile/profile/overview.html:44
+msgid "Not set yet"
+msgstr "还没设定"
+
+#: templates/userprofile/profile/overview.html:46
+#: templates/userprofile/userprofile/profile/overview.html:46
+#: templates/userprofile/userprofile/userprofile/profile/overview.html:46
+msgid " (Not validated)"
+msgstr " (尚未验证)"
+
+#: templates/userprofile/profile/overview.html:55
+#: templates/userprofile/profile/overview.html:64
+#: templates/userprofile/userprofile/profile/overview.html:55
+#: templates/userprofile/userprofile/profile/overview.html:64
+#: templates/userprofile/userprofile/userprofile/profile/overview.html:55
+#: templates/userprofile/userprofile/userprofile/profile/overview.html:64
+msgid "Not set"
+msgstr "未设定"
+
+#: templates/userprofile/profile/overview.html:82
+#: templates/userprofile/userprofile/profile/overview.html:82
+#: templates/userprofile/userprofile/userprofile/profile/overview.html:82
+msgid "Management:"
+msgstr "管理:"
+
+#: templates/userprofile/profile/overview.html:83
+#: templates/userprofile/userprofile/profile/overview.html:83
+#: templates/userprofile/userprofile/userprofile/profile/overview.html:83
+msgid "Change password"
+msgstr "更改密码"
+
+#: templates/userprofile/profile/overview.html:85
+#: templates/userprofile/userprofile/profile/overview.html:85
+#: templates/userprofile/userprofile/userprofile/profile/overview.html:85
+msgid "Change your e-mail address"
+msgstr "更改e-mail地址"
+
+#: templates/userprofile/profile/overview.html:85
+#: templates/userprofile/userprofile/profile/overview.html:85
+#: templates/userprofile/userprofile/userprofile/profile/overview.html:85
+msgid "Add your e-mail address"
+msgstr "加入你的e-mail地址"
+
+#: templates/userprofile/profile/overview.html:86
+#: templates/userprofile/userprofile/profile/overview.html:86
+#: templates/userprofile/userprofile/userprofile/profile/overview.html:86
+msgid "Resend validation e-mail"
+msgstr "重新寄出验证信"
+
+#: templates/userprofile/profile/overview.html:90
+#: templates/userprofile/userprofile/profile/overview.html:90
+#: templates/userprofile/userprofile/userprofile/profile/overview.html:90
+msgid "Add location"
+msgstr "加入位置"
+
+#: templates/userprofile/profile/overview.html:92
+#: templates/userprofile/userprofile/profile/overview.html:92
+#: templates/userprofile/userprofile/userprofile/profile/overview.html:92
+msgid "Change location"
+msgstr "更改位置"
+
+#: templates/userprofile/profile/personal.html:4
+#: templates/userprofile/profile/personal.html:27
+#: templates/userprofile/userprofile/profile/personal.html:4
+#: templates/userprofile/userprofile/profile/personal.html:27
+#: templates/userprofile/userprofile/userprofile/profile/personal.html:4
+#: templates/userprofile/userprofile/userprofile/profile/personal.html:27
+msgid "Edit your personal information"
+msgstr "编辑你的个人信息"
+
+#: templates/userprofile/profile/personal.html:35
+#: templates/userprofile/profile/personal_done.html:20
+#: templates/userprofile/userprofile/profile/personal.html:35
+#: templates/userprofile/userprofile/profile/personal_done.html:20
+#: templates/userprofile/userprofile/userprofile/profile/personal.html:35
+#: templates/userprofile/userprofile/userprofile/profile/personal_done.html:20
+msgid "Insert some information about you"
+msgstr "加入一些关于你的信息"
+
+#: templates/userprofile/profile/public.html:27
+#: templates/userprofile/userprofile/profile/public.html:27
+#: templates/userprofile/userprofile/userprofile/profile/public.html:27
+#, python-format
+msgid "Public profile of %(user)s"
+msgstr "%(user)s公开的个人信息"
+
+#: templates/userprofile/profile/usercard.html:12
+#: templates/userprofile/userprofile/profile/usercard.html:12
+#: templates/userprofile/userprofile/userprofile/profile/usercard.html:12
+msgid "Public profile information"
+msgstr "公开的个人信息"
+
+#: templatetags/avatars.py:68
+msgid "You have to provide only the size as             an integer (both sides will be equal) and optionally, the             username."
+msgstr "你的大小必须是整数而且左右两边等长"
+
+#: templates/userprofile/email/validation.txt
+msgid "Your username, in case you've forgotten:"
+msgstr "如果你忘记你的使用者名称的话, 这是你的使用者名称: "
+
+#: templates/userprofile/email/validation.txt
+msgid "You're receiving this e-mail because you requested an e-mail validation at "
+msgstr "你收到的这封信是因为你做了e-mail验证的请求"
+
+#: templates/userprofile/email/validation.txt
+msgid "Following this link, you will validate your e-mail address:"
+msgstr "透过下面这个连结, 可以验证你的信箱:"
+
+#: templates/userprofile/email/password_reset_email.txt
+msgid "You're receiving this e-mail because you requested a password reset"
+msgstr "你收到的这封信是因为你做了重设密码的请求"
+
+#: templates/userprofile/email/password_reset_email.txt
+msgid "for your user account at %(site_name)s"
+msgstr "你在%(site_name)s的使用者账号"
+
+#: templates/userprofile/email/password_reset_email.txt
+msgid "Thanks for using our site!"
+msgstr "感谢你使用本站"
+
+msgid "Please go to the following page and choose a new password:"
+msgstr "请到下面的页面并且选择一个新的密码:"
+
+msgid "Email validation for %(site_name)s"
+msgstr "%(site_name)s的e-mail验证"
+

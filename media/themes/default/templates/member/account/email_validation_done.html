@@ -1,0 +1,26 @@
+{% extends "member/base_2col.html" %}
+{% load i18n %}
+
+{% block title %}{% if successful %} E-mail 地址认证成功{% else %} E-mail 更改不成功{% endif %}{% endblock %}
+{% block robots %}noindex,nofollow{% endblock %}
+
+{% block userprofile_navigation %}
+{% include "member/menu.html" %}
+{% endblock %}
+
+{% block userprofile_content %}
+	<div class="{% if successful %}success{% else %}error{% endif %}">
+	{% if successful %}
+  <p>E-mail 地址认证成功.</p>
+	{% else %}
+	<p>您通过邮件获取的KEY 不再有效. 请重试 E-Mail 认证过程.</p>
+	{% endif %}
+	</div>
+{% endblock %}
+
+{% block userprofile_content_related %}
+  <div class="box">
+    <h3> E-mail 认证处理</h3>
+    <p>你可以管理 e-mail 过程从此链接: <a href="{% url profile_overview %}">个人档案概要</p>
+  </div>
+{% endblock %}

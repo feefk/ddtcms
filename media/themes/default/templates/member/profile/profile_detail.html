@@ -1,0 +1,46 @@
+{% load i18n %}
+
+{% block userprofile_detail %}
+{% if user.is_authenticated %}{% endif %}
+<li>姓 名：<strong>{{profile.nickname}} </strong></li>
+<li>籍 贯：<strong>{{profile.homeplace}}</strong></li> 
+<li>出生地：<strong>{{profile.homeplace}} </strong></li>
+<li>性 别：<strong>{%ifequal profile.gender "M"%}帅哥{%else%}美女{% endifequal %}</strong></li>
+<li>身 高：<strong>{{profile.height}}</strong> </li>
+<li>体 重：{{profile.weight}} </li>
+<li>英文名：{{profile.foreigname}}</li>
+
+<li>血 型： {{profile.bloodgroup}}</li>
+<li>星 座： {{profile.get_constellation_display}}</li>
+<li>生 肖： {%trans profile.get_zodiac_display %}</li>
+<li>生 日： {{profile.birthday}} </li>
+<li>职 业： {{profile.profession}}</li>
+<li>嗜 好： {{profile.hobby}}</li>
+<li>性 格： {{profile.character}} </li>
+<li>自我介绍： <p class="info">{{profile.intro}}</p>  </li>  
+
+{%comment%}<li>家庭：</li>
+<li>籍贯：</li>
+<li>语言: </li>
+<li>学 历： </li>
+<li>所在地： {{profile.location}}</li>
+<li>唱片公司：</li>
+<li>学校：</li>
+
+<li>喜欢音乐: </li>
+<li>喜欢歌手: </li>
+<li>擅长技能: {{profile.strongsuit}}</li>
+<li>喜欢舞蹈:</li>
+<li>喜欢电影: </li>
+<li>喜欢食物: </li>
+<li>喜欢颜色: </li>
+<li>喜欢饰物: </li>
+<li>喜欢运动:   {{profile.occupation}}</li>
+<li>喜欢宠物: </li>
+<li>喜欢杂志: </li>
+<li>喜欢国家城市: </li>
+<li>难忘经历:  </li>
+<li>讨厌事物: </li>
+<li>喜欢事物: </li>{%endcomment%}
+
+{% endblock %}

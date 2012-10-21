@@ -1,0 +1,2262 @@
+ {
+	word-wrap: break-word
+}
+body {
+	background: #fff; text-align: center
+}
+body {
+	font: 12px/1.6em tahoma; color: #666
+}
+td {
+	font: 12px/1.6em tahoma; color: #666
+}
+input {
+	font: 12px/1.6em tahoma; color: #666
+}
+textarea {
+	font: 12px/1.6em tahoma; color: #666
+}
+select {
+	font: 12px/1.6em tahoma; color: #666
+}
+button {
+	font: 12px/1.6em tahoma; color: #666
+}
+body {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px
+}
+ul {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px
+}
+dl {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px
+}
+dd {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px
+}
+p {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px
+}
+h1 {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px
+}
+h2 {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px
+}
+h3 {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px
+}
+h4 {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px
+}
+h5 {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px
+}
+h6 {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px
+}
+form {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px
+}
+fieldset {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px
+}
+h1 {
+	font-size: 1em
+}
+h2 {
+	font-size: 1em
+}
+h3 {
+	font-size: 1em
+}
+h4 {
+	font-size: 1em
+}
+h5 {
+	font-size: 1em
+}
+h6 {
+	font-size: 1em
+}
+#menu li {
+	list-style-type: none
+}
+.popupmenu_popup li {
+	list-style-type: none
+}
+#announcement li {
+	list-style-type: none
+}
+.portalbox li {
+	list-style-type: none
+}
+.tabs li {
+	list-style-type: none
+}
+.postmessage fieldset li {
+	list-style-type: none
+}
+.side li {
+	list-style-type: none
+}
+.formbox li {
+	list-style-type: none
+}
+.notice li {
+	list-style-type: none
+}
+.r {
+	float: right
+}
+a {
+	color: #3b5c7e; text-decoration: none
+}
+a:hover {
+	text-decoration: underline
+}
+a img {
+	border-top-style: none; border-right-style: none; border-left-style: none; border-bottom-style: none
+}
+em {
+	font-weight: normal; font-style: normal
+}
+cite {
+	font-weight: normal; font-style: normal
+}
+strong {
+	font-weight: normal; font-style: normal
+}
+th {
+	font-weight: normal; font-style: normal
+}
+table {
+	border-collapse: collapse; empty-cells: show
+}
+.wrap {
+	margin: 0px auto; width: 96%; text-align: left
+}
+.notice {
+	border-right: #b9d3e2 1px solid; padding-right: 1em; border-top: #b9d3e2 1px solid; padding-left: 3em; font-size: 14px; background: url(../../images/iq_browser/notice.gif) #f4f9ff no-repeat 1em 0.7em; margin-bottom: 6px; padding-bottom: 0.3em; border-left: #b9d3e2 1px solid; color: #71a7c6; padding-top: 0.5em; border-bottom: #b9d3e2 1px solid
+}
+.message {
+	border-right: #c5cad3 1px solid; border-top: #c5cad3 1px solid; background: #fcfdfe; margin: 3em 10em 5em; border-left: #c5cad3 1px solid; border-bottom: #c5cad3 1px solid
+}
+.message h1 {
+	padding-left: 1em; background: #f8f9fb repeat-x; margin-bottom: 1em; color: #3b5c7e; line-height: 26px; border-bottom: #c5cad3 1px solid
+}
+.message p {
+	margin: 1em
+}
+.message a {
+	color: #3b5c7e
+}
+#header {
+	background: url(../../images/iq_browser/top_bg.gif) repeat-x; overflow: hidden; width: 100%; height: 70px
+}
+#header h2 {
+	padding-right: 12px; padding-left: 2%; background: url(../../images/iq_browser/top_line.gif) no-repeat right 18px; float: left; padding-bottom: 5px; padding-top: 17px; text-align: left
+}
+.header_iq {
+	float: right; margin: 0px 15px 0px 0px; width: 364px; height: 70px
+}
+.header_iq_bg {
+	background: url(../../images/iq_browser/header_iqbg.gif); line-height: 26px
+}
+.header_iq_bg a {
+	margin: 0px 1px; color: #999999
+}
+.header_iq_bg a:hover {
+	color: #ccc; text-decoration: none
+}
+.top_b {
+	float: left
+}
+.top_b a {
+	display: block; background: url(../../images/iq_browser/top_b.png) no-repeat 10px 0px; overflow: hidden; width: 300px; cursor: pointer; line-height: 500px; height: 60px
+}
+.top_b a {
+	background: none transparent scroll repeat 0% 0%; filter: progid:dximagetransform.microsoft.alphaimageloader(src='../../images/iq_browser/top_b.png',sizingmethod='scale'); margin: 8px 0px 0px 8px; width: 230px
+}
+#footer {
+	padding-right: 0px; padding-left: 0px; background: url(../../images/iq_browser/foot_bg.gif) repeat-x; padding-bottom: 12px; margin: 10px 0px 0px; width: 100%; color: #878787; padding-top: 12px
+}
+#footlinks {
+	padding-right: 0px; padding-left: 0px; float: left; padding-bottom: 0px; padding-top: 5px; text-align: left
+}
+#debuginfo {
+	float: right; font: 10px/1.3em tahoma; text-align: right
+}
+.scrolltop {
+	cursor: pointer
+}
+#menu {
+	background: url(../../images/iq_browser/menu_bg.gif) repeat-x; height: 32px
+}
+#menu ul {
+	background: url(../../images/iq_browser/menu_itemline.gif) no-repeat right 50%; float: right; margin: 4px 14px 0px
+}
+#menu li {
+	float: left
+}
+#menu li a {
+	padding-right: 8px; padding-left: 8px; background: url(../../images/iq_browser/menu_itemline.gif) no-repeat; float: left; padding-bottom: 3px; color: #3b5c7e; padding-top: 4px; text-decoration: none
+}
+#menu li.hover {
+	border-right: #d1e5f1 1px solid; border-top: #d1e5f1 1px solid; background: #f1f8fd; border-left: #d1e5f1 1px solid; border-bottom: #d1e5f1 1px solid
+}
+#menu li.current {
+	font-weight: bold
+}
+#menu li.hover a {
+	padding-right: 7px; padding-left: 7px; background: none transparent scroll repeat 0% 0%; padding-bottom: 3px; padding-top: 3px
+}
+#menu cite a {
+	font-weight: bold; background-image: none
+}
+.frameswitch {
+	padding-left: 10px; float: left; border-left: #fff 1px solid; line-height: 30px; height: 30px
+}
+#menu a.frameoff {
+	padding-left: 16px; background: no-repeat 0px 50%; float: left; margin-left: 0px; border-top-style: none; border-right-style: none; border-left-style: none; border-bottom-style: none
+}
+#menu a.frameon {
+	padding-left: 16px; background: no-repeat 0px 50%; float: left; margin-left: 0px; border-top-style: none; border-right-style: none; border-left-style: none; border-bottom-style: none
+}
+#menu a.frameoff {
+	background-image: url(../../images/iq_browser/frame_off.gif)
+}
+#menu a.frameon {
+	background-image: url(../../images/iq_browser/frame_on.gif)
+}
+#foruminfo {
+	padding-right: 0px; padding-left: 0px; background: url(../../images/iq_browser/icon_dot_grey.gif) repeat-x 50% bottom; padding-bottom: 5px; margin: 0px 0px 7px; overflow: hidden; width: 100%; color: #999; padding-top: 8px
+}
+#userinfo {
+	padding-right: 0px; padding-left: 5px; float: left; padding-bottom: 0px; padding-top: 0px
+}
+#forumstats {
+	padding-right: 5px; float: right; text-align: right
+}
+#headsearch {
+	padding-right: 5px; float: right; text-align: right
+}
+#forumstats p {
+	margin: 3px 0px 0px
+}
+#foruminfo p {
+	color: #777
+}
+#foruminfo em {
+	color: #3b5c7e
+}
+#foruminfo cite {
+	font-weight: bold
+}
+#foruminfo strong a {
+	font-weight: bold; color: #677079
+}
+#nav {
+	margin: 0px 0px 2px
+}
+.index_userinfor {
+	padding-right: 0px; padding-left: 20px; background: url(../../images/iq_browser/icon_infor.gif) no-repeat 0px 3px; padding-bottom: 0px; padding-top: 0px
+}
+.index_userinfor p {
+	padding-right: 0px; padding-left: 50px; padding-bottom: 0px; padding-top: 0px
+}
+.pos_nav {
+	padding-right: 0px; padding-left: 20px; background: url(../../images/iq_browser/location_icon.gif) no-repeat 0px 2px; padding-bottom: 0px; padding-top: 0px
+}
+#foruminfo .pos_nav p {
+	color: #3b5c7e
+}
+#nav a {
+	font-weight: bold; color: #3b5c7e
+}
+#announcement {
+	overflow: hidden; line-height: 36px; height: 36px
+}
+#announcement div {
+	border-right: #fff 1px solid; padding-right: 10px; border-top: #fff 1px solid; overflow-y: hidden; padding-left: 10px; padding-bottom: 0px; border-left: #fff 1px solid; line-height: 35px! important; padding-top: 0px; border-bottom: #fff 1px solid; height: 36px
+}
+#announcement li {
+	padding-left: 10px; background: url(../../images/iq_browser/arrow_right.gif) no-repeat 0px 50%; float: left; margin-right: 20px; white-space: nowrap
+}
+#announcement li em {
+	font-size: 0.83em; margin-left: 5px; color: #999
+}
+#supeitems li {
+	float: left; overflow: hidden; height: 1.6em
+}
+#hottags a {
+	margin-right: 0.5em; white-space: nowrap
+}
+#hottags h3 {
+	clear: both
+}
+#quickpost .headactions {
+	float: right
+}
+.viewthread .headactions {
+	float: right
+}
+#online .headactions {
+	float: right
+}
+.formbox .headactions {
+	float: right
+}
+#pmprompt .headactions {
+	float: right
+}
+.forumlist .headactions img {
+	padding-right: 10px; padding-left: 0px; float: right; padding-bottom: 0px; cursor: pointer; padding-top: 1px
+}
+.mainbox .headactions {
+	color: #3b5c7e
+}
+.mainbox .bg_blue {
+	background: #f6fafe
+}
+.mainbox .headactions a {
+	padding-right: 10px; background: url(../../images/iq_browser/headactions_line.gif) no-repeat 100% 50%; color: #3b5c7e; margin-right: 8px
+}
+.mainbox .headactions span {
+	padding-right: 10px; background: url(../../images/iq_browser/headactions_line.gif) no-repeat 100% 50%; color: #3b5c7e; margin-right: 8px
+}
+.mainbox .headactions strong {
+	padding-right: 10px; background: url(../../images/iq_browser/headactions_line.gif) no-repeat 100% 50%; color: #3b5c7e; margin-right: 8px
+}
+.mainbox .headactions strong {
+	font-weight: bold; background-image: url(../../images/iq_browser/arrow_left.gif)
+}
+.pages_btns {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 8px; overflow: hidden; width: 100%; padding-top: 0px
+}
+.pages a {
+	border-right: #cccccc 1px solid; padding-right: 11px; border-top: #cccccc 1px solid; display: block; padding-left: 11px; background: url(../../images/iq_browser/page_bg01.gif) repeat-x; float: left; padding-bottom: 4px; border-left: #cccccc 0px solid; padding-top: 4px; border-bottom: #cccccc 1px solid
+}
+.pages a:hover {
+	background: url(../../images/iq_browser/page_bg03.gif); color: #3b5c7e
+}
+.pages em {
+	border-right: #cccccc 1px solid; padding-right: 11px; border-top: #cccccc 1px solid; display: block; padding-left: 11px; background: url(../../images/iq_browser/page_bg01.gif); float: left; padding-bottom: 4px; border-left: #cccccc 1px solid; color: #999999; padding-top: 4px; border-bottom: #cccccc 1px solid
+}
+.pages strong {
+	border-right: #89bdda 1px solid; padding-right: 11px; border-top: #89bdda 1px solid; display: block; padding-left: 11px; background: url(../../images/iq_browser/page_bg02.gif); float: left; padding-bottom: 4px; margin: 0px 0px 0px -1px; border-left: #89bdda 1px solid; color: #3b5c7e; padding-top: 4px; border-bottom: #89bdda 1px solid
+}
+.pages kbd {
+	border-right: #cccccc 1px solid; padding-right: 11px; border-top: #cccccc 1px solid; display: block; padding-left: 11px; background: url(../../images/iq_browser/page_bg01.gif); float: left; padding-bottom: 4px; border-left: #cccccc 0px solid; padding-top: 5px; border-bottom: #cccccc 1px solid
+}
+.pages kbd input {
+	border-right: #cccccc 1px solid; padding-right: 0px; border-top: #cccccc 1px solid; padding-left: 3px; padding-bottom: 0px; border-left: #cccccc 1px solid; width: 16px; padding-top: 0px; border-bottom: #cccccc 1px solid
+}
+.postbtn {
+	float: right; margin: 0px 10px 0px 0px
+}
+.replybtn {
+	float: right
+}
+.threadflow {
+	background: url(../../images/iq_browser/page_bg04.gif); float: right; margin: 0px 10px 0px 0px; width: 133px; line-height: 24px; height: 25px; text-align: center
+}
+.threadflow a {
+	margin: 0px 8px; color: #666
+}
+.threadflow a:hover {
+	color: #3b5c7e; text-decoration: none
+}
+.tabs {
+	background: #f6fafe; overflow: hidden; height: 25px
+}
+.tabs li {
+	border-right: #b9d3e2 1px solid; background: #edf6fe; float: left; line-height: 25px; height: 25px
+}
+.tabs li.current {
+	font-weight: bold; background: #ffffff; height: 27px
+}
+.tabs li a {
+	padding-right: 10px; padding-left: 10px; float: left; padding-bottom: 0px; padding-top: 0px
+}
+.headertabs {
+	border-right: #b9d3e2 1px solid; border-top: #b9d3e2 0px solid; border-left: #b9d3e2 1px solid; border-bottom: #b9d3e2 1px solid
+}
+.sendpm a {
+	padding-right: 20px! important; padding-left: 35px! important; background: url(../../images/iq_browser/buddy_sendpm.gif) no-repeat 15px 50%; padding-bottom: 0px! important; color: #71a7c6; padding-top: 0px! important
+}
+#headfilter {
+	border-right: #b9d3e2 1px solid; border-top: #b9d3e2 1px solid; border-left: #b9d3e2 1px solid; border-bottom: #b9d3e2 0px solid
+}
+#footfilter {
+	border-right: #b9d3e2 1px solid; padding-right: 10px; border-top: #b9d3e2 1px solid; padding-left: 10px; background: #f6fafe; padding-bottom: 6px; margin: 0px 0px 10px; border-left: #b9d3e2 1px solid; padding-top: 6px; border-bottom: #b9d3e2 1px solid; height: 13px
+}
+#footfilter form {
+	float: right; margin: -2px 0px 0px
+}
+.legend {
+	width: 100%; text-align: center
+}
+.legend .login_txt {
+	line-height: 15px; height: 15px
+}
+.legend button {
+	margin: 0px 0px 0px 5px
+}
+.legend label {
+	padding-right: 20px; padding-left: 20px; padding-bottom: 0px; padding-top: 0px
+}
+.legend img {
+	vertical-align: middle; margin-right: 10px
+}
+.avatarlist {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 5px; overflow: hidden; padding-top: 5px
+}
+ html .avatarlist {
+	height: 1%
+}
+.avatarlist dl {
+	border-right: #e6e6e2 1px solid; padding-right: 5px; border-top: #e6e6e2 1px solid; padding-left: 5px; float: left; padding-bottom: 5px; border-left: #e6e6e2 1px solid; width: 70px; margin-right: 5px; padding-top: 5px; border-bottom: #e6e6e2 1px solid; text-align: center
+}
+.avatarlist dt {
+	width: 70px; height: 70px
+}
+.avatarlist dl img {
+	width: 64px; height: 64px
+}
+.avatarlist dd {
+	overflow: hidden; line-height: 22px; height: 22px
+}
+.taglist {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 10px; overflow: hidden; width: 100%; padding-top: 10px
+}
+.taglist li {
+	display: inline; float: left; margin: 0px 10px; overflow: hidden; width: 10em; height: 24px
+}
+.taglist li em {
+	font-size: 10px; color: #3b5c7e
+}
+.attriblist  {
+	color: #677079
+}
+.attriblist dt {
+	float: left; margin-right: 10px
+}
+.attriblist .name {
+	font-weight: bold
+}
+.attriblist dd a {
+	color: #666
+}
+.forumlinks {
+	margin: 0px 0px 10px
+}
+#forumlinks {
+	border-right: #b9d3e2 1px solid; border-top: #b9d3e2 1px solid; border-left: #b9d3e2 1px solid; border-bottom: #b9d3e2 1px solid
+}
+#forumlinks td {
+	padding-right: 5px; padding-left: 40px; background: url(../../images/iq_browser/linksite.gif) no-repeat 15px 7px; padding-bottom: 5px; color: #3b5c7e; padding-top: 5px
+}
+#forumlinks td a {
+	margin: 0px 5px 0px 0px
+}
+#forumlinks .forumlink_logo {
+	float: right
+}
+#online {
+	background: url(../../images/iq_browser/member_bg02.gif) repeat-x 0px 2px; color: #71a7c6
+}
+#online h3 {
+	padding-right: 0px; padding-left: 60px; font-weight: normal; background: url(../../images/iq_browser/member_bg01.gif) no-repeat; padding-bottom: 0px; overflow: hidden; line-height: 24px; padding-top: 0px; height: 25px
+}
+#online .headactions {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; padding-top: 0px
+}
+#online .headactions img {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; padding-top: 0px
+}
+#online dl {
+	padding-right: 5px; padding-left: 55px; padding-bottom: 5px; padding-top: 5px
+}
+#onlinelist {
+	border-right: #b9d3e2 1px solid; border-top: #b9d3e2 0px solid; border-left: #b9d3e2 1px solid; border-bottom: #b9d3e2 1px solid
+}
+#online dt {
+	padding-right: 5px; padding-left: 5px; padding-bottom: 5px; padding-top: 5px
+}
+#online dt img {
+	margin-bottom: -3px
+}
+#bdayslist {
+	padding-right: 0px; border-top: #e6e6e2 1px solid; padding-left: 55px; background: url(../../images/iq_browser/bdays_cake.gif) no-repeat 10px 5px; padding-bottom: 10px; padding-top: 10px
+}
+.userlist {
+	padding-right: 5px; padding-left: 5px; padding-bottom: 0px; overflow: hidden; padding-top: 5px
+}
+ html .userlist {
+	height: 1%
+}
+.userlist li {
+	float: left; overflow: hidden; width: 128px; height: 20px
+}
+.userlist li img {
+	vertical-align: middle
+}
+#onlinelist .userlist li {
+	margin: 4px auto; height: auto
+}
+#recommendlist {
+	
+}
+#recommendlist li {
+	background: url(../../images/iq_browser/arrow_right.gif) no-repeat 2px 7px; float: left; overflow: hidden; width: 24.9%; text-indent: 12px; white-space: nowrap
+}
+.rules#recommendlist li {
+	width: 49%
+}
+.recommendrules {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; padding-top: 0px
+}
+#seccode {
+	cursor: pointer
+}
+.autosave {
+	behavior: url(#default#userdata)
+}
+#menu a.notabs {
+	background: none transparent scroll repeat 0% 0%
+}
+.headactions a.notabs {
+	padding-right: 0px; background: none transparent scroll repeat 0% 0%; margin-right: 0px
+}
+.absmiddle {
+	vertical-align: middle
+}
+.login_txt {
+	border-right: #bababa 1px solid; border-top: #bababa 1px solid; font-size: 13px; background: url(../../images/iq_browser/page_bg05.gif) repeat-x; margin: 0px 5px 0px 0px; border-left: #bababa 1px solid; line-height: 20px; border-bottom: #bababa 1px solid; height: 20px
+}
+.login_text {
+	border-right: #bababa 1px solid; border-top: #bababa 1px solid; font-size: 13px; background: url(../../images/iq_browser/page_bg05.gif) repeat-x; border-left: #bababa 1px solid; width: 95%; line-height: 20px; border-bottom: #bababa 1px solid
+}
+.mainbox {
+	margin-bottom: 10px
+}
+.mainbox h1 {
+	padding-left: 1.2em; background: url(../../images/iq_browser/box_tit_bg.gif) repeat-x; color: #3b5c7e; line-height: 25px
+}
+.mainbox h3 {
+	padding-left: 1.2em; background: url(../../images/iq_browser/box_tit_bg.gif) repeat-x; color: #3b5c7e; line-height: 25px
+}
+.mainbox h6 {
+	padding-left: 1.2em; background: url(../../images/iq_browser/box_tit_bg.gif) repeat-x; color: #3b5c7e; line-height: 25px
+}
+.mainbox h1 {
+	border-right: #89bdda 1px solid; border-top: #89bdda 1px solid; border-left: #89bdda 1px solid; border-bottom: #89bdda 1px solid
+}
+.mainbox h3 {
+	border-right: #89bdda 1px solid; border-top: #89bdda 1px solid; border-left: #89bdda 1px solid; border-bottom: #89bdda 1px solid
+}
+.mainbox h6 {
+	border-right: #89bdda 1px solid; border-top: #89bdda 1px solid; border-left: #89bdda 1px solid; border-bottom: #89bdda 1px solid
+}
+.mainbox h1 a {
+	color: #3b5c7e
+}
+.mainbox h3 a {
+	color: #3b5c7e
+}
+.mainbox h1 a:hover {
+	text-decoration: none
+}
+.mainbox h3 a:hover {
+	text-decoration: none
+}
+.mainbox table {
+	border-right: #b9d3e2 1px solid; border-top: #b9d3e2 0px solid; border-left: #b9d3e2 1px solid; width: 100%; border-bottom: #b9d3e2 0px solid
+}
+.forumlist table {
+	border-collapse: separate
+}
+.threadlist table {
+	border-collapse: separate
+}
+.mainbox thead th {
+	padding-right: 5px; padding-left: 0px; padding-bottom: 2px; color: #71a7c6; line-height: 22px; padding-top: 1px
+}
+.mainbox thead td {
+	padding-right: 5px; padding-left: 0px; padding-bottom: 2px; color: #71a7c6; line-height: 22px; padding-top: 1px
+}
+.mainbox thead.category th {
+	background: url(../../images/iq_browser/box_tit_bg01.gif); color: #71a7c6; border-bottom: #b9d3e2 1px solid
+}
+.mainbox thead.category td {
+	background: url(../../images/iq_browser/box_tit_bg01.gif); color: #71a7c6; border-bottom: #b9d3e2 1px solid
+}
+.threadlist thead th {
+	background: url(../../images/iq_browser/box_tit_bg01.gif); color: #71a7c6; border-bottom: #b9d3e2 1px solid
+}
+.threadlist thead td {
+	background: url(../../images/iq_browser/box_tit_bg01.gif); color: #71a7c6; border-bottom: #b9d3e2 1px solid
+}
+.mainbox thead.separation td {
+	background: #f6fafe; color: #71a7c6; border-bottom: #b9d3e2 1px solid
+}
+.forumlist tbody strong {
+	font-weight: bold; color: #3b5c7e
+}
+.threadlist tbody strong {
+	font-weight: bold; color: #3b5c7e
+}
+.formbox tbody strong {
+	font-weight: bold; color: #3b5c7e
+}
+.mainbox tbody h2 {
+	font-size: 14px
+}
+.footoperation {
+	border-right: #b9d3e2 1px solid; padding-right: 5px; border-top: #b9d3e2 0px solid; padding-left: 10px; background: #f6fafe; padding-bottom: 6px; border-left: #b9d3e2 1px solid; padding-top: 5px; border-bottom: #b9d3e2 1px solid
+}
+.threadlist .footoperation {
+	padding-left: 61px
+}
+.footoperation  {
+	vertical-align: middle
+}
+.footoperation label {
+	cursor: pointer; margin-right: 1em
+}
+.footoperation button {
+	border-right: #cccccc 1px solid; padding-right: 8px; border-top: #cccccc 1px solid; display: inline; padding-left: 8px; background: #fff; padding-bottom: 3px; margin-left: 3px; overflow: visible; border-left: #cccccc 1px solid; width: 0px; cursor: pointer; line-height: 1em; padding-top: 1px; border-bottom: #cccccc 1px solid
+}
+unknown {
+	width: auto
+}
+.forumlist tbody th {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 12px; padding-top: 12px; border-bottom: #b9d3e2 1px solid; empty-cells: show
+}
+.forumlist tbody td {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 12px; padding-top: 12px; border-bottom: #b9d3e2 1px solid; empty-cells: show
+}
+.threadlist tbody th {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 12px; padding-top: 12px; border-bottom: #b9d3e2 1px solid; empty-cells: show
+}
+.threadlist tbody td {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 12px; padding-top: 12px; border-bottom: #b9d3e2 1px solid; empty-cells: show
+}
+.forumlist th {
+	text-align: left
+}
+.threadlist th {
+	text-align: left
+}
+.forumlist h2 em {
+	font-size: 12px; color: #878787
+}
+.mainbox .stat_pic {
+	padding-right: 0px; padding-left: 0px; background: url(../../images/iq_browser/default_bg.gif) no-repeat 15px 8px; padding-bottom: 2px; vertical-align: top; width: 100px; padding-top: 8px
+}
+.mainbox .stat_pic img {
+	margin: 0px 0px 0px 20px
+}
+.mainbox .forumlist .new {
+	padding-right: 0px; padding-left: 0px; background: url(../../images/iq_browser/default_bg.gif) no-repeat 15px 8px; padding-bottom: 8px; vertical-align: top; width: 100px; padding-top: 8px
+}
+.mainbox div.bold_pic {
+	padding-right: 0px; padding-left: 2px; padding-bottom: 0px; width: 100px; padding-top: 6px; height: 74px; text-align: center
+}
+.mainbox div.bold_pic img {
+	width: 60px; height: 60px
+}
+.forumlist h2 em {
+	color: #666
+}
+.moderators {
+	color: #999
+}
+.moderators a {
+	color: #999
+}
+.moderators a strong {
+	font-weight: bold; color: #999
+}
+.threadlist th label {
+	float: right
+}
+.threadpages {
+	font-size: 11px; background: url(../../images/iq_browser/multipage.gif) no-repeat 0px 100%; margin-left: 5px; white-space: nowrap
+}
+.threadpages a {
+	padding-left: 8px
+}
+.threadpages a:hover {
+	text-decoration: underline
+}
+.threadlist th a.new {
+	font-size: 9px; text-transform: uppercase; color: #ff3a00; white-space: nowrap
+}
+.threadlist th input {
+	float: left; margin-right: 5px
+}
+.threadlist th em {
+	color: #3b5c7e
+}
+.threadlist th em a {
+	color: #3b5c7e
+}
+.threadlist th img.icon {
+	float: left; margin-left: -22px
+}
+.threadlist th img.attach {
+	margin-bottom: -3px
+}
+.threadlist th img.icon {
+	margin-bottom: -3px
+}
+.threadlist .target {
+	display: block; float: left; margin-left: -28px; overflow: hidden; width: 20px; text-indent: -9999px; height: 20px
+}
+ html .threadlist .target {
+	margin-left: -14px; margin-right: 5px
+}
+.forumlist tbody tr:hover th {
+	background-color: #f6fafe
+}
+.forumlist tbody tr:hover td {
+	background-color: #f6fafe
+}
+.threadlist tbody tr:hover th {
+	background-color: #f6fafe
+}
+.threadlist tbody tr:hover td {
+	background-color: #f6fafe
+}
+.forumlist td.lastpost {
+	padding-right: 10px; padding-left: 15px; padding-bottom: 0px; width: 240px; padding-top: 0px
+}
+.threadlist td.folder {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; width: 40px; padding-top: 0px; text-align: center
+}
+.threadlist td.icon {
+	padding-right: 5px; padding-left: 0px; padding-bottom: 0px; width: 16px; padding-top: 0px; text-align: center
+}
+.mainbox td.icon {
+	padding-right: 5px; padding-left: 0px; padding-bottom: 0px; width: 16px; padding-top: 0px; text-align: center
+}
+.threadlist td.author {
+	padding-right: 0px; padding-left: 12px; padding-bottom: 0px; width: 120px; line-height: 14px; padding-top: 0px
+}
+.threadlist td.lastpost {
+	padding-right: 10px; padding-left: 12px; padding-bottom: 0px; width: 120px; line-height: 14px; padding-top: 0px; text-align: left
+}
+.threadlist td.lastpost cite a {
+	color: #3b5c7e
+}
+.forumlist cite {
+	display: block
+}
+.threadlist cite {
+	display: block
+}
+.threadlist td.author em {
+	font-size: 9px; color: #878787
+}
+.threadlist td.lastpost em {
+	font-size: 9px; color: #878787
+}
+label.highlight {
+	width: 40px; margin-right: 30px
+}
+label.highlight {
+	float: left
+}
+label.highlight input {
+	float: left
+}
+label.highlight em {
+	float: right; width: 16px; height: 16px
+}
+.quickmanage label.highlight {
+	margin: 3px 18px 3px 0px; width: 40px
+}
+#updatecircles th {
+	background-image: none
+}
+#updatecircles .circlelogo {
+	margin-top: 10px; float: left; margin-left: -40px; ; width: expression(this.width > 32 && this.height < this.width ? 32:true); ; height: expression(this.height > 32 ? 32:true); max-height: 32px; max-width: 32px
+}
+.viewthread {
+	padding-bottom: 1px
+}
+.viewthread .headactions {
+	padding-right: 8px; padding-left: 0px; padding-bottom: 0px; padding-top: 4px
+}
+.viewthread h1 {
+	border-bottom-width: 0px
+}
+.viewthread table {
+	border-right: #b9d3e2 1px solid; table-layout: fixed; border-top: #b9d3e2 1px solid; border-left: #b9d3e2 1px solid; border-bottom: #b9d3e2 1px solid
+}
+#pmprompt table {
+	border-right: #b9d3e2 1px solid; table-layout: fixed; border-top: #b9d3e2 1px solid; border-left: #b9d3e2 1px solid; border-bottom: #b9d3e2 1px solid
+}
+#specialpost {
+	border-right: #b9d3e2 1px solid; table-layout: fixed; border-top: #b9d3e2 1px solid; border-left: #b9d3e2 1px solid; border-bottom: #b9d3e2 1px solid
+}
+#newpost {
+	border-right: #b9d3e2 1px solid; table-layout: fixed; border-top: #b9d3e2 1px solid; border-left: #b9d3e2 1px solid; border-bottom: #b9d3e2 1px solid
+}
+#editpost {
+	border-right: #b9d3e2 1px solid; table-layout: fixed; border-top: #b9d3e2 1px solid; border-left: #b9d3e2 1px solid; border-bottom: #b9d3e2 1px solid
+}
+.viewthread ins {
+	display: block; background: #f9f9f9; margin-bottom: 1px; line-height: 26px; text-align: center; text-decoration: none
+}
+.mainbox ins {
+	display: block; background: #f9f9f9; margin-bottom: 1px; line-height: 26px; text-align: center; text-decoration: none
+}
+ins.logininfo {
+	padding-right: 5px; padding-left: 5px; background: #80a400; padding-bottom: 2px; color: #999; border-top-style: none; line-height: 22px; padding-top: 2px; border-right-style: none; border-left-style: none; text-align: left; border-bottom-style: none
+}
+.viewthread ins {
+	color: #ff3a00
+}
+.viewthread ins a {
+	color: #ff3a00
+}
+.viewthread td.postcontent {
+	vertical-align: top; overflow: hidden; border-top-style: none; border-right-style: none; border-left-style: none; border-bottom-style: none
+}
+.viewthread td.postauthor {
+	vertical-align: top; overflow: hidden; border-top-style: none; border-right-style: none; border-left-style: none; border-bottom-style: none
+}
+.postinfo {
+	padding-right: 8px; padding-left: 8px; background: #f6fafe; padding-bottom: 0px; overflow: hidden; color: #71a7c6; line-height: 26px; padding-top: 0px; border-bottom: #b9d3e2 1px solid; height: 26px
+}
+.postinfo strong {
+	border-right: #8fc0dc 1px solid; padding-right: 3px; border-top: #8fc0dc 1px solid; display: block; padding-left: 3px; font-weight: normal; font-size: 9px; background: #f6fafe; float: right; padding-bottom: 0px; margin: 5px 0px 0px; border-left: #8fc0dc 1px solid; cursor: pointer; color: #3b5c7e; line-height: 15px! important; padding-top: 0px; border-bottom: #8fc0dc 1px solid
+}
+.postinfo strong sup {
+	font-weight: normal; margin-left: 1px; color: #3b5c7e
+}
+.postinfo a {
+	color: #666
+}
+.postinfo label {
+	cursor: pointer; color: #ff3a00
+}
+.postmessage {
+	padding-right: 10px; padding-left: 10px; overflow-x: hidden; padding-bottom: 10px; padding-top: 10px
+}
+.postmessage  {
+	line-height: normal
+}
+.pmmessage  {
+	line-height: normal
+}
+.register  {
+	line-height: normal
+}
+.defaultpost {
+	height: auto! important
+}
+.postmessage h2 {
+	margin-bottom: 0.5em
+}
+.t_msgfont {
+	padding-right: 10px; padding-left: 10px; padding-bottom: 20px; line-height: 1.8em; padding-top: 10px
+}
+.t_msgfont td {
+	padding-right: 10px; padding-left: 10px; padding-bottom: 20px; line-height: 1.8em; padding-top: 10px
+}
+.t_smallfont {
+	font-size: 12px; line-height: 1.6em
+}
+.t_smallfont td {
+	font-size: 12px; line-height: 1.6em
+}
+.t_bigfont {
+	font-size: 16px; line-height: 1.6em
+}
+.t_bigfont td {
+	font-size: 16px; line-height: 1.6em
+}
+.t_msgfont  {
+	line-height: normal
+}
+.t_smallfont  {
+	line-height: normal
+}
+.t_bigfont  {
+	line-height: normal
+}
+.postratings {
+	float: right
+}
+.signatures {
+	background: url(../../images/iq_browser/sigline.gif) no-repeat 0px 0px; margin: 10px; overflow: hidden; color: #999; line-height: 1.6em; padding-top: 20px; ; height: expression(signature(this))
+}
+.signatures img {
+	margin: 4px 0px
+}
+.signatures  {
+	line-height: normal
+}
+.signatures strong {
+	font-weight: bold
+}
+.postactions {
+	padding-right: 10px; border-top: #ccc 1px solid; padding-left: 10px; background: #f6fafe; padding-bottom: 0px; line-height: 28px; padding-top: 0px; height: 28px
+}
+.postactions strong {
+	cursor: pointer
+}
+.postactions input {
+	float: right; margin: 5px 0px 0px 5px
+}
+.postactions p {
+	padding-right: 0px; padding-left: 0px; float: right; padding-bottom: 0px; padding-top: 6px
+}
+.postmessage .box {
+	border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; margin: 5px 0px; border-right-width: 0px
+}
+.postmessage .typeoption {
+	width: 500px
+}
+.typeoption tbody th {
+	width: 100px
+}
+.typeoption tbody td {
+	border-top-width: 0px; border-bottom: #e6e6e2 1px dashed
+}
+.typeoption tbody th {
+	border-top-width: 0px; border-bottom: #e6e6e2 1px dashed
+}
+.postmessage .box tbody th {
+	border-top-color: #e6e6e2
+}
+.postmessage .box tbody td {
+	border-top-color: #e6e6e2
+}
+.postmessage fieldset {
+	border-right: #b9d3e2 1px solid; padding-right: 10px; border-top: #b9d3e2 1px solid; padding-left: 10px; font-size: 12px; background: #ffffff; padding-bottom: 10px; margin: 2em 0px 0px 10px; border-left: #b9d3e2 1px solid; width: 500px; padding-top: 10px; border-bottom: #b9d3e2 1px solid
+}
+.postmessage fieldset li {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; color: #3b5c7e; line-height: 1.6em; padding-top: 4px
+}
+.postmessage fieldset li cite {
+	margin: auto 10px
+}
+.postmessage fieldset li em {
+	margin: auto 10px
+}
+.t_msgfont li {
+	margin-left: 2em
+}
+.t_bigfont li {
+	margin-left: 2em
+}
+.t_smallfont li {
+	margin-left: 2em
+}
+.faq li {
+	margin-left: 2em
+}
+.faq {
+	margin: 0px 0px 10px
+}
+.faq .postcontent {
+	border-right: #e2e2e2 1px solid
+}
+.postattach {
+	margin: 10px 0px; width: 500px
+}
+.postattachlist {
+	margin-top: 2em; font-size: 12px; width: 500px
+}
+.t_attach {
+	border-right: #e6e6e2 1px solid; padding-right: 5px; border-top: #e6e6e2 1px solid; padding-left: 5px; font-size: 12px; background: #fff; padding-bottom: 5px; border-left: #e6e6e2 1px solid; padding-top: 5px; border-bottom: #e6e6e2 1px solid
+}
+.t_attach em {
+	color: #3b5c7e
+}
+.t_attachlist {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 5px; padding-top: 5px; border-bottom: #e6e6e2 1px dashed
+}
+.t_attachlist dt {
+	font-weight: bold
+}
+.t_attachlist dt img {
+	margin-bottom: -4px
+}
+.t_attachlist dd {
+	padding-left: 20px; color: #3b5c7e
+}
+.t_attachinsert {
+	font-size: 12px; margin: 1em 0px
+}
+.t_attachinsert p img {
+	margin-bottom: -4px
+}
+.t_table {
+	border-collapse: collapse; empty-cells: show
+}
+.t_table td {
+	padding-right: 4px; padding-left: 4px; padding-bottom: 4px; overflow: hidden; padding-top: 4px
+}
+.quote {
+	border-right: #b9d3e2 1px solid; border-top: #b9d3e2 3px solid; margin: 10px 0px; border-left: #b9d3e2 1px solid; width: 95%; border-bottom: #b9d3e2 1px solid; text-align: left
+}
+.quote h5 {
+	padding-right: 0px; padding-left: 10px; background: #fbfdff; padding-bottom: 0px; line-height: 26px; padding-top: 0px; border-bottom: #b9d3e2 1px solid
+}
+.blockcode code {
+	margin: 1em 1em 1em 3em; line-height: 1.6em
+}
+.quote blockquote {
+	margin: 1em 1em 1em 3em; line-height: 1.6em
+}
+.blockcode code {
+	padding-right: 5px; display: block; padding-left: 5px; padding-bottom: 5px; font: 14px/1.4em "courier new", courier, monospace; padding-top: 5px
+}
+.blockcode .headactions {
+	font-size: 12px; cursor: pointer; color: #999; padding-top: 5px
+}
+p.posttags {
+	margin: 2em 0em 0.5em
+}
+p.posttags a {
+	font-weight: bold
+}
+.footoperation span.posttags a {
+	font-weight: bold
+}
+.postmessage strong {
+	font-weight: bold
+}
+.postmessage em {
+	color: #999
+}
+.postmessage span.t_tag {
+	cursor: pointer; border-bottom: #999 1px solid; white-space: nowrap
+}
+.mainbox td.postauthor {
+	border-right: #e2e2e2 1px solid; padding-right: 0px; padding-left: 0px; background: #f9f9f9; padding-bottom: 15px; overflow: hidden; width: 180px; padding-top: 0px
+}
+.postauthor cite {
+	display: block; font-weight: bold; background: #f6fafe; border-bottom: #b9d3e2 1px solid; text-align: center
+}
+.postauthor cite a {
+	overflow: hidden; line-height: 26px; height: 26px
+}
+#avatar {
+	display: block; background: url(../../images/iq_browser/default_bg.gif) no-repeat 0px 0px; margin: 10px auto 0px; overflow: hidden; width: 74px; line-height: 74px; position: relative; height: 74px; text-align: center
+}
+div.avatar {
+	vertical-align: middle; position: absolute; top: 50%
+}
+div.avatar img {
+	left: -50%; vertical-align: middle; position: relative; top: -51%
+}
+.postauthor .post_level {
+	background: url(../../images/iq_browser/postauthor_bg.gif) no-repeat center 0px; color: #999; line-height: 21px; height: 25px
+}
+.postauthor .post_level_img {
+	background: url(../../images/iq_browser/icon_dot_grey.gif) repeat-x 0px 24px; margin: 0px auto; width: 92%; height: 25px
+}
+.postauthor .post_level_img img {
+	margin: 0px 1px
+}
+.postauthor dl {
+	background: url(../../images/iq_browser/icon_dot_grey.gif) repeat-x 50% bottom
+}
+.postauthor dt {
+	padding-right: 0px; padding-left: 16px; background: url(../../images/iq_browser/postauthor_ico.gif) no-repeat 0px 5px; float: left; padding-bottom: 0px; color: #999; margin-right: 0.5em; padding-top: 0px
+}
+.postauthor dd {
+	line-height: 1.6em; height: 1.6em
+}
+.postauthor dt {
+	line-height: 1.6em; height: 1.6em
+}
+.postauthor dd {
+	overflow: hidden; color: #999
+}
+.postauthor dd a {
+	overflow: hidden; color: #999
+}
+.postauthor p {
+	text-align: center
+}
+.postauthor p.customstatus {
+	color: #999
+}
+.postauthor ul {
+	margin: 5px 10px; overflow: hidden; line-height: 1.6em
+}
+.postauthor li {
+	background-position: 0px 50%; float: left; overflow: hidden; width: 49.5%; text-indent: 22px; background-repeat: no-repeat; height: 1.6em
+}
+.postauthor li.pm {
+	background-image: url(../../images/iq_browser/buddy_sendpm.gif)
+}
+.postauthor li.buddy {
+	background-image: url(../../images/iq_browser/user_add.gif)
+}
+.postauthor li.space {
+	background-image: url(../../images/iq_browser/forumlink.gif)
+}
+.postauthor li.online {
+	background-image: url(../../images/iq_browser/user_online.gif); color: #ff3a00
+}
+.postauthor li.offline {
+	background-image: url(../../images/iq_browser/user_offline.gif); color: #999
+}
+.postauthor li.magic {
+	background-image: url(../../images/iq_browser/magic.gif)
+}
+.postauthor .post_medals {
+	padding-right: 0px; padding-left: 0px; background: url(../../images/iq_browser/icon_dot_grey.gif) repeat-x 50% top; padding-bottom: 0px; margin: 0px 10px; padding-top: 8px
+}
+.postauthor dl.profile {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 8px; margin: 5px 10px; padding-top: 5px
+}
+.postauthor div.bio {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 8px; margin: 5px 10px; padding-top: 5px
+}
+.box h4 {
+	padding-left: 1.2em; background: url(../../images/iq_browser/box_tit_bg.gif) repeat-x; color: #3b5c7e; line-height: 25px; border-bottom: #b9d3e2 1px solid
+}
+.box table {
+	width: 100%
+}
+.box .box li {
+	list-style-type: none
+}
+.postattachlist h4 {
+	border-top: #fafaf7 1px solid
+}
+.tradethumblist h4 {
+	border-top: #fafaf7 1px solid
+}
+.pollpanel h4 {
+	border-top: #fafaf7 1px solid
+}
+.activitythread h4 {
+	border-top: #fafaf7 1px solid
+}
+.typeoption h4 {
+	border-top: #fafaf7 1px solid
+}
+#pmprompt {
+	margin: 0px 0px 10px
+}
+#pmprompt .headactions {
+	padding-right: 8px; padding-left: 0px; padding-bottom: 0px; padding-top: 4px
+}
+#pmprompt h4 {
+	border-right: #b9d3e2 1px solid; border-top: #b9d3e2 1px solid; background: #f6fafe; border-left: #b9d3e2 1px solid; border-bottom: #b9d3e2 0px solid
+}
+td.user {
+	width: 120px
+}
+td.nums {
+	width: 80px; text-align: center
+}
+td.time {
+	width: 120px
+}
+td.selector {
+	width: 20px; text-align: center
+}
+.specialthread table table {
+	border-top-width: 0px; border-right: #e2e2e2 1px solid; border-left-width: 0px; border-bottom-width: 0px
+}
+.specialthread thead th {
+	padding-right: 0px; padding-left: 8px; background: url(../../images/iq_browser/box_tit_bg01.gif); padding-bottom: 0px; color: #71a7c6; padding-top: 0px; border-bottom: #b9d3e2 1px solid
+}
+.specialthread thead td {
+	padding-right: 0px; padding-left: 8px; background: url(../../images/iq_browser/box_tit_bg01.gif); padding-bottom: 0px; color: #71a7c6; padding-top: 0px; border-bottom: #b9d3e2 1px solid
+}
+.specialthread .postcontent tbody th {
+	padding-right: 0px; padding-left: 8px; padding-bottom: 6px; padding-top: 6px; border-bottom: #b9d3e2 1px solid; empty-cells: show
+}
+.specialthread .postcontent tbody td {
+	padding-right: 0px; padding-left: 8px; padding-bottom: 6px; padding-top: 6px; border-bottom: #b9d3e2 1px solid; empty-cells: show
+}
+.specialthread h1 {
+	border-top-width: 0px; border-right: #e2e2e2 1px solid; padding-right: 5px; padding-left: 12px; border-left-width: 0px; font-size: 1.3em; background: #fff; padding-bottom: 8px; color: #677079; padding-top: 8px; border-bottom: #b9d3e2 1px solid
+}
+.specialthread h1 a {
+	color: #666
+}
+.specialthread .postcontent label {
+	padding-right: 5px; display: inline; padding-left: 5px; float: right; padding-bottom: 3px; margin: 12px 12px 0px; padding-top: 3px
+}
+.specialthread .postcontent label strong {
+	color: #ff3a00
+}
+.specialthread .postcontent label a {
+	color: #666
+}
+.specialthread .postauthor {
+	width: 180px
+}
+.specialpostcontainer {
+	padding-right: 1px; padding-left: 1px; padding-bottom: 0px; padding-top: 0px
+}
+.specialpost {
+	text-align: right
+}
+.specialpost .postinfo h2 {
+	padding-left: 8px; font-weight: normal; font-size: 11px; float: left
+}
+.specialpost .postinfo {
+	background: #f1f4f7; border-bottom: #f5f9fd 1px solid
+}
+.specialpost strong {
+	border-top-style: none; border-right-style: none; border-left-style: none; border-bottom-style: none
+}
+.specialpost .postinfo h2 a {
+	font-size: 12px
+}
+.specialpost .postmessage {
+	min-height: 30px; text-align: left
+}
+ html .specialpost .postmessage {
+	overflow: visible; height: 30px
+}
+.post_thread_review h4 {
+	border-right: #ccc 1px solid; border-top: #ccc 1px solid; border-left: #ccc 1px solid; border-bottom: #ccc 1px solid
+}
+p.imicons {
+	margin: 8px auto; width: 160px
+}
+.pollpanel table {
+	border-bottom-width: 0px
+}
+.pollpanel {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 10px; padding-top: 20px
+}
+.pollpanel h4 {
+	border-right: #89bdda 1px solid; border-top: #89bdda 1px solid; border-left: #89bdda 1px solid; border-bottom: #89bdda 0px solid; height: 24px
+}
+.pollpanel h4 span {
+	float: left; line-height: 24px
+}
+.pollpanel h4 p {
+	padding-right: 12px; padding-left: 0px; font-weight: normal; float: right; padding-bottom: 0px; padding-top: 4px
+}
+.pollpanel tbody td {
+	padding-right: 0px; padding-left: 12px; padding-bottom: 8px; padding-top: 8px; border-bottom: #b9d3e2 1px solid; empty-cells: show
+}
+.optionbar {
+	border-right: #89bdda 1px solid; border-top: #89bdda 1px solid; background: url(../../images/iq_browser/poll_bg.gif) repeat-x; float: left; border-left: #89bdda 1px solid; margin-right: 0.5em; border-bottom: #89bdda 1px solid; height: 12px
+}
+.optionbar div {
+	border-right: #fff 1px solid; border-top: #fff 1px solid; float: left; overflow: hidden; border-left: #fff 1px solid; border-bottom: #fff 1px solid; height: 10px
+}
+.rewardthread .postcontent label {
+	padding-left: 25px; background-image: url(../../images/iq_browser/rewardsmallend.gif)
+}
+.rewardthread .postcontent label.unsolved {
+	float: right; background-image: url(../../images/iq_browser/rewardsmall.gif)
+}
+#bestpost {
+	margin-top: 10px; padding-top: 10px
+}
+.activitythread .box th {
+	width: 7em
+}
+#activityjoin label {
+	padding-right: 0px; padding-left: 0px; background: none transparent scroll repeat 0% 0%; float: none; padding-bottom: 0px; margin: 0px; border-top-style: none; padding-top: 0px; border-right-style: none; border-left-style: none; border-bottom-style: none
+}
+.tradethread .postmessage {
+	min-height: 160px
+}
+ html .tradethread .postmessage {
+	height: 360px! important
+}
+.tradethread .postauthor dt {
+	overflow: hidden; height: 20px
+}
+.tradethread .postauthor dd {
+	overflow: hidden; height: 20px
+}
+unknown {
+	overflow: hidden
+}
+ html .tradeinfo {
+	height: 1%
+}
+.tradeinfo h1 {
+	padding-right: 5px; padding-left: 5px; font-size: 1.5em; background: #f5f5f0; margin-bottom: 1em; padding-bottom: 10px; color: #677079; padding-top: 10px; border-bottom: #e6e6e2 1px solid
+}
+.tradethumb {
+	float: left
+}
+.tradeattribute {
+	float: left
+}
+.tradethumb {
+	width: 260px; text-align: center
+}
+.tradeattribute {
+	padding-left: 1em
+}
+.tradeattribute img {
+	vertical-align: middle
+}
+.tradeattribute dl {
+	padding-bottom: 2em! important; overflow: hidden
+}
+.tradeattribute dt {
+	clear: left; padding-right: 0.5em; padding-left: 0.5em; float: left; padding-bottom: 0.5em; width: 5em; line-height: 2em; padding-top: 0.5em
+}
+.tradeattribute dd {
+	padding-right: 1.5em; padding-left: 1.5em; padding-bottom: 0.5em; line-height: 2em; padding-top: 0.5em; border-bottom: #e6e6e2 1px dotted
+}
+.tradeattribute em {
+	color: #3b5c7e
+}
+.tradeattribute del {
+	color: #3b5c7e
+}
+.tradeattribute strong {
+	font-weight: bold; font-size: 1.6em; color: #f00
+}
+.sellerinfo {
+	display: inline; float: right; width: 180px; margin-right: 1em
+}
+.sellerinfo h4 {
+	border-bottom: #e6e6e2 1px dotted
+}
+.sellerinfo dl {
+	margin: 1em
+}
+.tradeinfo .postinfo {
+	clear: both
+}
+.tradeinfo .postmessage {
+	min-height: 100px
+}
+ html .tradethread .postmessage {
+	height: 100px
+}
+unknown {
+	overflow: hidden
+}
+ html .tradethumblist {
+	height: 1%
+}
+.tradethumblist dl {
+	padding-right: 10px; padding-left: 10px; float: left; padding-bottom: 10px; width: 150px; padding-top: 10px; height: 200px; text-align: center
+}
+.tradethumblist dd.thumblist {
+	overflow: hidden; height: 100px
+}
+.tradethumblist dd img {
+	vertical-align: middle; cursor: pointer
+}
+.tradethumblist dl p {
+	overflow: hidden; height: 1.6em
+}
+.tradethumblist p.tradename {
+	margin-top: 5px; line-height: 18px; height: 45px
+}
+.tradethumblist del {
+	color: #3b5c7e
+}
+.tradethumblist strong {
+	font-weight: bold; color: #f00
+}
+#ajaxtradelist .price {
+	text-align: right
+}
+#ajaxtradelist strong {
+	font-weight: bold; color: #f00
+}
+#ajaxtradelist .popupmenu_popup {
+	overflow: visible; white-space: nowrap
+}
+#ajaxtradelist .popupmenu_popup a {
+	color: #666
+}
+.debatethread .postmessage {
+	height: auto
+}
+.debatethread .box {
+	margin: 0px
+}
+.debatethread .debatepoints {
+	border-top: 1px; border-left-width: 0px; border-bottom-width: 0px; margin-bottom: 10px; padding-bottom: 0px; border-right-width: 0px
+}
+.debatepoints tbody td {
+	border-top-width: 0px; border-left-width: 0px; vertical-align: top; width: 50%; border-bottom: 0px; border-right-width: 0px
+}
+.debatepoints .message td.stand1 {
+	border-right: #e6e6e2 1px solid; border-top: #e6e6e2 1px solid; background: #d9d9d4; border-left: #e6e6e2 1px solid; border-bottom: #e6e6e2 1px
+}
+.debatepoints .message td.stand2 {
+	border-right: #fafaf7 1px solid; border-top: #fafaf7 1px solid; border-left: #fafaf7 1px solid; border-bottom: #fafaf7 1px
+}
+.debatepoints .button td.stand1 {
+	border-right: #e6e6e2 1px solid; border-top: #e6e6e2 1px; background: #d9d9d4; border-left: #e6e6e2 1px solid; border-bottom: #e6e6e2 1px solid
+}
+.debatepoints .button td.stand2 {
+	border-right: #fafaf7 1px solid; border-top: #fafaf7 1px; border-left: #fafaf7 1px solid; border-bottom: #fafaf7 1px solid
+}
+.debatepoints h2 {
+	background-position: 5px 1px; padding-left: 40px; line-height: 2em; background-repeat: no-repeat
+}
+.stand1 h2 {
+	background-image: url(../../images/iq_browser/debate_stand_1.gif)
+}
+.stand2 h2 {
+	background-image: url(../../images/iq_browser/debate_stand_2.gif)
+}
+.poststand0 {
+	border-right: #e6e6e2 1px solid; border-top: #e6e6e2 1px solid; display: block; font-size: 1.17em; background: #f9f9f9; float: left; border-left: #e6e6e2 1px solid; width: 40px; color: #3b5c7e; line-height: 22px; margin-right: 12px; border-bottom: #e6e6e2 1px solid; height: 22px; text-align: center
+}
+.poststand1 {
+	border-right: #e6e6e2 1px solid; border-top: #e6e6e2 1px solid; display: block; font-size: 1.17em; background: #f9f9f9; float: left; border-left: #e6e6e2 1px solid; width: 40px; color: #3b5c7e; line-height: 22px; margin-right: 12px; border-bottom: #e6e6e2 1px solid; height: 22px; text-align: center
+}
+.poststand2 {
+	border-right: #e6e6e2 1px solid; border-top: #e6e6e2 1px solid; display: block; font-size: 1.17em; background: #f9f9f9; float: left; border-left: #e6e6e2 1px solid; width: 40px; color: #3b5c7e; line-height: 22px; margin-right: 12px; border-bottom: #e6e6e2 1px solid; height: 22px; text-align: center
+}
+.poststand1 {
+	border-right: #e6e6e2 1px solid; border-top: #e6e6e2 1px solid; background: #d9d9d4; border-left: #e6e6e2 1px solid; color: #ff3a00; border-bottom: #e6e6e2 1px solid
+}
+.poststand2 {
+	border-right: #fafaf7 1px solid; border-top: #fafaf7 1px solid; border-left: #fafaf7 1px solid; color: #666; border-bottom: #fafaf7 1px solid
+}
+.debatepoints p {
+	padding-right: 10px; padding-left: 10px; padding-bottom: 0px; overflow: hidden; padding-top: 0px
+}
+.debatepoints a {
+	border-right: 1px solid; padding-right: 1em; border-top: 1px solid; display: block; padding-left: 1em; padding-bottom: 0.3em; margin: 0px auto; border-left: 1px solid; width: 80px; padding-top: 0.3em; border-bottom: 1px solid; text-align: center
+}
+.debatepoints #affirmbutton {
+	border-left-color: #e6e6e2; background: #d9d9d4; border-bottom-color: #e6e6e2; color: #ff3a00; border-top-color: #e6e6e2; border-right-color: #e6e6e2
+}
+.debatepoints #negabutton {
+	border-left-color: #fafaf7; border-bottom-color: #fafaf7; color: #666; border-top-color: #fafaf7; border-right-color: #fafaf7
+}
+.debatethread .optionbar div {
+	float: none
+}
+.payinfo dt {
+	padding-right: 0.5em; padding-left: 0.5em; float: left; padding-bottom: 0.5em; width: 10em; padding-top: 0.5em
+}
+.container {
+	overflow: hidden; width: 100%
+}
+.content {
+	float: right; width: 80%
+}
+.content .mainbox {
+	padding-bottom: 5px
+}
+.content .footoperation {
+	border-top-style: none; border-bottom: #b9d3e2 1px solid
+}
+.content .mainbox thead th {
+	border-top-style: none; border-bottom: #b9d3e2 1px solid
+}
+.content .mainbox thead td {
+	border-top-style: none; border-bottom: #b9d3e2 1px solid
+}
+.content .mainbox tbody th {
+	border-top-style: none; border-bottom: #b9d3e2 1px solid
+}
+.content .mainbox thead th {
+	padding-right: 5px; padding-left: 10px; background: url(../../images/iq_browser/box_tit_bg01.gif); padding-bottom: 2px; padding-top: 1px; border-bottom: #b9d3e2 1px solid
+}
+.content .mainbox thead td {
+	padding-right: 5px; padding-left: 10px; background: url(../../images/iq_browser/box_tit_bg01.gif); padding-bottom: 2px; padding-top: 1px; border-bottom: #b9d3e2 1px solid
+}
+.member thead th {
+	padding-right: 5px; padding-left: 10px; background: url(../../images/iq_browser/box_tit_bg01.gif); padding-bottom: 2px; padding-top: 1px; border-bottom: #b9d3e2 1px solid
+}
+.member thead td {
+	padding-right: 5px; padding-left: 10px; background: url(../../images/iq_browser/box_tit_bg01.gif); padding-bottom: 2px; padding-top: 1px; border-bottom: #b9d3e2 1px solid
+}
+.member thead a {
+	color: #71a7c6
+}
+.content .mainbox tbody th {
+	padding-right: 0px; padding-left: 10px; padding-bottom: 12px; padding-top: 12px; border-bottom: #b9d3e2 1px solid; empty-cells: show
+}
+.content .mainbox tbody td {
+	padding-right: 0px; padding-left: 10px; padding-bottom: 12px; padding-top: 12px; border-bottom: #b9d3e2 1px solid; empty-cells: show
+}
+.member tbody th {
+	padding-right: 0px; padding-left: 10px; padding-bottom: 12px; padding-top: 12px; border-bottom: #b9d3e2 1px solid; empty-cells: show
+}
+.member tbody td {
+	padding-right: 0px; padding-left: 10px; padding-bottom: 12px; padding-top: 12px; border-bottom: #b9d3e2 1px solid; empty-cells: show
+}
+.side {
+	float: left; width: 18%
+}
+.side div {
+	margin-bottom: 6px
+}
+.side h2 {
+	border-right: #90c0db 1px solid; padding-right: 0px; border-top: #90c0db 1px solid; padding-left: 12px; background: url(../../images/iq_browser/box_tit_bg.gif) repeat-x; padding-bottom: 0px; border-left: #90c0db 1px solid; color: #3b5c7e; line-height: 26px; padding-top: 0px; border-bottom: #90c0db 1px solid; height: 26px
+}
+.side h3 {
+	border-right: #90c0db 1px solid; border-top: #90c0db 1px solid; background: url(../../images/iq_browser/box_tit_bg.gif) repeat-x; margin: 8px 0px 0px; border-left: #90c0db 1px solid; color: #3b5c7e; line-height: 26px; border-bottom: #90c0db 1px solid; height: 26px
+}
+.side h3 a {
+	display: block; background: url(../../images/iq_browser/collapsed_yes.gif) no-repeat 94% 0px; margin: 0px 0px 0px 12px
+}
+.side h3 a:hover {
+	text-decoration: none
+}
+.side_on {
+	background: url(../../images/iq_browser/box_tit_bg.gif) repeat-x
+}
+.side_on h3 {
+	padding-right: 0px; padding-left: 12px; background: url(../../images/iq_browser/collapsed_no.gif) no-repeat 94% 0px; padding-bottom: 0px; margin: 8px 0px 0px; overflow: hidden; line-height: 25px; padding-top: 0px; height: 25px
+}
+.side .first h3 {
+	margin: 0px
+}
+.side .first h3 a {
+	background: none transparent scroll repeat 0% 0%
+}
+.side li ul {
+	border-right: #90c0db 1px solid; border-left: #90c0db 1px solid
+}
+.side li li {
+	line-height: 2.2em; border-bottom: #98c4de 1px solid
+}
+.side li li a {
+	border-top: #f4f9ff 1px solid; display: block; padding-left: 24px; color: #666
+}
+.side li li a:hover {
+	border-top: #ecf1f7 1px solid; background: #f4f9ff; color: #3b5c7e; text-decoration: none
+}
+.side li.current {
+	background: #f4f9ff
+}
+.side li.current a {
+	border-top: #ecf1f7 1px solid; color: #3b5c7e
+}
+.side li.last ul {
+	border-bottom-style: none
+}
+.property ul {
+	border-right: #90c0db 1px solid; margin: 0px 0px 8px; border-left: #90c0db 1px solid
+}
+.property li {
+	line-height: 2.2em; border-bottom: #98c4de 1px solid
+}
+.property li a {
+	border-top: #f4f9ff 1px solid; display: block; padding-left: 24px; color: #666
+}
+.property li a:hover {
+	border-top: #ecf1f7 1px solid; background: #f4f9ff; color: #3b5c7e; text-decoration: none
+}
+.property .other li {
+	padding-right: 0px; padding-left: 24px; padding-bottom: 0px; padding-top: 0px
+}
+.credits_info ul {
+	border-right: #90c0db 1px solid; border-left: #90c0db 1px solid
+}
+.credits_info li {
+	padding-right: 0px; padding-left: 24px; padding-bottom: 0px; line-height: 2.2em; padding-top: 0px; border-bottom: #98c4de 1px solid
+}
+.portalbox {
+	border-right: #d6e3eb 0px solid; border-top: #d6e3eb 1px solid; margin-bottom: 10px; border-left: #d6e3eb 1px solid; width: 100%; border-bottom: #d6e3eb 1px solid
+}
+.portalbox td {
+	border-right: #d6e3eb 1px solid; padding-right: 8px; padding-left: 8px; background: url(../../images/iq_browser/portalbox_bg.gif) repeat-x; padding-bottom: 8px; vertical-align: top; line-height: 20px; padding-top: 8px
+}
+.portalbox h3 {
+	font-size: 14px; margin: 0px 0px 5px; color: #333; white-space: nowrap
+}
+.portalbox strong {
+	margin-top: 4px; font-weight: bold
+}
+#memberinfo {
+	border-right: #b9d3e2 1px solid; border-top: #b9d3e2 1px solid; background: url(../../images/iq_browser/mecp_bg.gif) repeat-x; border-left: #b9d3e2 1px solid; border-bottom: #b9d3e2 1px solid
+}
+#memberinfo .memberinfo_avatar {
+	font-weight: bold; width: 120px; text-align: center
+}
+#memberinfo .memberinfo_avatar p {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; padding-top: 5px
+}
+#memberinfo li label {
+	color: #3b5c7e; margin-right: 0.5em
+}
+#memberinfo .memberinfo_forum {
+	text-align: left
+}
+#memberinfo .memberinfo_forum li {
+	text-align: left
+}
+.mysearch {
+	margin-top: -10px; display: block; float: left; margin-left: 10px
+}
+.dropmenu {
+	padding-right: 15px! important; background-position: 100% 50%; background-image: url(../../images/iq_browser/arrow_down.gif)! important; cursor: pointer; background-repeat: no-repeat! important
+}
+#menu .dropmenu {
+	padding-right: 10px! important; background-position: 98% 50%
+}
+.popupmenu_popup {
+	border-right: #b9d3e2 1px solid; padding-right: 8px; border-top: #b9d3e2 1px solid; padding-left: 8px; background: #fff; padding-bottom: 8px; overflow: hidden; border-left: #b9d3e2 1px solid; line-height: 1.4em; padding-top: 8px; border-bottom: #b9d3e2 1px solid; text-align: left
+}
+.headermenu_popup {
+	width: 170px
+}
+.headermenu_popup li {
+	float: left; overflow: hidden; width: 7em; line-height: 24px; border-bottom: #ccc 1px dashed; height: 24px
+}
+.newspecialmenu {
+	width: 100px
+}
+.newspecialmenu li {
+	background: url(../../images/iq_browser/folder_s.gif) no-repeat 3px 50%; float: left
+}
+.newspecialmenu li.poll {
+	background-image: url(../../images/iq_browser/pollsmall.gif)
+}
+.newspecialmenu li.trade {
+	background-image: url(../../images/iq_browser/tradesmall.gif)
+}
+.newspecialmenu li.reward {
+	background-image: url(../../images/iq_browser/rewardsmall.gif)
+}
+.newspecialmenu li.activity {
+	background-image: url(../../images/iq_browser/activitysmall.gif)
+}
+.newspecialmenu li.debate {
+	background-image: url(../../images/iq_browser/debatesmall.gif)
+}
+.newspecialmenu li.video {
+	background-image: url(../../images/iq_browser/videosmall.gif)
+}
+.newspecialmenu a {
+	padding-right: 0px; padding-left: 25px; float: left; padding-bottom: 5px; width: 75px; padding-top: 5px; border-bottom: #e6e6e2 1px solid
+}
+.newspecialmenu a:hover {
+	color: #666; text-decoration: none
+}
+#forumlist_menu {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; width: 170px; padding-top: 0px
+}
+#forumlist_menu dt {
+	padding-right: 0px; border-top: #ddd 1px dashed; padding-left: 24px; font-weight: bold; background: url(../../images/iq_browser/postauthor_ico.gif) #f8f8f8 no-repeat 8px 9px; padding-bottom: 3px; padding-top: 4px; border-bottom: #ddd 1px dashed
+}
+#forumlist_menu dt a {
+	color: #51677e
+}
+#forumlist_menu dd {
+	padding-right: 0px; padding-left: 24px; padding-bottom: 5px; line-height: 20px; padding-top: 3px
+}
+#forumlist_menu dd a {
+	color: #666
+}
+#forumlist_menu li.sub {
+	padding-left: 1em
+}
+#forumlist_menu li.current a {
+	color: #3b5c7e
+}
+.userinfopanel {
+	padding-right: 10px; padding-left: 10px; background: #fff repeat-x 0px 0px; padding-bottom: 10px; width: 140px; padding-top: 10px
+}
+.imicons {
+	border-right: #e6e6e2 1px solid; padding-right: 1px; border-top: #e6e6e2 1px solid; padding-left: 1px; background: #fff; padding-bottom: 4px; border-left: #e6e6e2 1px solid; padding-top: 4px; border-bottom: #e6e6e2 1px solid; text-align: center
+}
+.imicons img {
+	vertical-align: middle
+}
+.userinfopanel p {
+	margin: 0px; text-align: left
+}
+.userinfopanel p a {
+	color: #666
+}
+.userinfopanel dl {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 5px; margin: 5px 0px; padding-top: 5px; border-bottom: #e6e6e2 1px solid
+}
+.popupmenu_popup .postauthor {
+	width: 180px
+}
+.popupmenu_popup .postauthor a {
+	color: #666
+}
+#calendar {
+	border-right: #d9d9d4 1px solid; border-top: #d9d9d4 1px solid; margin-bottom: 0.8em; border-left: #d9d9d4 1px solid; border-bottom: #d9d9d4 1px solid
+}
+#calendar td {
+	padding-right: 2px; padding-left: 2px; font-weight: bold; padding-bottom: 2px; padding-top: 2px
+}
+#calendar_week td {
+	line-height: 2em; height: 2em
+}
+#hourminute td {
+	padding-right: 2px; padding-left: 2px; padding-bottom: 4px; padding-top: 4px
+}
+.calendar_expire {
+	font-weight: normal; color: #999
+}
+.calendar_expire a:link {
+	font-weight: normal; color: #999
+}
+.calendar_expire a:visited {
+	font-weight: normal; color: #999
+}
+.calendar_default {
+	color: #666
+}
+.calendar_default a:link {
+	color: #666
+}
+.calendar_default a:visited {
+	color: #666
+}
+.calendar_checked {
+	font-weight: bold; color: #ff3a00
+}
+.calendar_checked a:link {
+	font-weight: bold; color: #ff3a00
+}
+.calendar_checked a:visited {
+	font-weight: bold; color: #ff3a00
+}
+td.calendar_checked {
+	
+}
+span.calendar_checked {
+	
+}
+.calendar_today {
+	font-weight: bold; color: #677079
+}
+.calendar_today a:link {
+	font-weight: bold; color: #677079
+}
+.calendar_today a:visited {
+	font-weight: bold; color: #677079
+}
+#calendar_header td {
+	font-weight: normal; width: 30px; height: 20px
+}
+#calendar_year {
+	display: none; z-index: 10; line-height: 130%; position: absolute
+}
+#calendar_year .col {
+	padding-right: 4px; padding-left: 4px; float: left; padding-bottom: 4px; margin-left: 1px; padding-top: 4px
+}
+#calendar_month {
+	border-right: #ddd 1px solid; padding-right: 4px; border-top: #ddd 1px solid; display: none; padding-left: 4px; z-index: 11; padding-bottom: 4px; border-left: #ddd 1px solid; line-height: 130%; padding-top: 4px; border-bottom: #ddd 1px solid; position: absolute
+}
+#styleswitcher {
+	border-right: #b9d3e2 1px dashed; padding-right: 0px; border-top: #b9d3e2 1px dashed; padding-left: 5px; padding-bottom: 0px; border-left: #b9d3e2 1px dashed; color: #3b5c7e; padding-top: 0px; border-bottom: #b9d3e2 1px dashed
+}
+#styleswitcher_menu {
+	overflow: visible
+}
+#styleswitcher_menu {
+	white-space: nowrap
+}
+#styleswitcher_menu ul li {
+	white-space: nowrap
+}
+#styleswitcher_menu ul li.current a {
+	white-space: nowrap
+}
+#styleswitcher_menu ul li a {
+	white-space: nowrap
+}
+#styleswitcher_menu ul li.current {
+	font-weight: bold
+}
+#styleswitcher_menu ul li.current a {
+	color: #3b5c7e
+}
+#styleswitcher_menu {
+	
+}
+#styleswitcher_menu li.current {
+	font-weight: bold
+}
+.tagthread {
+	width: 360px
+}
+.tagthread .close {
+	float: right; padding-top: 5px
+}
+.tagthread h4 {
+	line-height: 26px; border-bottom: #e6e6e2 1px solid
+}
+.tagthread ul {
+	padding-right: 5px; padding-left: 5px; padding-bottom: 5px; padding-top: 5px
+}
+.tagthread li {
+	line-height: 1.8em
+}
+.tagthread li.more {
+	padding-right: 10px; background: url(../../images/iq_browser/arrow_right.gif) no-repeat 100% 50%; text-align: right
+}
+.headactions .popupmenu_popup a {
+	background: none transparent scroll repeat 0% 0%; color: #666; white-space: nowrap
+}
+.headactions .popupmenu_popup strong {
+	background: none transparent scroll repeat 0% 0%; color: #666; white-space: nowrap
+}
+.headactions .popupmenu_popup {
+	overflow: visible
+}
+unknown {
+	margin-left: 1px
+}
+ html #my_menu {
+	margin-left: 1px
+}
+ html #memcp_menu {
+	margin-left: 1px
+}
+ html #stats_menu {
+	margin-left: 1px
+}
+ html #plugin_menu {
+	margin-left: 1px
+}
+fieldset {
+	border-top-style: none; border-right-style: none; border-left-style: none; border-bottom-style: none
+}
+input {
+	border-top-width: 1px; padding-right: 2px; padding-left: 2px; border-left-width: 1px; border-left-color: #d9d9d4; background: #fff; border-bottom-width: 1px; border-bottom-color: #d9d9d4; padding-bottom: 2px; border-top-color: #d9d9d4; padding-top: 2px; border-right-width: 1px; border-right-color: #d9d9d4
+}
+textarea {
+	border-top-width: 1px; padding-right: 2px; padding-left: 2px; border-left-width: 1px; border-left-color: #d9d9d4; background: #fff; border-bottom-width: 1px; border-bottom-color: #d9d9d4; padding-bottom: 2px; border-top-color: #d9d9d4; padding-top: 2px; border-right-width: 1px; border-right-color: #d9d9d4
+}
+unknown {
+	background: none transparent scroll repeat 0% 0%; border-top-style: none; border-right-style: none; border-left-style: none; border-bottom-style: none
+}
+.radio {
+	background: none transparent scroll repeat 0% 0%; border-top-style: none; border-right-style: none; border-left-style: none; border-bottom-style: none
+}
+.checkbox {
+	background: none transparent scroll repeat 0% 0%; border-top-style: none; border-right-style: none; border-left-style: none; border-bottom-style: none
+}
+.invitecodelist input {
+	font-size: 13px; cursor: pointer; border-top-style: none; font-family: "courier new", courier, monospace; border-right-style: none; border-left-style: none; border-bottom-style: none
+}
+.btns #postsubmit {
+	border-top-width: 0px; padding-right: 0px; padding-left: 20px; border-left-width: 0px; background: url(../../images/iq_browser/view_icon05.gif); border-bottom-width: 0px; padding-bottom: 0px; width: 91px; cursor: pointer; color: #52687f; line-height: 25px; padding-top: 0px; height: 25px; text-align: center; border-right-width: 0px
+}
+.btns button.submit {
+	border-top-width: 0px; border-left-width: 0px; background: url(../../images/iq_browser/but_submit.gif); border-bottom-width: 0px; width: 60px; cursor: pointer; color: #52687f; line-height: 24px; height: 25px; text-align: center; border-right-width: 0px
+}
+.submit_five {
+	border-top-width: 0px; font-weight: bolder; border-left-width: 0px; background: url(../../images/iq_browser/but_submit_five.gif); border-bottom-width: 0px; width: 107px; cursor: pointer; color: #52687f; line-height: 25px; height: 25px; text-align: center; border-right-width: 0px
+}
+button.insmsg {
+	border-right: #e6e6e2 1px solid; border-top: #e6e6e2 1px solid; background: #d9d9d4; margin: 1em 0px; border-left: #e6e6e2 1px solid; color: #ff3a00; border-bottom: #e6e6e2 1px solid
+}
+.formbox .headactions {
+	padding-right: 10px; padding-left: 0px; padding-bottom: 0px; padding-top: 4px
+}
+.formbox .headactions a {
+	background: none transparent scroll repeat 0% 0%
+}
+.formbox table {
+	border-right: #d6e3eb 1px solid; border-left: #d6e3eb 1px solid
+}
+.formbox thead th {
+	padding-right: 0px; padding-left: 10px; background: #f6fafe; padding-bottom: 0px; color: #71a7c6; padding-top: 0px; border-bottom: #b9d3e2 1px solid
+}
+.formbox thead td {
+	padding-right: 0px; padding-left: 10px; background: #f6fafe; padding-bottom: 0px; color: #71a7c6; padding-top: 0px; border-bottom: #b9d3e2 1px solid
+}
+.formbox th {
+	padding-right: 0px; padding-left: 15px; padding-bottom: 0px; width: 180px; padding-top: 0px; border-bottom: #d6e3eb 1px solid
+}
+.formbox td {
+	padding-right: 0px; padding-left: 10px; padding-bottom: 8px; padding-top: 8px; border-bottom: #d6e3eb 1px solid
+}
+.attachlist thead th {
+	padding-right: 0px; padding-left: 10px; background: #f6fafe; padding-bottom: 0px; color: #71a7c6; padding-top: 0px; border-bottom: #b9d3e2 1px solid
+}
+.formbox thead td {
+	padding-right: 0px; padding-left: 10px; background: #f6fafe; padding-bottom: 0px; color: #71a7c6; padding-top: 0px; border-bottom: #b9d3e2 1px solid
+}
+.attachlist th {
+	padding-right: 0px; padding-left: 15px; padding-bottom: 0px; padding-top: 0px; border-bottom: #d6e3eb 1px solid
+}
+.attachlist td {
+	padding-right: 0px; padding-left: 10px; padding-bottom: 8px; padding-top: 8px; border-bottom: #d6e3eb 1px solid
+}
+.formbox label {
+	cursor: pointer
+}
+.lighttxt {
+	color: #3b5c7e
+}
+.formbox .tips {
+	color: #3b5c7e
+}
+.formbox th ul {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 5px; margin: 5px 0px; padding-top: 5px
+}
+#threadtypes table td {
+	border-top: #fafaf7 1px solid; border-bottom-width: 0px
+}
+#threadtypes table th {
+	border-top: #fafaf7 1px solid; border-bottom-width: 0px
+}
+#loginform  {
+	vertical-align: middle
+}
+#loginform button {
+	border-top-width: 0px; padding-right: 0px; padding-left: 20px; border-left-width: 0px; background: url(../../images/iq_browser/userinfo_bg03.gif) no-repeat; border-bottom-width: 0px; padding-bottom: 0px; margin: 2px 0px 4px; width: 57px; color: #666; line-height: 25px; padding-top: 0px; height: 25px; border-right-width: 0px
+}
+#userinfo #username {
+	border-right: #bebebe 1px solid; padding-right: 0px; border-top: #bebebe 1px solid; padding-left: 23px; background: url(../../images/iq_browser/userinfo_bg01.gif) no-repeat; padding-bottom: 0px; margin: 2px 0px 4px; border-left: #bebebe 1px solid; width: 90px; color: #666; line-height: 17px; padding-top: 2px; border-bottom: #bebebe 1px solid; height: 17px
+}
+#userinfo #password {
+	border-right: #bebebe 1px solid; padding-right: 0px; border-top: #bebebe 1px solid; padding-left: 23px; background: url(../../images/iq_browser/userinfo_bg02.gif) no-repeat; padding-bottom: 0px; margin: 2px 8px 4px 5px; border-left: #bebebe 1px solid; width: 90px; cursor: pointer; line-height: 17px; padding-top: 2px; border-bottom: #bebebe 1px solid; height: 17px
+}
+.editor_cell {
+	vertical-align: top
+}
+#editor {
+	border-right: 1px solid; border-top: 1px solid; background: #f9f9f9; border-left: 1px solid; border-bottom: 0px solid
+}
+#editor td {
+	padding-right: 2px; padding-left: 2px; padding-bottom: 2px; border-top-style: none; padding-top: 2px; border-right-style: none; border-left-style: none; border-bottom-style: none
+}
+.editortoolbar table {
+	width: auto
+}
+.editortoolbar a {
+	border-right: #f9f9f9 1px solid; padding-right: 1px; border-top: #f9f9f9 1px solid; display: block; padding-left: 1px; padding-bottom: 1px; border-left: #f9f9f9 1px solid; cursor: pointer; padding-top: 1px; border-bottom: #f9f9f9 1px solid
+}
+.editortoolbar .a {
+	border-right: #f9f9f9 1px solid; padding-right: 1px; border-top: #f9f9f9 1px solid; display: block; padding-left: 1px; padding-bottom: 1px; border-left: #f9f9f9 1px solid; cursor: pointer; padding-top: 1px; border-bottom: #f9f9f9 1px solid
+}
+.editortoolbar a.hover {
+	border-right: #d9d9d4 1px solid; border-top: #d9d9d4 1px solid; border-left: #d9d9d4 1px solid; border-bottom: #d9d9d4 1px solid; background-color: #f5f5f0; text-decoration: none
+}
+.editortoolbar a:hover {
+	border-right: #d9d9d4 1px solid; border-top: #d9d9d4 1px solid; border-left: #d9d9d4 1px solid; border-bottom: #d9d9d4 1px solid; background-color: #f5f5f0; text-decoration: none
+}
+.editortoolbar .a1 {
+	border-right: #d9d9d4 1px solid; border-top: #d9d9d4 1px solid; border-left: #d9d9d4 1px solid; border-bottom: #d9d9d4 1px solid; background-color: #f5f5f0; text-decoration: none
+}
+.editor_switcher_bar {
+	width: 100%; border-bottom: #ccc 1px solid; position: relative
+}
+.editor_switcher_bar a {
+	padding-right: 3px; padding-left: 3px; float: right; padding-bottom: 0px; margin-right: 5px; padding-top: 0px
+}
+.editor_switcher_bar button {
+	border-right: #ccc 1px solid; border-top: #ccc 1px solid; font-weight: bold; background: #fff; margin: 5px 4px 0px 0px; border-left: #ccc 1px solid; cursor: pointer; line-height: 26px; border-bottom: #ffffff 1px solid; position: relative; top: 1px; height: 26px
+}
+.editor_switcher_bar .editor_switcher {
+	border-bottom-color: #b9d3e2
+}
+.editor_text textarea {
+	font: 12px/1.6em "courier new", courier, monospace; width: 99%; border-top-style: none; border-right-style: none; border-left-style: none; border-bottom-style: none
+}
+#posteditor_bottom input {
+	border-right: #bababa 1px solid; border-top: #bababa 1px solid; font-size: 13px; background: url(../../images/iq_browser/page_bg05.gif) repeat-x; border-left: #bababa 1px solid; line-height: 20px; border-bottom: #bababa 1px solid; height: 20px
+}
+#posteditor_bottom button {
+	background: #f9f9f9
+}
+.editor_button button {
+	border-top-width: 0px; border-left-width: 1px; background: none transparent scroll repeat 0% 0%; border-bottom-width: 0px; color: #666; border-right-width: 0px
+}
+.editor_attach {
+	
+}
+#wysiwyg {
+	font: 14px/1.6em arial, helvetica, sans-serif, tahoma
+}
+#wysiwyg  {
+	line-height: normal
+}
+#wysiwyg a {
+	color: #666; text-decoration: underline
+}
+#wysiwyg li {
+	margin-left: 2em
+}
+#wysiwyg strong {
+	font-weight: bold
+}
+#wysiwyg b {
+	font-weight: bold
+}
+#wysiwyg em {
+	font-style: italic
+}
+#wysiwyg i {
+	font-style: italic
+}
+.fontname_menu {
+	width: 97px
+}
+.fontsize_menu {
+	width: 27px; line-height: normal
+}
+#posteditor table {
+	border-right-width: 0px
+}
+#editor table {
+	border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px
+}
+#posteditor_popup_table_menu {
+	width: 220px
+}
+.fontname_menu li {
+	cursor: pointer
+}
+.fontsize_menu li {
+	cursor: pointer
+}
+.editor_colornormal {
+	padding-right: 2px! important; padding-left: 2px! important; padding-bottom: 2px! important; border-top-style: none! important; padding-top: 2px! important; border-right-style: none! important; border-left-style: none! important; border-bottom-style: none! important
+}
+.editor_colorhover {
+	padding-right: 2px! important; padding-left: 2px! important; padding-bottom: 2px! important; border-top-style: none! important; padding-top: 2px! important; border-right-style: none! important; border-left-style: none! important; border-bottom-style: none! important
+}
+.editor_colornormal div {
+	border-right: #fff 1px solid; border-top: #fff 1px solid; overflow: hidden; border-left: #fff 1px solid; width: 10px; cursor: pointer; border-bottom: #fff 1px solid; height: 10px
+}
+.editor_colorhover div {
+	border-right: #677079 1px solid; border-top: #677079 1px solid; overflow: hidden; border-left: #677079 1px solid; width: 10px; cursor: pointer; border-bottom: #677079 1px solid; height: 10px
+}
+#quickpost {
+	border-right: #b9d3e2 1px solid; border-top: #b9d3e2 1px solid; margin: 0px 0px 10px; overflow: hidden; border-left: #b9d3e2 1px solid; border-bottom: #b9d3e2 1px solid
+}
+#quickpost .headactions {
+	padding-right: 10px; padding-left: 0px; padding-bottom: 0px; padding-top: 4px
+}
+ html #quickpost {
+	overflow: visible; height: 1%
+}
+#quickpost h5 {
+	margin: 0.5em 1em
+}
+.postoptions {
+	float: left
+}
+.postform {
+	float: left
+}
+.smilies {
+	float: left
+}
+.postoptions {
+	width: 15%
+}
+.smilies {
+	width: 20%
+}
+.postoptions p {
+	margin: 2px 0.7em
+}
+.postform {
+	padding-bottom: 10px; width: 64%
+}
+.postform p label {
+	font-weight: bold; vertical-align: top
+}
+.postform h5 input {
+	border-right: #bababa 1px solid; border-top: #bababa 1px solid; background: url(../../images/iq_browser/page_bg05.gif) repeat-x; border-left: #bababa 1px solid; width: 70%; border-bottom: #bababa 1px solid
+}
+.postform p {
+	margin: 0px 1em
+}
+.postform div {
+	margin: 0px 1em
+}
+.postform h4  {
+	vertical-align: middle
+}
+.postform h4 input {
+	border-right: #bababa 1px solid; border-top: #bababa 1px solid; background: url(../../images/iq_browser/page_bg05.gif) repeat-x; border-left: #bababa 1px solid; width: 70%; border-bottom: #bababa 1px solid
+}
+.postform textarea {
+	border-right: #bababa 1px solid; border-top: #bababa 1px solid; background: url(../../images/iq_browser/page_bg05.gif) repeat-x; border-left: #bababa 1px solid; width: 90%; border-bottom: #bababa 1px solid; height: 160px
+}
+.postform .btns {
+	margin-top: 0.5em; color: #3b5c7e; line-height: 30px
+}
+.postform .btns button {
+	vertical-align: middle
+}
+.postform .btns a {
+	float: right; margin: -34px 0px 0px
+}
+.postform button {
+	padding-right: 0px; padding-left: 0px; background: none transparent scroll repeat 0% 0%; padding-bottom: 0px; cursor: pointer; color: #666; border-top-style: none; padding-top: 0px; border-right-style: none; border-left-style: none; border-bottom-style: none
+}
+.postform #postsubmit {
+	display: inline; float: left; margin-left: 2.3em
+}
+.btns {
+	margin: 12px 0px 0px 10px
+}
+.btns em {
+	color: #3b5c7e
+}
+#smilieslist {
+	border-right: #e6e6e2 1px solid; border-top: #e6e6e2 1px solid; overflow: hidden; border-left: #e6e6e2 1px solid; border-bottom: #e6e6e2 1px solid; text-align: center
+}
+#quickpost #smilieslist {
+	margin: 12px 12px 0px 0px
+}
+#smilieslist td {
+	border-right: #fff 1px solid; padding-right: 0px; border-top: #fff 1px solid; padding-left: 0px; padding-bottom: 5px; border-left: #fff 1px solid; cursor: pointer; padding-top: 5px; border-bottom: #fff 1px solid
+}
+#smilieslist td:hover {
+	border-right: #ccc 1px solid; background: #e7f6f3; border-bottom: #ccc 1px solid
+}
+#smilieslist .pages {
+	border-top-width: 1px; border-left-width: 0px; float: none; border-bottom-width: 0px; border-right-width: 0px
+}
+.formbox #smilieslist table {
+	border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px
+}
+.ajaxform {
+	
+}
+.ajaxform th {
+	padding-right: 5px; padding-left: 5px; padding-bottom: 5px; padding-top: 5px; border-bottom: #e6e6e2 1px solid
+}
+.ajaxform td {
+	padding-right: 5px; padding-left: 5px; padding-bottom: 5px; padding-top: 5px; border-bottom: #e6e6e2 1px solid
+}
+.ajaxform thead th {
+	font-weight: bold
+}
+.ajaxform a {
+	color: #666
+}
+#ad_headerbanner {
+	margin-top: 15px; float: right
+}
+.ad_text {
+	padding-right: 6px; padding-left: 6px; background: #d9d9d4 repeat-x; margin-bottom: 6px; padding-bottom: 6px; padding-top: 6px
+}
+.ad_text table {
+	width: 100%; border-collapse: collapse
+}
+.ad_text td {
+	padding-right: 10px; background-position: 0px 0px; padding-left: 10px; padding-bottom: 2px; padding-top: 2px; background-repeat: repeat-x
+}
+.ad_textlink1 {
+	float: left; white-space: nowrap
+}
+.ad_textlink2 {
+	margin: 10px
+}
+.ad_textlink1 {
+	padding-left: 25px; background: url(../../images/iq_browser/ad_icon.gif) no-repeat 0px 50%
+}
+.ad_textlink2 {
+	padding-left: 25px; background: url(../../images/iq_browser/ad_icon.gif) no-repeat 0px 50%
+}
+.ad_pip {
+	clear: right; display: inline; float: right; margin: 10px
+}
+.ad_topicrelated {
+	clear: both; border-right: #78a73d 1px solid; padding-right: 10px; border-top: #78a73d 1px solid; display: inline; padding-left: 30px; background: #caeec0; float: right; padding-bottom: 10px; margin: 0px 10px 10px; border-left: #78a73d 1px solid; padding-top: 10px; border-bottom: #78a73d 1px solid
+}
+.ad_column {
+	margin-bottom: 6px; text-align: center
+}
+.ad_footerbanner {
+	clear: both; margin: 5px; text-align: center
+}
+.archiver .wrap {
+	padding-right: 10px; padding-left: 10px; padding-bottom: 10px; margin: 20px auto 10px; width: 760px; padding-top: 10px
+}
+.archiver_banner {
+	padding-right: 5px; margin-top: 40px; padding-left: 5px; padding-bottom: 5px; padding-top: 5px; text-align: center
+}
+.archiver h1 {
+	padding-right: 5px; padding-left: 5px; font-size: 1.17em; padding-bottom: 0px; padding-top: 0px
+}
+.archiver h2 {
+	padding-right: 5px; padding-left: 5px; font-size: 1.17em; padding-bottom: 0px; padding-top: 0px
+}
+.archiver_forumlist {
+	padding-right: 1em; padding-left: 1em; font-size: 1.17em; padding-bottom: 1em; line-height: 1.6em; padding-top: 1em
+}
+.archiver_threadlist {
+	padding-right: 1em; padding-left: 1em; font-size: 1.17em; padding-bottom: 1em; line-height: 1.6em; padding-top: 1em
+}
+.archiver_forumlist ul {
+	padding-left: 2em
+}
+.archiver_threadlist li {
+	padding-left: 10px; background: url(../../images/iq_browser/arrow_right.gif) no-repeat 0px 46%; list-style-type: none
+}
+.archiver_threadlist li em {
+	font-size: 0.83em; color: #3b5c7e
+}
+.archiver_post {
+	
+}
+.archiver_post cite {
+	padding-left: 10px; font-weight: bold
+}
+.archiver_post p {
+	background: #f5f5f0; margin-bottom: 0.5em; line-height: 3em; height: 3em
+}
+.archiver_postbody {
+	padding-right: 10px; padding-left: 10px; font-size: 1.17em; padding-bottom: 10px; overflow: hidden; padding-top: 0px; border-bottom: #e6e6e2 1px solid
+}
+.archiver_pages {
+	padding-right: 10px; padding-left: 10px; padding-bottom: 10px; padding-top: 10px
+}
+.archiver_fullversion {
+	padding-right: 10px; padding-left: 10px; padding-bottom: 10px; padding-top: 10px
+}
+.archiver_pages strong {
+	font-weight: bold; color: #ff3a00
+}
+.archiver_fullversion strong {
+	font-weight: bold; color: #ff3a00
+}
+.archiver_fullversion strong a {
+	font-weight: bold; color: #ff3a00
+}
+#ajaxwaitid {
+	display: none; z-index: 100; right: 0px; background: #dd0000; overflow: hidden; width: 100px; color: #ffffff; line-height: 1.6em; position: absolute; top: 0px; height: 1.6em
+}
+.postform .special {
+	font-weight: bold; color: #666
+}
+#postform .special {
+	font-weight: bold; color: #666
+}
+#newpost em {
+	color: #3b5c7e
+}
+.msgtabs {
+	display: none
+}
+.tool {
+	padding-right: 12px; padding-left: 0px; padding-bottom: 0px; padding-top: 4px
+}
+.tool a {
+	background: none transparent scroll repeat 0% 0%
+}
+#restoredata {
+	display: none
+}
+#previewpost {
+	margin: -34px 5% 0px 8px
+}

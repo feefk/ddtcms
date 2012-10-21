@@ -1,0 +1,51 @@
+{% extends 'base_2col.html' %}{% load i18n themes%}
+{% block title %}Guestbook{% endblock %}
+
+{% block sidebar %}
+{% include "guestbook/sidebar.html" %}
+{% endblock %}
+
+{% block article_content %}
+
+<h1>Guestbook</h1>
+
+
+		<div class="leave_message">
+			<div class="box-top1"><span></span></div>
+		        <div class="box1">
+		            <h2>Check your input</h2>
+            		<form action="{% url guestbook-post %}" method="POST">
+                        {% if form.errors %}
+                          <h3>There were errors in the response, please correct them below.</h3>
+                        {% else %}
+                        <div class="entry_even">
+                            {{ comment|linebreaks }}
+                        </div>                
+                          <p>
+                            <input type="submit" name="submit" value="Confirm your entry" id="submit">
+                          </p>
+                        {% endif %}
+                        <h3>Edit your entry</h3>
+                        {% for field in form %}
+                          {% if field.is_hidden %}
+                            {{ field }}
+                          {% else %}
+                            <p{% if field.errors %} class="error"{% endif %}{% ifequal field.name "honeypot" %} style="display:none;"{% endifequal %}>
+                              {% if field.errors %}{{ field.errors }}{% endif %}
+                              {{ field.label_tag }} {{ field }}
+                            </p>
+                          {% endif %}
+                        {% endfor %}
+                        <p class="submit">
+                          <input type="submit" name="submit" class="submit-post" value="Post">
+                          <input type="submit" name="submit" class="submit-preview" value="Preview">
+                        </p>
+                    </form>
+		    	
+		            <div class="clear"></div>
+		        </div>
+		    <div class="box-bot"><span></span></div>
+		</div>
+{% endblock %}
+
+

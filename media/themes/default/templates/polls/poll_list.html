@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}The current time{% endblock %}
+{% block sidebar %}
+<a href="/polls/"> 返回 </a>{{site.name}}
+{% endblock %}
+
+{% block content %}
+
+    <ul>
+    {% for object in object_list %}
+        <li><a href="{{object.id}}">{{ object.question }}</a></li>
+    {% endfor %}
+    </ul>
+ 
+
+
+
+
+{% endblock %}

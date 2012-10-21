@@ -1,0 +1,17 @@
+{% extends "news/news_base.html" %}
+{% load markup news_tags %}
+
+{% block title %}
+	News from {{ year }}
+{% endblock %}
+
+{% block content %}
+<h1>News from {{ year }}</h1>
+
+	<ul>
+		{% for item in object_list %}
+			<li><strong>{{ item.pub_date|date:"M j" }} &ndash;</strong> <a href="{{ item.get_absolute_url }}">{{ item.title }}</a></li>
+		{% endfor %}
+	</ul>
+
+{% endblock %}

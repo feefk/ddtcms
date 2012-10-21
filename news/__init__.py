@@ -1,0 +1,23 @@
+from signals import *
+"""
+http://movies.xunlei.com/type,genre/movie,Action
+http://movies.xunlei.com/type,genre/movie,Comedy
+http://movies.xunlei.com/type,genre/movie,*
+http://movies.xunlei.com/type,year/movie,2010
+http://movies.xunlei.com/type,year/movie,2009
+http://movies.xunlei.com/type,area/movie,8
+http://movies.xunlei.com/type,area/movie,5
+http://movies.xunlei.com/type,area/movie,*
+http://movies.xunlei.com/type,cp/movie,12
+http://movies.xunlei.com/type,cp/movie,58
+http://movie.xunlei.com/person/101913
+http://movie.xunlei.com/person/101888
+-----------
+http://kan.pps.tv/nlist/555/1.html
+http://kan.pps.tv/nlist/556/1.html
+http://kan.pps.tv/movie_region/%C4%DA%B5%D8_1.html
+http://kan.pps.tv/movie_region/%D3%A2%B9%FA_1.html
+http://kan.pps.tv/movie_year/2010_1.html
+http://kan.pps.tv/movie_actor/%D6%DC%D0%C7%B3%DB
+http://kan.pps.tv/movie_actor/%B3%C9%C1%FA
+"""

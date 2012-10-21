@@ -1,0 +1,42 @@
+#header {
+
+padding-top:3px;
+margin:8px auto; /*居中*/
+text-align: left;
+border:0px solid #369;
+}
+#header img {
+  float:left;
+  width:88px;
+  height:31px;
+  }
+
+#pagebody {
+margin:8px auto; /*居中*/
+width:100%;
+text-align: center;
+}
+
+
+
+#mainbody {
+width:90%!important;width:90%;
+text-align:left;
+clear:right; /*不允许右侧存在浮动*/
+color: #4E4E4E;
+} 
+
+
+#mainbody table.full{width:700px;padding:8px;}
+
+
+#footer{
+width:90%px;
+height: 55px;
+padding-top: 5px;
+
+margin:8px auto; /*居中*/
+text-align: center;
+color: #000;
+border-top:1px solid #8DCFE2;
+}

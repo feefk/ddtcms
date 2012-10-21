@@ -1,0 +1,41 @@
+{% extends "member/base_2col.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Registration complete" %}{% endblock %}
+{% block robots %}noindex,nofollow{% endblock %}
+
+{% block userprofile_content %}
+	<div class="success">
+		<p>
+
+		
+		版主：列兵<strong>{{username}}</strong>，出列！<br/>
+        <strong>{{username}}</strong>：是！<br/>
+        版主：列兵<strong>{{username}}</strong>，论坛有多少人？<br/>
+        <strong>{{username}}</strong>：一百……一百多个吧？<br/>
+        版主：错！是三百三十九人！其中三百三十八人已沉迷论坛，彻底成了废人！<br/>
+        <strong>{{username}}</strong>：是！<br/>
+        版主：列兵<strong>{{username}}</strong>，论坛建立至今已两年，主版几经改变，一共有三百三十八人沦为论坛的一员！列兵<strong>{{username}}</strong>，你必须记住，你是论坛第三百三十九名成员！<br/>
+        <strong>{{username}}</strong>：是！<br/>
+        版主：列兵<strong>{{username}}</strong>，有的论坛因为某位列兵是傻逼而骄傲，有的论坛因为某位回帖的是傻逼而骄傲，而我们论坛的骄傲就是发帖和回帖的都是傻逼中的战斗机、败类中的VIP的那一种！<br/>
+        <strong>{{username}}</strong>：是！<br/>
+        版主：列兵<strong>{{username}}</strong>，下面，同我们一起朗诵那首论坛战歌，
+        会唱这首歌的人已经在论坛中全部发帖阵亡，
+        我们从论坛回收站里，只找到这首歌词的手抄本，
+        但是我们希望——我们希望能听到从三百三十九个喉咙里吼出的歌声：<br/>
+        </p>
+        <p class="note">一只鼠标一键盘，一群网友逛论坛；<br/>
+        英姿飒爽美女兵，阳刚气质潇洒汉；<br/>
+        指点江山码文字，亮剑中原驻雄关！<br/>
+        扮愤青，斥走狗，论坛英豪美名传！！！<br/></p>
+        
+		
+	</div>
+{% endblock %}
+{% block userprofile_content_related %}
+  <div class="box">
+    <h3>加入我们</h3>
+    <p>欢迎您成功加入我们的行列，希望您在这里度过愉快的时光。</p>
+    <p class="red">现在，请到 <a href="{% url profile_overview %}"> 这里  </a> 登录！</p>
+  </div>
+{% endblock %}

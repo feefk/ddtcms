@@ -1,0 +1,53 @@
+{% extends "blog_base.html" %}
+{% load comments %}
+
+{% block title %}Blog - {{ object.title|escape }}{% endblock %}
+
+{% block content %}
+<h2>{{ object.title|escape }}</h2>
+
+<dl>
+<dt>Posted On:{{ object.pub_date|date:"F j, Y" }}</dt>
+<dd>Tags:
+{% for tag in object.tags.all %}
+<a href="{{ tag.get_absolute_url }}">{{ tag.name }}</a>{% if not forloop.last %}, {% endif %}
+{% endfor %}
+</dd>
+</dl>
+<div class="opt">
+<div>
+    {{ object.content|escape|linebreaks }}
+</div>
+{% get_comment_count for object as comment_count %}
+
+
+<div class="editUsr" align="right">(责任编辑：#)</div>
+
+<div class="clearBOX">&nbsp;</div>
+<div class="newsComment">[<a href="comment/?id={{object.id}}" target="_blank">我来说两句</a><span id="commentAllCountin">({{ comment_count }}条)</span>]</div>
+</div>
+
+<div class='more'>类别：<a href="" title="查看该分类中所有文章">python &amp; django &#38; gae</a>
+| <a title="将此文章添加到搜藏" href="/cang/add" onClick="return addToFavor();" target="_blank">添加到搜藏</a>
+| 浏览(<span id="result"></span>)
+</div>
+<div id="in_nav">
+新东东：<a href="early"  title="">比这新的信息</a> &nbsp;&nbsp;&nbsp;&nbsp;
+旧东东：<a href="later"  title="">比这旧的信息</a>
+</div>
+<div style="height:5px;line-height:5px;">&nbsp;</div>
+
+
+
+{% get_comment_list for object as comment_list %}
+{% for comment in comment_list %}
+<p>{{comment.user_name}}:{{comment.comment}}</p>
+{% endfor %}
+<div id='commentform'>
+    <h2>发表你的评论：</h2>
+    {% render_comment_form for object %}
+</div>
+
+
+</div>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}添加新链接{% endblock %}
+
+
+{% block sidebar %}
+
+		
+        <div>
+            <div class="box-top1"><span></span></div>
+            <div class="box1">
+	      		<h2>操作菜单</h2>
+	      		<ul>
+	      			<li><a href="{%url link_create%}">添加新链接</a></li>
+	      		</ul>
+	      		<h2>链接分类</h2>
+	      		<ul>
+	      			<li>分类1</li>
+	      			<li>分类1</li>
+	      			<li>分类1</li>
+	      		</ul>
+                <div class="clear"></div>
+			</div>
+            <div class="box-bot"><span></span></div>
+	      </div>
+        <div class="clear"></div>  
+				
+        
+{% endblock sidebar %}
+
+
+
+
+{% block content %}
+
+
+
+<div id="userprofile_content">
+	{% block userprofile_content %}
+	<h2>{% trans "Create a Link" %}{{ msg }}</h2>
+	<form method='post' action='./'>
+	{% if form.errors %}<ul>{{ form.errors.as_ul }}</ul>{% endif %}
+	<p><label>{% trans "Posting As" %}</label><span>{{ user.username }}</span></p>
+	{{ form.as_p }}
+	<p><input type='submit' value='提交' /></p>
+	</form>
+
+	{% endblock %}		
+</div>
+
+			
+{% endblock %}

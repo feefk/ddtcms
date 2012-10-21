@@ -1,0 +1,23 @@
+{% extends "news/news_base.html" %}
+
+{% block title %}发布新闻{% endblock %}
+{% block breadcrumbs %} <a href="/">首页</a> &raquo; <a href="{% url news_index %}">新闻中心</a>{% for title, url in category.get_url_name %} &raquo; <a href='{{ url }}'>{{ title }}</a>{% endfor %}  &raquo; 发布新闻 {% endblock %}
+{% block content %}
+<div class='inline'><h1>发布新闻</h1></div>
+
+
+{% if user.is_authenticated %}
+
+            <form class="form" id="createform" name="form1" enctype="multipart/form-data"  action="/news/post/" method="post">
+            
+            <table class="full">
+            <tbody>{{ form }}</tbody>
+            </table>
+            
+            <input type="submit" value="提交新闻"> <input type="reset" value="重新设置"> 
+            </form>
+
+{% else %}
+<p>发布新闻请<a href='{% url news-post %}'>登录</a>.</p>
+{% endif %}
+{% endblock %}

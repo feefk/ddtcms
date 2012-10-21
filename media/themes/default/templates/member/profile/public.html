@@ -1,0 +1,90 @@
+{% extends "member/base_2col.html" %}
+{% load i18n %}
+{% load avatars %}
+
+{% block title %}{{ profile.user }}'s public profile{% endblock %}
+{% block robots %}noindex,nofollow{% endblock %}
+
+{% block js.custom %}
+	{% if profile.latitude and profile.longitude %}
+	<script src="http://www.google.com/jsapi?key={{ GOOGLE_MAPS_API_KEY }}"></script>
+	<script>google.load("maps", "2");</script>
+	<script>
+		$(function() {
+		if (google.maps.BrowserIsCompatible()) {
+			var map = new google.maps.Map2(document.getElementById("map"));
+			map.disableDragging();
+			map.setCenter(new google.maps.LatLng({{ profile.latitude }}, {{ profile.longitude }}), 4);
+			var marker = new google.maps.Marker(new google.maps.LatLng({{ profile.latitude }}, {{ profile.longitude }}), {clickable: false });
+			map.addOverlay(marker);
+		}
+		});
+	</script>
+	{% endif %}
+{% endblock %}
+
+
+
+{% block userprofile_content %}
+	<h2>{% blocktrans with profile.user as user %} {{ user }} 的公开小档案{% endblocktrans %}</h2>
+
+	<div class="vcard">
+		<div class="boxc-gray mb-20">
+			<h5>{{ profile.user }}</h5>
+			<p class="icaption_right"><img class="border top" alt="{{ profile.user }}" src="{% avatar 64 profile.user %}" /></p>
+			<p> {{profile.intro}}</p>
+		</div>
+		
+		<!--info -->
+		<div class="clearfix">
+			<ul>
+				<li><span class="ico-adduser">认识了 <a href="/member/friends/list/413907/">{{ profile.total_friends }}个朋友</a></span></li>
+				<li><span class="ico-photo">上传了 <a href="/photo/albums/413907/">70张照片</a></span></li>
+				<li><span class="ico-post">发表了 <a href="/news/">{{ profile.get_posts.count }}篇帖子</a></span></li>
+				<li><span class="ico-blog">写出了 <a href="/blog/">{{ profile.total_blogs }}篇日记</a></span></li>
+				<li><span class="ico-group">参加了 <a href="/group/7/">{{ profile.total_groups }}个团</a></span></li>
+			</ul>
+		</div>
+		<!--end info -->
+
+		<div class="clearfix">
+
+			  想了解更多关于 <strong>{{ profile.user }}</strong> 的信息？            
+			  请<a href="{% url signup %}">注册新用户</a>
+
+
+		</div>
+
+		<div>
+			已经是会员了？请 <a href="{%url login%}">登录</a></div>
+
+
+		{% if profile.latitude and profile.longitude %}
+		<div class="span-10">
+			<div id="map"></div>
+		</div>
+		{% endif %}
+		
+		
+	</div>
+	<div class="clear"></div>
+
+{% endblock %}
+
+{% block userprofile_content_related %}
+		<!--friends -->
+		<div class="clearfix">
+			<h6>{{ profile.user }}的一些朋友...</h6>
+
+			<table width="100%" border="0" cellspacing="10" cellpadding="0" class="fs-12">
+				<tr>
+					<td valign="middle" align="center">
+					<a href="/member/profile/70461/">
+					<img src="{{MEDIA_URL}}/member/avator/user/64/70461.jpg" /></a>
+					<div class="mt-5"><a href="/member/profile/70461/">{{user}}</a></div></td>                   
+				</tr>
+			</table>
+		</div>
+
+		<!--end friends -->
+{% endblock %}

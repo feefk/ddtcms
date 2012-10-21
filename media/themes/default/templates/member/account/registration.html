@@ -1,0 +1,70 @@
+{% extends "member/base_2col.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "User registration" %}{% endblock %}
+{% block robots %}noindex,nofollow{% endblock %}
+
+{% block js.custom %}
+<script>
+	$(function() {
+		$("input#id_username").focus();
+		$("input[type='text'], input[type='password']").addClass("text");
+		$("input[type='submit']").addClass("submit");
+	});
+</script>
+{% endblock %}
+
+{% block userprofile_content %}
+<div id="account_content">
+	<form class="form" action="" method="post" accept-charset="utf-8">
+		<h2>{% trans "register"%}</h2>
+		<label for="id_username">{% trans "username"%}</label>
+		<p>
+			{{ form.username }}
+			{% if form.username.errors %}
+				<span class="quiet red">* {{ form.username.errors|join:"; " }}<br /></span>
+			{% endif %}
+		</p>
+		<div class="clear"></div>
+		<label for="id_email">{% trans "Email"%}{% if not form.email.field.required %} ({% trans "Optional" %}){% endif %}</label>
+		<p>{{ form.email }}
+			{% if form.email.errors %}
+				<span class="quiet red">* {{ form.email.errors|join:"; " }}<br /></span>
+			{% endif %}
+		</p>
+		<div class="clear"></div>
+		<label for="id_password1">{% trans "password"%}</label>
+		<p>{{ form.password1 }}
+			{% if form.password1.errors %}
+				<span class="quiet red">* {{ form.password1.errors|join:"; " }}<br /></span>
+			{% endif %}
+		</p>
+		<div class="clear"></div>
+		<label for="id_password2">{% trans "password(repeat)"%}</label>
+		<p>{{ form.password2 }}
+			{% if form.password2.errors %}
+				<span class="quiet red">* {{ form.password2.errors|join:"; " }}<br /></span>
+			{% endif %}
+		</p>
+		<div class="clear"></div>
+		<label for="id_captcha">{% trans "captcha"%}</label>
+		<p>{{ form.captcha }}{% trans "Fill in Result" %}
+			{% if form.captcha.errors %}
+				<span class="quiet red">* {{ form.captcha.errors|join:"; " }}<br /></span>
+			{% endif %}
+		</p>
+		<div class="clear"></div>
+		{% if form.non_field_errors %}
+			<ul class="quiet red">{{ form.non_field_errors.as_ul }}</ul>
+		{% endif %}
+		<p><input type="submit" value="{% trans "register"%}" id="submit" name="submit" class="button"/></p>
+	</form>
+</div>
+{% endblock %}
+
+{% block userprofile_content_related %}
+	<div class="box">
+		<h3>加入我们</h3>
+		<p> 加入本社区是简单快捷的. 您仅仅需要填写这个表单来获得访问私人的内容的权限.</p>
+	</div>
+{% endblock %}

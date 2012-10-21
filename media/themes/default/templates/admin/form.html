@@ -1,0 +1,13 @@
+{%extends "admin/change_form.html"%}
+{%block extrahead%}
+    {{block.super}}
+     <script type="text/javascript">
+           django.jQuery(document).ready(function(){
+                django.jQuery("textarea[rel='kind']").each(function(n){
+                          KE.show({
+                               id : django.jQuery(this).attr("id"),
+                          });
+                });
+           });
+      </script>
+    {%endblock%}
